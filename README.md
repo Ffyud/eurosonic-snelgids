@@ -5,3 +5,4 @@ De Lijstjesman stelt elk jaar een prettig overzicht samen van het Eurosonic fest
 - De bron: [Eurosonic 2025 snelgids.ods]([Eurosonic 2025 snelgids.ods - Google Spreadsheets](https://docs.google.com/spreadsheets/d/1IpreXQt8gMkvbMWSK2IdzopMWqfGQDwEtRr4EY5Qoi8/edit?usp=sharing))
 
 - Twitter van de Lijstjesman: [x.com/Naituutstad](https://x.com/Naituutstad)
+ 
