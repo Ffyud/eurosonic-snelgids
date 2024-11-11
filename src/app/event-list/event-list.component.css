@@ -1,0 +1,53 @@
+.event-list-container {
+    overflow: scroll;
+    display: grid;
+    grid-auto-flow: column;
+    width: 100vw;
+    height: calc(100vh + 1px);
+
+    /* anders geen sticky headers */
+}
+
+.event-list-container .event-list:first-child {
+    margin-left: auto;
+}
+
+.event-list-container .event-list:last-child {
+    margin-right: auto;
+}
+
+.event-list {
+    width: 70vw;
+}
+
+.event-list h3 {
+    top: 0px;
+    left: 0px;
+    width: fit-content;
+    font-size: 1.5em;
+    text-shadow: none;
+    border-radius: var(--heavy-radius);
+    position: sticky;
+    z-index: 100;
+    align-self: start;
+    padding: var(--spacing-m);
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+    background: var(--main-color);
+    background: -webkit-linear-gradient(to right, var(--main-color), var(--main-dark-color));
+    background: linear-gradient(to right, var(--main-color), var(--main-dark-color));
+    box-shadow: inset 0px 2px 0px 0px #FFFFFF78;
+    color: var(--bright-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-left: var(--spacing-m);
+    padding-right: var(--spacing-m);
+    margin-bottom: var(--spacing-xl);
+}

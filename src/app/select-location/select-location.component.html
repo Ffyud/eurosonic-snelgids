@@ -1,0 +1,13 @@
+<div>
+    <ul>
+        @for (location of locations; track location) {
+        <li>
+            @if(locationIsSelected(location)) {
+            <button class="active" (click)="onClick(location)">{{ location }}</button>
+            } @else {
+            <button class="inactive" (click)="onClick(location)">{{ location }}</button>
+            }
+        </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,14 @@
+/* app-root { 
+    height: 100%;
+} */
+
+main {
+    height: 100%;
+}
+
+.content {
+    display: grid;
+    gap: var(--spacing-xl);
+    grid-template-rows: 1fr 50px 50px;
+
+}

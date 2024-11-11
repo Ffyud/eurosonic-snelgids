@@ -1,0 +1,90 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: #222;
+    color: #F2F2F2;
+    font-family: "Andika", sans-serif;
+}
+
+:root {
+
+    --spacing-xl: 15px;
+    --spacing-m: 5px;
+
+    --background-color: #222;
+    --dark-color: #000;
+    --light-dark-color: #FFF3;
+    --bright-color: #F2F2F2;
+    --transparant-black-color: #22222282;
+
+    --main-color: #07b34c;
+    --main-dark-color: #0575e6;
+
+    --backdrop-blur: blur(15px);
+
+    --minimal-radius: 3px;
+    --medium-radius: 15px;
+    --heavy-radius: 30px;
+
+    --skewed-radius: 48% 12%;
+    --skewed-radius-reverse: 12% 48%;
+
+    --box-shadow-button: inset 0px -2px 0px 2px #000;
+
+    --andika-font: "Andika", sans-serif;
+    --baskerville-font: "Libre Baskerville", serif;
+}
+
+button {
+    cursor: pointer;
+    font-family: var(--andika-font);
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.andika-regular {
+    /* font: 16px "Andika" 400 sans-serif; */
+    font-family: "Andika", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.andika-bold {
+    font-family: "Andika", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.andika-regular-italic {
+    font-family: "Andika", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.andika-bold-italic {
+    font-family: "Andika", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  

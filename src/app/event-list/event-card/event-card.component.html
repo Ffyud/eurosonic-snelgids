@@ -1,0 +1,34 @@
+<div class="event-card">
+   <h4>{{ gig?.artist }}</h4>
+   <p class="description">{{gig?.description}}</p>
+   <span>21:15</span>
+   @switch (gig?.rating) {
+   @case (rating.VIJF) {
+   <div class="rating rating-5"><span>5</span></div>
+   }
+   @case (rating.VIER) {
+   <div class="rating rating-4"><span>4</span></div>
+   }
+   @case (rating.DRIE) {
+   <div class="rating rating-3"><span>3</span></div>
+   }
+   @case (rating.TWEE) {
+   <div class="rating rating-2"><span>2</span></div>
+   }
+   @case (rating.EEN) {
+   <div class="rating rating-1"><span>1</span></div>
+   }
+   @case (rating.EEN_STER) {
+   <div class="rating rating-1-ster"><span>1</span></div>
+   }
+   @case (rating.EEN_STER_STER) {
+   <div class="rating rating-1-ster-ster"><span>1</span></div>
+   }
+   @case (rating.EEN_STER_STER_STER) {
+   <div class="rating rating-1-ster-ster-ster"><span>1</span></div>
+   }
+   @case (rating.EEN_STER_STER_STER_STER) {
+   <div class="rating rating-1-ster-ster-ster-ster rating-fire"><span>1</span></div>
+   }
+   }
+</div>

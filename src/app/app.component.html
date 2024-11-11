@@ -1,0 +1,9 @@
+<main class="main">
+  <div class="content">
+    <app-event-list [eventList]="eventsList()" [selectedLocationsList]="selectedLocationsList()"></app-event-list>
+    <app-select-location></app-select-location>
+    <app-select-day></app-select-day>
+  </div>
+</main>
+
+<router-outlet />

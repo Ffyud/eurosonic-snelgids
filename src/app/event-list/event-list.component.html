@@ -1,0 +1,14 @@
+<div class="event-list-container">
+    @for(location of selectedLocationsList(); track location) {
+        <div class="event-list">
+            <h3>{{location}}</h3>
+            <ul>
+                @for (event of eventList(); track event) {
+                <li>
+                    <app-event-card [gig]="event"></app-event-card>
+                </li>
+                }
+            </ul>
+        </div>
+    }
+</div>

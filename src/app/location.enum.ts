@@ -1,0 +1,23 @@
+export enum Location {
+    OOSTERPOORT = "Oosterpoort",
+    VERA = "Vera",
+    SIMPLON = "Simplon",
+    GRAND_THEATER = "Grand Theater",
+    SPOT = "Spot",
+    MARTINIKERK = "Martinikerk",
+    PLATFORM_THEATER = "Platform Theater",
+    SCHIMMELPENNINCK_HUIS = "Schimmelpenninck Huys",
+    PRINSENTUIN = "Prinsentuin",
+    OOST = "OOST",
+    GRONINGER_MUSEUM = "Groninger Museum",
+    WARMOESSTRAAT = "Warmoesstraat",
+    PLATO = "Plato",
+    DOT = "DOT",
+    EM2 = "EM2",
+    STUDENT_HOTEL = "Student Hotel",
+    SYNAGOGUE = "Synagogue",
+    HUIS_DE_BEURS = "Huis de Beurs",
+    POOLCAFE_HOBBY = "Poolcafé Hobby",
+    GRONINGER_FORUM = "Groninger Forum",
+    ONBEKEND = "Onbekend"
+}
