@@ -21,7 +21,7 @@ li {
     font-weight: 400;
     display: block;
     padding: 0px 12px 2px 10px;
-    line-height: 48px;
+    line-height: 38px;
     text-align: center;
     box-shadow: inset -2px 0px 0px 0px var(--light-dark-color);
 }

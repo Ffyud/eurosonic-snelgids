@@ -17,27 +17,37 @@
 }
 
 .event-list {
-    width: 70vw;
+    width: 60vw;
 }
 
 .event-list h3 {
     top: 0px;
     left: 0px;
-    width: fit-content;
-    font-size: 1.5em;
-    text-shadow: none;
-    border-radius: var(--heavy-radius);
+    width: 100%;
     position: sticky;
     z-index: 100;
     align-self: start;
-    padding: var(--spacing-m);
-    padding-left: var(--spacing-xl);
-    padding-right: var(--spacing-xl);
+    font-size: 1.3em;
+    text-align: center;
+    text-shadow: none;
+    border-radius: var(--medium-radius);
+    padding-top: var(--spacing-m);
+    padding-bottom: var(--spacing-m);
     background: var(--main-color);
     background: -webkit-linear-gradient(to right, var(--main-color), var(--main-dark-color));
     background: linear-gradient(to right, var(--main-color), var(--main-dark-color));
     box-shadow: inset 0px 2px 0px 0px #FFFFFF78;
     color: var(--bright-color);
+}
+
+.event-list h3 span {
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+    left: 0px;
+    right: 0px;
+    position: sticky;
+    z-index: 100;
+    align-self: start;
 }
 
 ul {

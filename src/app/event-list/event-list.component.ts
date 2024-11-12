@@ -14,5 +14,6 @@ import { Day } from '../day.enum';
 export class EventListComponent {
   
   eventList = input.required<Gig[]>();
+
   selectedLocationsList = input.required<Location[]>();
 }
