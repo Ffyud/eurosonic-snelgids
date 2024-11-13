@@ -71,6 +71,10 @@ export class SnelgidsService {
     return Object.values(Location);
   }
 
+  getAllCountries(): Country[] {
+    return Object.values(Country);
+  }
+
   // Get user selected locations
   getSelectedLocations(): Location[] {
     return this.selectedLocations();
