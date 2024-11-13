@@ -17,7 +17,7 @@
 }
 
 .event-list {
-    width: 60vw;
+    width: 40vw;
 }
 
 .event-list h3 {
@@ -27,7 +27,7 @@
     position: sticky;
     z-index: 100;
     align-self: start;
-    font-size: 1.3em;
+    font-size: 1em;
     text-align: center;
     text-shadow: none;
     border-radius: var(--medium-radius);
@@ -41,13 +41,8 @@
 }
 
 .event-list h3 span {
-    padding-left: var(--spacing-xl);
-    padding-right: var(--spacing-xl);
-    left: 0px;
-    right: 0px;
-    position: sticky;
-    z-index: 100;
-    align-self: start;
+    padding-left: var(--spacing-m);
+    padding-right: var(--spacing-m);
 }
 
 ul {

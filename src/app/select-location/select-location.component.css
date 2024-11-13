@@ -13,12 +13,12 @@ button.locatie-filter-button {
     font-size: 1em;
     padding: 0px 10px 2px 10px;
     line-height: 38px;
-    box-shadow: inset 0px 0px 0px 2px var(--light-dark-color);
-    background: none;
+    /* box-shadow: inset 0px 0px 0px 2px var(--main-color); */
+    background: var(--transparant-black-color);
     color: var(--bright-color);
     text-shadow: none;
     border-radius: var(--medium-radius);
-    backdrop-filter: blur(25px);
+    backdrop-filter: var(--backdrop-blur);
 }
 
 div.filter-wrapper {

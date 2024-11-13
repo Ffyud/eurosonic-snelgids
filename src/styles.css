@@ -9,7 +9,6 @@ html {
 }
 
 :root {
-
     --spacing-xl: 15px;
     --spacing-m: 5px;
 
@@ -17,7 +16,7 @@ html {
     --dark-color: #000;
     --light-dark-color: #FFF3;
     --bright-color: #F2F2F2;
-    --transparant-black-color: #22222282;
+    --transparant-black-color: #222222bd;
 
     --main-color: #07b34c;
     --main-dark-color: #0575e6;

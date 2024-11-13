@@ -1,9 +1,10 @@
 <div class="event-card">
    <h4>{{ gig?.artist }}</h4>
-   <span>{{ gig.country }}</span>
-   <span>21:15</span>
+   <p class="description">{{gig.description}}</p>
+
+   <!-- <span>{{ gig.country }}</span>
+   <span>21:15</span> -->
    <div class="info-grid">
-      <p class="description">{{gig.description}}</p>
       @switch (gig?.rating) {
       @case (rating.VIJF) {
       <div class="rating rating-5"><span>5</span></div>

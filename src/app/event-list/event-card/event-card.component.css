@@ -34,7 +34,9 @@ p.description::after {
 
 p.description {
     quotes: "„" "“" "‚" "‘";
+    font-size: .8em;
     margin: 0;
+    text-align: center;
     quotes: initial;
     font-family: var(--baskerville-font);
 }
@@ -45,11 +47,8 @@ p.description {
     width: 40px;
     right: 0px;
     top: 0px;
-    background: linear-gradient(135deg, #6edb7a, #8df58d);
-    border-radius: 100%;
-    /* padding-left: var(--spacing-xl); */
-    /* padding-right: var(--spacing-xl); */
-    line-height: 40px;
+    border-radius: var(--medium-radius);
+    line-height: 30px;
     text-align: center;
     color: #ffffff;
     font-size: 1.2em;
@@ -72,13 +71,11 @@ p.description {
 }
 
 .rating-1 {
-    background-color: #ffbb00;
     color: rgb(0, 0, 0);
     text-shadow: 0px 0px 1px #FFF;
 }
 
 .rating-1-ster {
-    background-color: #ffbb00;
     color: rgb(0, 0, 0);
     text-shadow: 0px 0px 1px #FFF;
 }
