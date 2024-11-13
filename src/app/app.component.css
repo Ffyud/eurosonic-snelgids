@@ -7,8 +7,31 @@ main {
 }
 
 .content {
-    display: grid;
-    gap: var(--spacing-xl);
-    grid-template-rows: 1fr 40px 40px;
+    /* display: grid; */
+    /* gap: var(--spacing-xl); */
+    /* grid-template-rows: 1fr 40px 40px; */
+
+}
+
+header {
+
+    position: relative;
+    top: 0;
+    text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    font-size: 1em;
+    margin-right: var(--spacing-m);
+}
+
+header h3 {
+    font-weight: 400;
+    display: inline-block;
+    margin: 0;
+    font-size: 1em;
 
 }
