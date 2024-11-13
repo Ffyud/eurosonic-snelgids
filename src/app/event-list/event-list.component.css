@@ -57,7 +57,7 @@ ul {
 }
 
 li {
-    padding-left: var(--spacing-m);
+    /* padding-left: var(--spacing-m); */
     padding-right: var(--spacing-m);
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-m);
 }
