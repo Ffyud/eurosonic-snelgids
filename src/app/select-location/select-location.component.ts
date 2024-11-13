@@ -16,6 +16,7 @@ export class SelectLocationComponent {
   protected locations: Location[] = this.snelgidsService.getAllLocations();
   protected selectedLocations = signal<Location[]>(this.snelgidsService.getSelectedLocations());
 
+  showMenu = signal<boolean>(false);
   onClick(location: Location): void {
     this.snelgidsService.setSelectedLocations(location);
     // Update signal zodat locationIsSelected het opmerkt
@@ -24,5 +25,13 @@ export class SelectLocationComponent {
 
   locationIsSelected(location: Location): boolean {
     return this.selectedLocations().includes(location)
+  }
+
+  onToggleMenu() {
+    if(this.showMenu()) {
+      this.showMenu.set(false);
+    } else {
+      this.showMenu.set(true);
+    }
   }
 }
