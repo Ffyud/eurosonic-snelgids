@@ -4,14 +4,13 @@ ul {
     white-space:nowrap;
     width: 100vw;
     margin: 0;
-    margin-bottom: env(safe-area-inset-bottom);
     padding: 0;    
     display: grid;
     z-index: 100;
     position: fixed;
     background: var(--transparant-black-color);
     backdrop-filter: var(--backdrop-blur);
-    bottom: 0;
+    bottom: env(safe-area-inset-bottom);
     column-gap: 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     box-shadow: inset 0px 2px 0px 0px var(--light-dark-color), inset 0px -2px 0px 0px var(--light-dark-color);
