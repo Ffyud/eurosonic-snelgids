@@ -36,6 +36,7 @@ p.description {
     quotes: "„" "“" "‚" "‘";
     font-size: .8em;
     margin: 0;
+    margin-bottom: var(--spacing-m);
     text-align: center;
     quotes: initial;
     font-family: var(--baskerville-font);
