@@ -23,7 +23,7 @@
 .event-list h3 {
     top: 0px;
     left: 0px;
-    width: 100%;
+    width: calc(100% - var(--spacing-m));
     position: sticky;
     z-index: 100;
     align-self: start;
@@ -32,10 +32,10 @@
     text-shadow: none;
     border-radius: var(--medium-radius);
     margin: 0px;
+    margin-right: var(--spacing-m);
     padding-top: var(--spacing-m);
     padding-bottom: var(--spacing-m);
     background: var(--main-color);
-    background: -webkit-linear-gradient(to right, var(--main-color), var(--main-dark-color));
     background: linear-gradient(to right, var(--main-color), var(--main-dark-color));
     box-shadow: inset 0px 2px 0px 0px #FFFFFF78;
     color: var(--bright-color);
