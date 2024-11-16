@@ -8,10 +8,7 @@ main {
 }
 
 .content {
-    /* display: grid; */
-    /* gap: var(--spacing-xl); */
-    /* grid-template-rows: 1fr 40px 40px; */
-
+    
 }
 
 header {
@@ -34,5 +31,11 @@ header h3 {
     display: inline-block;
     margin: 0;
     font-size: 1em;
+}
 
+.bottom-wrapper {
+    z-index: 200;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
 }
