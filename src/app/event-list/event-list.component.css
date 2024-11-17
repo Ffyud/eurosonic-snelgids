@@ -36,6 +36,7 @@
     border-bottom-right-radius: var(--medium-radius);
     margin: 0px;
     margin-right: var(--spacing-m);
+    margin-bottom: var(--spacing-m);
     padding-top: var(--spacing-m);
     padding-bottom: var(--spacing-m);
     background: var(--main-color);

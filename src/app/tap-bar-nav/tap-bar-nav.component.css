@@ -1,0 +1,59 @@
+div.tap-bar-nav-wrapper {
+    z-index: 200;
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: env(safe-area-inset-bottom);
+    width: 100%;
+    background: var(--transparant-black-color);
+    backdrop-filter: var(--backdrop-blur);
+    overflow: scroll;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px var(--spacing-m) 0px var(--spacing-m);
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+
+}
+
+li {
+    text-align: center;
+    display: inline-block;
+}
+
+li button.active {
+    background: var(--main-color);
+    text-shadow: none;
+    box-shadow: inset 0px 2px 0px 0px #FFFFFF78;
+    color: var(--bright-color);
+}
+
+li button.inactive {
+    background: none;
+    color: var(--bright-color);
+    text-shadow: none;
+}
+
+li button {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    padding: var(--spacing-m) 10px var(--spacing-m) 10px;
+    background: none;
+    color: var(--bright-color);
+    backdrop-filter: blur(25px);
+}
+
+li button i  {
+    font-size: 1.3em;
+    padding: 0px 0px 5px 0px;
+    display: block;
+    clear: both;
+}
+li button span {
+    font-size: .8em;
+    display: block;
+    clear: both;
+}

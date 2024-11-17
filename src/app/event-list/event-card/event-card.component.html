@@ -2,10 +2,12 @@
    <h4>{{ gig?.artist }}</h4>
    <p class="description">{{gig.description}}</p>
 
-   <!-- <span>{{ gig.country }}</span>
-   <span>21:15</span> -->
    <div class="info-grid">
-      @switch (gig?.rating) {
+      <div class="rating rating-5"><span>{{gig.rating}}</span></div>
+      <div class="time"><span>21:30</span></div>
+      <div class="fav"><i class="ri-heart-line"></i></div>
+
+      <!-- @switch (gig?.rating) {
       @case (rating.VIJF) {
       <div class="rating rating-5"><span>5</span></div>
       }
@@ -33,7 +35,7 @@
       @case (rating.EEN_STER_STER_STER_STER) {
       <div class="rating rating-1-ster-ster-ster-ster rating-fire"><span>1</span></div>
       }
-      }
+      } -->
    </div>
 
 </div>

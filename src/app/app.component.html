@@ -1,11 +1,12 @@
 <main class="main">
   <header><h1>Eurosonic Snelgids</h1> <h3> van De Lijstjesman</h3></header>
+  <app-select-day/>
   <div class="content">
     <app-event-list [eventList]="eventsList()" [selectedLocationsList]="selectedLocationsList()"></app-event-list>
-    <div class="bottom-wrapper">
+    <!-- <div class="bottom-wrapper">
       <app-select-location></app-select-location>
-      <app-select-day></app-select-day>
-    </div>
+    </div> -->
+    <app-tap-bar-nav></app-tap-bar-nav>
   </div>
 </main>
 
