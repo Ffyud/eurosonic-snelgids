@@ -1,5 +1,6 @@
 .event-list-container {
     overflow: scroll;
+    scroll-snap-type: both mandatory;
     display: grid;
     grid-auto-flow: column;
     width: 100vw;
@@ -16,6 +17,7 @@
 }
 
 .event-list {
+    scroll-snap-align: start;
     width: 40vw;
     max-width: 200px;
 }
@@ -30,7 +32,8 @@
     font-size: 1em;
     text-align: center;
     text-shadow: none;
-    border-radius: var(--medium-radius);
+    border-bottom-left-radius: var(--medium-radius);
+    border-bottom-right-radius: var(--medium-radius);
     margin: 0px;
     margin-right: var(--spacing-m);
     padding-top: var(--spacing-m);
