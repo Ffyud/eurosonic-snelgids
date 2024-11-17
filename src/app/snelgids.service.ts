@@ -25,7 +25,8 @@ export class SnelgidsService {
     }));
   }
 
-  selectedLocations: WritableSignal<Location[]> = signal(this.getAllLocations());
+  selectedLocations: WritableSignal<Location[]> = signal(this.getAllLocations()); // TODO bewaren in localstorage
+  favoriteEvents: WritableSignal<Gig[]> = signal([]); // TODO bewaren in localstorage
 
   // Method to validate location
   private getValidLocation(location: string): Location {
@@ -66,6 +67,19 @@ export class SnelgidsService {
     );
   }
 
+  setFavoriteEvents(gig: Gig): void {
+    const isInFavoriteEvents: boolean = this.favoriteEvents().includes(gig);
+    if (isInFavoriteEvents) {
+      const updatedList: Gig[] = this.favoriteEvents().filter((value: Gig) => value !== gig);
+      this.favoriteEvents.update(() => { return updatedList });
+
+    } else {
+      this.favoriteEvents.update(() => { return [gig, ...this.favoriteEvents()] });
+    }
+    console.log('Favoriete optredens geüpdate', this.favoriteEvents());
+
+  }
+
   // Get all locations
   getAllLocations(): Location[] {
     return Object.values(Location);
@@ -90,7 +104,7 @@ export class SnelgidsService {
     } else {
       this.selectedLocations.update(() => { return [location, ...this.selectedLocations()] });
     }
-    console.log('Select geüpdate', this.selectedLocations());
+    console.log('Geselecteerde locaties geüpdate', this.selectedLocations());
   }
 
 }
