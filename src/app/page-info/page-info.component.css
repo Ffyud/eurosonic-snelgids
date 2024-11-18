@@ -1,0 +1,9 @@
+div.wrapper-info {
+    margin-left: var(--spacing-xl);
+    margin-right: var(--spacing-xl);
+}
+
+div.wrapper-info p {
+    display: block;
+    text-align: center;
+}

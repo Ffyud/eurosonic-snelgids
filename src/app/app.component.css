@@ -12,6 +12,7 @@ header {
     position: relative;
     top: 0;
     text-align: center;
+    box-shadow: inset 0px -1px 0px 0px var(--light-dark-color);
 }
 
 header h1 {

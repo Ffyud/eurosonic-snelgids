@@ -5,6 +5,7 @@ div.tap-bar-nav-wrapper {
     padding-bottom: env(safe-area-inset-bottom);
     width: 100%;
     background: var(--background-color);
+    box-shadow: inset 0px 1px 0px 0px var(--light-dark-color);
     overflow: hidden;
 }
 
@@ -42,7 +43,6 @@ li button {
     padding: var(--spacing-m) 10px var(--spacing-m) 10px;
     background: none;
     color: var(--bright-color);
-    backdrop-filter: blur(25px);
 }
 
 li button i  {

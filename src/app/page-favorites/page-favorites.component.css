@@ -1,0 +1,19 @@
+div.wrapper-favorites {
+    height: calc(100vh - 40px - 60px);
+    display: grid;
+}
+
+.no-results {
+    align-self: center;
+}
+
+
+div.wrapper-favorites p {
+    display: block;
+    text-align: center;
+}
+
+div.wrapper-favorites .heart {
+    text-align: center;
+    font-size: 2em;
+}
