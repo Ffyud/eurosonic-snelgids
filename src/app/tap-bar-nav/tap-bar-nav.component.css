@@ -4,9 +4,8 @@ div.tap-bar-nav-wrapper {
     bottom: 0px;
     padding-bottom: env(safe-area-inset-bottom);
     width: 100%;
-    background: var(--transparant-black-color);
-    backdrop-filter: var(--backdrop-blur);
-    overflow: scroll;
+    background: var(--background-color);
+    overflow: hidden;
 }
 
 ul {
@@ -24,11 +23,11 @@ li {
     display: inline-block;
 }
 
-li button.active {
-    background: var(--main-color);
+a.active-button button {
+    background: none;
     text-shadow: none;
-    box-shadow: inset 0px 2px 0px 0px #FFFFFF78;
-    color: var(--bright-color);
+    font-weight: 700;
+    color: #FFF;
 }
 
 li button.inactive {

@@ -1,26 +1,49 @@
 <div class="tap-bar-nav-wrapper">
     <ul>
-        <li>
-            <button>
-                <i class="ri-layout-grid-line"></i>
-                <span>Schema</span>
-            </button>
-        </li>
-        <li>
+        <!-- <li>
             <button (click)="onToggleMenu()">
                 <i class="ri-filter-2-line"></i>
                 <span>Locaties</span>
             </button>
+        </li> -->
+        <li>
+            <a routerLink="/favorieten" routerLinkActive="active-button" ariaCurrentWhenActive="page"
+                #fav="routerLinkActive">
+                <button>
+                    @if(fav.isActive) {
+                    <i class="ri-heart-fill"></i>
+                    } @else {
+                    <i class="ri-heart-line"></i>
+                    }
+                    <span>Favorieten</span>
+                </button>
+            </a>
         </li>
-
-        <li><button>
-                <i class="ri-heart-line"></i>
-                <span>Favorieten</span>
-            </button>
+        <li>
+            <a routerLink="/schema" routerLinkActive="active-button" ariaCurrentWhenActive="page"
+                #home="routerLinkActive">
+                <button>
+                    @if(home.isActive) {
+                    <i class="ri-layout-grid-fill"></i>
+                    } @else {
+                    <i class="ri-layout-grid-line"></i>
+                    }
+                    <span>Schema</span>
+                </button>
+            </a>
         </li>
-        <li><button><i class="ri-information-line"></i>
-                <span>Info</span>
-            </button>
+        <li>
+            <a routerLink="/info" routerLinkActive="active-button" ariaCurrentWhenActive="page"
+                #info="routerLinkActive">
+                <button>
+                    @if(info.isActive) {
+                    <i class="ri-information-fill"></i>
+                    } @else {
+                    <i class="ri-information-line"></i>
+                    }
+                    <span>Info</span>
+                </button>
+            </a>
         </li>
     </ul>
 </div>
