@@ -1,9 +1,40 @@
 div.wrapper-info {
-    margin-left: var(--spacing-xl);
-    margin-right: var(--spacing-xl);
+    max-width: 600px;
+    margin: 0px auto;
 }
 
 div.wrapper-info p {
+    margin: var(--spacing-xl);    
     display: block;
     text-align: center;
+}
+
+div.wrapper-info ul.links {
+    list-style-type: none;
+    margin: 0px var(--spacing-xl) 0px var(--spacing-xl);
+    padding: 0;
+    display: grid;
+    justify-items: center;
+    gap: var(--spacing-xl);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+ul.links li {
+    width: available;
+    width: -moz-available;
+    width: -webkit-available;
+    max-width: 150px;
+    padding: var(--spacing-m);
+    text-align: center;
+    background: var(--light-dark-color);
+    border-radius: var(--medium-radius);
+}
+ul.links li a { 
+    text-decoration: none;
+    color: inherit;
+}
+
+ul.links li i {
+    display: block;
+    font-size: 35px;
 }
