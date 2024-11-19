@@ -26,7 +26,17 @@ export class SnelgidsService {
   }
 
   selectedLocations: WritableSignal<Location[]> = signal(this.getAllLocations()); // TODO bewaren in localstorage
-  favoriteEvents: WritableSignal<Gig[]> = signal([]); // TODO bewaren in localstorage
+  
+  favoriteEvents: WritableSignal<Gig[]> = signal(this.getFavoritesFromLocalStorage());
+
+  private getFavoritesFromLocalStorage(): Gig[] {
+    const storedFavorites = localStorage.getItem('favoriteEvents');
+    return storedFavorites ? JSON.parse(storedFavorites) : [];
+  }
+
+  private saveFavoritesToLocalStorage(favorites: Gig[]): void {
+    localStorage.setItem('favoriteEvents', JSON.stringify(favorites));
+  }
 
   // Method to validate location
   private getValidLocation(location: string): Location {
@@ -67,7 +77,7 @@ export class SnelgidsService {
     );
   }
 
-  // Get all events
+  // Get all favorite events
   getFavoriteEvents(): Gig[] {
     console.log(this.favoriteEvents)
     return this.favoriteEvents();
@@ -78,12 +88,13 @@ export class SnelgidsService {
     if (isInFavoriteEvents) {
       const updatedList: Gig[] = this.favoriteEvents().filter((value: Gig) => value !== gig);
       this.favoriteEvents.update(() => { return updatedList });
-
+      this.saveFavoritesToLocalStorage(updatedList);
     } else {
-      this.favoriteEvents.update(() => { return [gig, ...this.favoriteEvents()] });
+      const updatedList: Gig[] = [gig, ...this.favoriteEvents()];
+      this.favoriteEvents.update(() => { return updatedList });
+      this.saveFavoritesToLocalStorage(updatedList);
     }
     console.log('Favoriete optredens geüpdate', this.favoriteEvents());
-
   }
 
   // Get all locations
