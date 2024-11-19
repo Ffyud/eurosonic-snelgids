@@ -43,10 +43,10 @@ export class SnelgidsService {
     return Object.values(Day).includes(day as Day) ? day as Day : Day.ONBEKEND;
   }
 
-    // Method to validate day
-    private getValidCountry(country: string): Country {
-      return Object.values(Country).includes(country.toUpperCase() as Country) ? country as Country : Country.Onbekend;
-    }
+  // Method to validate day
+  private getValidCountry(country: string): Country {
+    return Object.values(Country).includes(country.toUpperCase() as Country) ? country as Country : Country.Onbekend;
+  }
 
   // Get all events
   getAllEvents(): Gig[] {
@@ -67,6 +67,12 @@ export class SnelgidsService {
     );
   }
 
+  // Get all events
+  getAllFavoriteEvents(): Gig[] {
+    console.log(this.favoriteEvents)
+    return this.favoriteEvents();
+  }
+
   setFavoriteEvents(gig: Gig): void {
     const isInFavoriteEvents: boolean = this.favoriteEvents().includes(gig);
     if (isInFavoriteEvents) {
@@ -85,6 +91,7 @@ export class SnelgidsService {
     return Object.values(Location);
   }
 
+  // Get all countries
   getAllCountries(): Country[] {
     return Object.values(Country);
   }
