@@ -9,6 +9,25 @@ div.wrapper-info p {
     text-align: center;
 }
 
+button.share {
+    outline: none;
+    border: none;
+    background: var(--light-dark-color);
+    color:  var(--light-color);
+    padding: var(--spacing-xl);
+    width: calc(100% - var(--spacing-xl) - var(--spacing-xl));
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    border-radius: var(--medium-radius);
+    margin: var(--spacing-xl);
+}
+
+button.share i {
+    font-size: 24px;
+    margin-right: var(--spacing-xl);
+}
+
 div.wrapper-info ul.links {
     list-style-type: none;
     margin: 0px var(--spacing-xl) 0px var(--spacing-xl);
@@ -24,7 +43,7 @@ ul.links li {
     width: -moz-available;
     width: -webkit-available;
     max-width: 150px;
-    padding: var(--spacing-m);
+    padding: var(--spacing-xl);
     text-align: center;
     background: var(--light-dark-color);
     border-radius: var(--medium-radius);
@@ -37,4 +56,5 @@ ul.links li a {
 ul.links li i {
     display: block;
     font-size: 35px;
+    margin-bottom: var(--spacing-xl);
 }
