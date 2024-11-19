@@ -1,8 +1,8 @@
 div.tap-bar-nav-wrapper {
     z-index: 200;
     position: fixed;
-    bottom: env(safe-area-inset-bottom, 0px);
-    /* padding-bottom: ; */
+    bottom: 0;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
     width: 100%;
     background: var(--background-color);
     box-shadow: inset 0px 1px 0px 0px var(--light-dark-color);
