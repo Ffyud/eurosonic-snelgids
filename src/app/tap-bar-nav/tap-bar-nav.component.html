@@ -7,19 +7,6 @@
             </button>
         </li> -->
         <li>
-            <a routerLink="/favorieten" routerLinkActive="active-button" ariaCurrentWhenActive="page"
-                #fav="routerLinkActive">
-                <button>
-                    @if(fav.isActive) {
-                    <i class="ri-heart-fill"></i>
-                    } @else {
-                    <i class="ri-heart-line"></i>
-                    }
-                    <span>Favorieten</span>
-                </button>
-            </a>
-        </li>
-        <li>
             <a routerLink="/schema" routerLinkActive="active-button" ariaCurrentWhenActive="page"
                 #home="routerLinkActive">
                 <button>
@@ -29,6 +16,19 @@
                     <i class="ri-layout-grid-line"></i>
                     }
                     <span>Schema</span>
+                </button>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/favorieten" routerLinkActive="active-button" ariaCurrentWhenActive="page"
+                #fav="routerLinkActive">
+                <button>
+                    @if(fav.isActive) {
+                    <i class="ri-heart-fill"></i>
+                    } @else {
+                    <i class="ri-heart-line"></i>
+                    }
+                    <span>Favorieten</span>
                 </button>
             </a>
         </li>

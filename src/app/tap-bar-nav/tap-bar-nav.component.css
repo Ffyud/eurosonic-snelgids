@@ -39,7 +39,7 @@ li button.inactive {
 li button {
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 300;
-    padding: var(--spacing-m) 10px var(--spacing-m) 10px;
+    padding: 8px 10px var(--spacing-m) 10px;
     background: none;
     color: var(--bright-color);
 }
