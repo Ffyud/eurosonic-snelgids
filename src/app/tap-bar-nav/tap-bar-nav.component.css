@@ -15,8 +15,7 @@ ul {
     padding: 0px var(--spacing-m) 0px var(--spacing-m);
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: auto;
-
+    grid-template-columns: repeat(3, 1fr);
 }
 
 li {
