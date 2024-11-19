@@ -1,7 +1,8 @@
-import { Component, Signal, Input } from '@angular/core';
+import { Component, Signal, Input, inject } from '@angular/core';
 import { Gig } from '../../gig.model';
 import { Rating } from '../../rating.enum';
 import { Country } from "../../country.enum";
+import { SnelgidsService } from '../../snelgids.service';
 
 @Component({
   selector: 'app-event-card',
@@ -12,7 +13,13 @@ import { Country } from "../../country.enum";
 })
 export class EventCardComponent {
 
+  protected snelgidsService = inject(SnelgidsService);
+
   @Input() gig!: Gig;
+
+  setAsFavorite(gig: Gig): void {
+    this.snelgidsService.setFavoriteEvents(gig);
+  }
 
   rating = Rating;
 

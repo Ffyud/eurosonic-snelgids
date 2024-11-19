@@ -30,7 +30,12 @@ h4 {
     font-weight: 300;
 }
 
-.info-grid div.fav {
+.info-grid button.fav {
+    color: inherit;
+    font-size: 24px;
+    background: none;
+    border: none;
+    outline: none;
     text-align: right;
 }
 

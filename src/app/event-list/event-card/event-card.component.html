@@ -5,7 +5,7 @@
    <div class="info-grid">
       <div class="rating rating-5"><span>{{gig.rating}}</span></div>
       <div class="time"><span>21:30</span></div>
-      <div class="fav"><i class="ri-heart-line"></i></div>
+      <button (click)="setAsFavorite(gig)" class="fav" title="Favoriet"><i class="ri-heart-line"></i></button>
 
       <!-- @switch (gig?.rating) {
       @case (rating.VIJF) {

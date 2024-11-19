@@ -68,7 +68,7 @@ export class SnelgidsService {
   }
 
   // Get all events
-  getAllFavoriteEvents(): Gig[] {
+  getFavoriteEvents(): Gig[] {
     console.log(this.favoriteEvents)
     return this.favoriteEvents();
   }

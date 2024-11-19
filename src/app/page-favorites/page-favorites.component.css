@@ -3,10 +3,13 @@ div.wrapper-favorites {
     display: grid;
 }
 
+div.wrapper-favorites .header {
+    line-height: 38px;
+    text-align: center;
+}
 .no-results {
     align-self: center;
 }
-
 
 div.wrapper-favorites p {
     display: block;
@@ -15,5 +18,5 @@ div.wrapper-favorites p {
 
 div.wrapper-favorites .heart {
     text-align: center;
-    font-size: 2em;
+    font-size: 35px;
 }
