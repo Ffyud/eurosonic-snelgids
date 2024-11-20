@@ -13,7 +13,7 @@ import { RouterLink,RouterLinkActive } from '@angular/router';
 export class TapBarNavComponent {
   snelgidsService = inject(SnelgidsService);
   
-  protected locations: Location[] = this.snelgidsService.getAllLocations();
+  protected locations: Location[] = this.snelgidsService.getLocations();
   protected selectedLocations = signal<Location[]>(this.snelgidsService.getSelectedLocations());
 
   showMenu = signal<boolean>(false);

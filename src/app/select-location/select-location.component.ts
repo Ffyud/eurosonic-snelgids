@@ -13,7 +13,7 @@ export class SelectLocationComponent {
 
   snelgidsService = inject(SnelgidsService);
   
-  protected locations: Location[] = this.snelgidsService.getAllLocations();
+  protected locations: Location[] = this.snelgidsService.getLocations();
   protected selectedLocations = signal<Location[]>(this.snelgidsService.getSelectedLocations());
 
   showMenu = signal<boolean>(false);

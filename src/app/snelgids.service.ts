@@ -98,7 +98,7 @@ export class SnelgidsService {
   }
 
   // Get all locations
-  getAllLocations(): Location[] {
+  getLocations(): Location[] {
     return Object.values(Location);
   }
 
