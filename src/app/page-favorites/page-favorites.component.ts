@@ -15,6 +15,7 @@ export class PageFavoritesComponent {
   snelgidsService = inject(SnelgidsService);
 
   protected readonly favoriteEvents = this.snelgidsService.getFavoriteEvents();
+  protected readonly favoriteEventsLocations = this.snelgidsService.getFavoriteEventsLocations();
 
   @Input() selectedLocationsList: Signal<Location[]> = computed(() => this.snelgidsService.getSelectedLocations());
 

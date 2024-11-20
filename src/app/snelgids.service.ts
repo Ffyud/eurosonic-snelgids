@@ -25,7 +25,7 @@ export class SnelgidsService {
     }));
   }
 
-  selectedLocations: WritableSignal<Location[]> = signal(this.getAllLocations()); // TODO bewaren in localstorage
+  selectedLocations: WritableSignal<Location[]> = signal(this.getLocations()); // TODO bewaren in localstorage
   
   favoriteEvents: WritableSignal<Gig[]> = signal(this.getFavoritesFromLocalStorage());
 
@@ -79,8 +79,13 @@ export class SnelgidsService {
 
   // Get all favorite events
   getFavoriteEvents(): Gig[] {
-    console.log(this.favoriteEvents)
     return this.favoriteEvents();
+  }
+
+  getFavoriteEventsLocations(): Location[] {
+    const locations: Location[] = this.favoriteEvents().map((gig: Gig) => { return gig.location });
+    const uniqueLocations: Location[] = locations.filter((value, index, array) => array.indexOf(value) === index);
+    return uniqueLocations;
   }
 
   setFavoriteEvents(gig: Gig): void {

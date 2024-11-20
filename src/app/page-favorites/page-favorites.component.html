@@ -1,7 +1,7 @@
 <div class="wrapper-favorites">
     @if (favoriteEvents.length !== 0) {
     <div class="header">Favorieten</div>
-    <app-event-list [eventList]="favoriteEvents" [selectedLocationsList]="selectedLocationsList()"></app-event-list>
+    <app-event-list [eventList]="favoriteEvents" [selectedLocationsList]="favoriteEventsLocations"></app-event-list>
     } @else {
     <div class="no-results">
         <div class="heart">
