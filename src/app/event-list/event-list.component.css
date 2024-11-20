@@ -18,14 +18,13 @@
 
 .event-list {
     scroll-snap-align: start;
-    width: 40vw;
+    width: 45vw;
     max-width: 200px;
 }
 
 .event-list h3 {
     top: 0px;
     left: 0px;
-    width: calc(100% - var(--spacing-m));
     position: sticky;
     z-index: 100;
     align-self: start;
@@ -35,13 +34,12 @@
     border-bottom-left-radius: var(--medium-radius);
     border-bottom-right-radius: var(--medium-radius);
     margin: 0px;
-    margin-right: var(--spacing-m);
-    margin-bottom: var(--spacing-m);
-    padding-top: var(--spacing-m);
-    padding-bottom: var(--spacing-m);
+    padding: var(--spacing-m);
+    margin-bottom: var(--spacing-xl);
+    margin-right: var(--spacing-xl);
     background: var(--main-color);
     background: linear-gradient(to right, var(--main-color), var(--main-dark-color));
-    box-shadow: inset 0px 2px 0px 0px #FFFFFF78;
+    box-shadow: 0px 1px 0px 0px #232323, 0px 1px 10px 0px var(--background-color);
     color: var(--bright-color);
 }
 
@@ -57,7 +55,6 @@ ul {
 }
 
 li {
-    /* padding-left: var(--spacing-m); */
-    padding-right: var(--spacing-m);
-    margin-bottom: var(--spacing-m);
+    padding-right: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
 }
