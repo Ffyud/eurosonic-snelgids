@@ -39,6 +39,11 @@ h4 {
     text-align: right;
 }
 
+.info-grid button.fav.is-favoriet {
+    color: red;
+    text-shadow: 2px 0px 0px #FFF, 0px 2px 0px #FFF, -2px 0px 0px #FFF, 0px -2px 0px #FFF;
+}
+
 p.description::before {
     content: open-quote;
 }

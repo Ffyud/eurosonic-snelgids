@@ -1,11 +1,11 @@
 <div class="event-card">
-   <h4>{{ gig?.artist }}</h4>
-   <p class="description">{{gig.description}}</p>
-
+   <h4>{{ gig()?.artist }}</h4>
+   <p class="description">{{gig().description}}</p>
    <div class="info-grid">
-      <div class="rating rating-5"><span>{{gig.rating}}</span></div>
+      <div class="rating rating-5"><span>{{gig().rating}}</span></div>
       <div class="time"><span>21:30</span></div>
-      <button (click)="setAsFavorite(gig)" class="fav" title="Favoriet"><i class="ri-heart-line"></i></button>
+      <button [ngClass]="isFavorite ? 'is-favoriet' : ''" (click)="setAsFavorite(gig())" class="fav"
+         title="Favoriet"><i [ngClass]="isFavorite ? 'ri-heart-fill' : 'ri-heart-line'"></i></button>
 
       <!-- @switch (gig?.rating) {
       @case (rating.VIJF) {
