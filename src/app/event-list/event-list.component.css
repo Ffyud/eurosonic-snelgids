@@ -1,6 +1,6 @@
 .event-list-container {
     overflow: scroll;
-    scroll-snap-type: both proximity;
+    /* scroll-snap-type: both proximity; */
     display: grid;
     grid-auto-flow: column;
     width: 100vw;
@@ -17,7 +17,7 @@
 }
 
 .event-list {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     width: 45vw;
     max-width: 200px;
 }
