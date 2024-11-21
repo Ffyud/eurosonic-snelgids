@@ -1,5 +1,5 @@
 import { Injectable, signal, WritableSignal } from '@angular/core';
-import data from '../../sheet_data.json';
+import data from '../../sheet_data.mock.json';
 import { Gig } from './gig.model';
 import { Day } from './day.enum';
 import { Location } from './location.enum';

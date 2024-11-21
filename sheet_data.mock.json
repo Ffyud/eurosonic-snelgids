@@ -1,0 +1,183 @@
+[
+    {
+      "Score": "4",
+      "Land": "Spa",
+      "Dag": "Woe",
+      "Tijd": "21:30",
+      "Locatie": "Vera",
+      "Artiest": "Adelaida",
+      "Korte beschrijving": "Spaanstalige kleinkunst-achtige songs. Intrigerend"
+    },
+    {
+      "Score": "3",
+      "Land": "Ned",
+      "Dag": "Vrij",
+      "Tijd": "20:00",
+      "Locatie": "Oosterpoort",
+      "Artiest": "De Likt",
+      "Korte beschrijving": "Nederlandse electro-funk met een rauw randje."
+    },
+    {
+      "Score": "5",
+      "Land": "USA",
+      "Dag": "Zat",
+      "Tijd": "19:45",
+      "Locatie": "Simplon",
+      "Artiest": "Phoebe Bridgers",
+      "Korte beschrijving": "Indie-folk die je raakt in je ziel."
+    },
+    {
+      "Score": "2",
+      "Land": "Fra",
+      "Dag": "Don",
+      "Tijd": "22:15",
+      "Locatie": "Grand Theater",
+      "Artiest": "Camille",
+      "Korte beschrijving": "Franse avant-garde pop."
+    },
+    {
+      "Score": "1",
+      "Land": "Bel",
+      "Dag": "Vrij",
+      "Tijd": "18:30",
+      "Locatie": "Martinikerk",
+      "Artiest": "Balthazar",
+      "Korte beschrijving": "Alternatieve rock met een melancholische sfeer."
+    },
+    {
+      "Score": "3",
+      "Land": "Dui",
+      "Dag": "Woe",
+      "Tijd": "20:15",
+      "Locatie": "Spot",
+      "Artiest": "Kraftwerk",
+      "Korte beschrijving": "Pioniers van elektronische muziek."
+    },
+    {
+      "Score": "4",
+      "Land": "Ita",
+      "Dag": "Don",
+      "Tijd": "19:30",
+      "Locatie": "Prinsentuin",
+      "Artiest": "Måneskin",
+      "Korte beschrijving": "Italiaanse rock met een flinke dosis energie."
+    },
+    {
+      "Score": "5",
+      "Land": "UK",
+      "Dag": "Zat",
+      "Tijd": "23:00",
+      "Locatie": "Groninger Museum",
+      "Artiest": "Arctic Monkeys",
+      "Korte beschrijving": "Indie rock van wereldklasse."
+    },
+    {
+      "Score": "2",
+      "Land": "Zwe",
+      "Dag": "Vrij",
+      "Tijd": "21:00",
+      "Locatie": "DOT",
+      "Artiest": "Lykke Li",
+      "Korte beschrijving": "Dromerige popmuziek met Zweedse invloeden."
+    },
+    {
+      "Score": "4",
+      "Land": "Arg",
+      "Dag": "Woe",
+      "Tijd": "20:45",
+      "Locatie": "Simplon",
+      "Artiest": "Soda Stereo",
+      "Korte beschrijving": "Iconische Latijns-Amerikaanse rockband."
+    },
+    {
+      "Score": "5",
+      "Land": "Spa",
+      "Dag": "Don",
+      "Tijd": "21:15",
+      "Locatie": "Vera",
+      "Artiest": "Rosalía",
+      "Korte beschrijving": "Moderne flamenco met een experimenteel randje."
+    },
+    {
+      "Score": "3",
+      "Land": "Ned",
+      "Dag": "Zat",
+      "Tijd": "19:30",
+      "Locatie": "Platform Theater",
+      "Artiest": "Eefje de Visser",
+      "Korte beschrijving": "Dromerige Nederlandstalige pop."
+    },
+    {
+      "Score": "2",
+      "Land": "USA",
+      "Dag": "Vrij",
+      "Tijd": "22:30",
+      "Locatie": "Schimmelpenninck Huys",
+      "Artiest": "Billie Eilish",
+      "Korte beschrijving": "Intieme pop met donkere ondertonen."
+    },
+    {
+      "Score": "4",
+      "Land": "UK",
+      "Dag": "Woe",
+      "Tijd": "20:00",
+      "Locatie": "Groninger Forum",
+      "Artiest": "The 1975",
+      "Korte beschrijving": "Pop-rock met een unieke sound."
+    },
+    {
+      "Score": "1",
+      "Land": "Fra",
+      "Dag": "Zat",
+      "Tijd": "18:45",
+      "Locatie": "Warmoesstraat",
+      "Artiest": "Christine and the Queens",
+      "Korte beschrijving": "Androgyne popartiest met een eigen stijl."
+    },
+    {
+      "Score": "3",
+      "Land": "Ita",
+      "Dag": "Don",
+      "Tijd": "20:15",
+      "Locatie": "Prinsentuin",
+      "Artiest": "Laura Pausini",
+      "Korte beschrijving": "Romantische Italiaanse ballades."
+    },
+    {
+      "Score": "5",
+      "Land": "USA",
+      "Dag": "Vrij",
+      "Tijd": "21:30",
+      "Locatie": "Spot",
+      "Artiest": "The Strokes",
+      "Korte beschrijving": "Garagerock met een rauwe rand."
+    },
+    {
+      "Score": "2",
+      "Land": "Spa",
+      "Dag": "Woe",
+      "Tijd": "19:15",
+      "Locatie": "Plato",
+      "Artiest": "Pablo Alborán",
+      "Korte beschrijving": "Romantische Spaanse pop."
+    },
+    {
+      "Score": "1",
+      "Land": "Arg",
+      "Dag": "Don",
+      "Tijd": "22:45",
+      "Locatie": "Oosterpoort",
+      "Artiest": "Mercedes Sosa",
+      "Korte beschrijving": "Folkloristische muziek uit Argentinië."
+    },
+    {
+      "Score": "4",
+      "Land": "USA",
+      "Dag": "Vrij",
+      "Tijd": "20:45",
+      "Locatie": "Martinikerk",
+      "Artiest": "Bon Iver",
+      "Korte beschrijving": "Intieme en experimentele folk."
+    }
+  ]
+  
