@@ -16,7 +16,7 @@ export class TimetablePageComponent {
 
   snelgidsService = inject(SnelgidsService);
 
-  @Input() eventsList: Signal<Gig[]> = computed(() => this.snelgidsService.getAllEvents());
+  @Input() eventsList: Signal<Gig[]> = computed(() => this.snelgidsService.getEvents());
   @Input() selectedLocationsList: Signal<Location[]> = computed(() => this.snelgidsService.getSelectedLocations());
 
 
