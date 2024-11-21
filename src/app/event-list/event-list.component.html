@@ -2,11 +2,8 @@
     @for(location of selectedLocationsList(); track location) {
         <div class="event-list">
             <h3><span>{{location}}</span></h3>
-             <!-- TODO Sorteren op tijdstip -->
-             <!-- TODO Blokken hoogte geven relatief aan  -->
-             <!-- TODO Lege blokken tussen de tijdstippen plaatsen -->
             <ul>
-                @for (event of eventList(); track event) {
+                @for (event of eventList(); track event.artist) {
                 <li>
                     <app-event-card [gig]="event"></app-event-card>
                 </li>

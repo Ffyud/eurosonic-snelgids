@@ -26,7 +26,7 @@ export class SnelgidsService {
   }
 
   selectedLocations: WritableSignal<Location[]> = signal(this.getLocations()); // TODO bewaren in localstorage
-  
+
   favoriteEvents: WritableSignal<Gig[]> = signal(this.getFavoritesFromLocalStorage());
 
   private getFavoritesFromLocalStorage(): Gig[] {
@@ -59,9 +59,13 @@ export class SnelgidsService {
   }
 
   // Get all events
-  getAllEvents(): Gig[] {
-    console.log(this.gigs)
-    return this.gigs;
+  getEvents(): Gig[] {
+    const gigWithFavorites = this.gigs.map((gig: Gig) => ({
+      ...gig,
+      favorite: this.favoriteEvents().some((favoriteGig) => favoriteGig.artist === gig.artist)
+    }));
+    console.log(gigWithFavorites)
+    return gigWithFavorites;
   }
 
   // Get a single event by artist name
@@ -82,6 +86,10 @@ export class SnelgidsService {
     return this.favoriteEvents();
   }
 
+  isFavoriteEvent(gig: Gig): boolean {
+    return this.favoriteEvents().includes(gig);
+  }
+
   getFavoriteEventsLocations(): Location[] {
     const locations: Location[] = this.favoriteEvents().map((gig: Gig) => { return gig.location });
     const uniqueLocations: Location[] = locations.filter((value, index, array) => array.indexOf(value) === index);
@@ -89,9 +97,10 @@ export class SnelgidsService {
   }
 
   setFavoriteEvents(gig: Gig): void {
-    const isInFavoriteEvents: boolean = this.favoriteEvents().includes(gig);
+    // TODO veld favorite altijd op true zetten
+    const isInFavoriteEvents: boolean = this.favoriteEvents().some((value: Gig) => value.artist === gig.artist);
     if (isInFavoriteEvents) {
-      const updatedList: Gig[] = this.favoriteEvents().filter((value: Gig) => value !== gig);
+      const updatedList: Gig[] = this.favoriteEvents().filter((value: Gig) => value.artist !== gig.artist);
       this.favoriteEvents.update(() => { return updatedList });
       this.saveFavoritesToLocalStorage(updatedList);
     } else {

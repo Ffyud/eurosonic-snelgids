@@ -17,7 +17,6 @@ export class EventCardComponent {
   protected snelgidsService = inject(SnelgidsService);
 
   gig: InputSignal<Gig> = input.required<Gig>();
-  isFavorite = false; // FIXME echt bepalen
 
   setAsFavorite(gig: Gig): void {
     this.snelgidsService.setFavoriteEvents(gig);

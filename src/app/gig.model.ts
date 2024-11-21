@@ -10,4 +10,6 @@ export interface Gig {
     day: Day,
     time?: string,
     rating: string,
+    favorite?: boolean
+
 }
