@@ -42,7 +42,6 @@ ul.links li {
     width: available;
     width: -moz-available;
     width: -webkit-available;
-    max-width: 150px;
     padding: var(--spacing-xl);
     text-align: center;
     background: var(--light-dark-color);
