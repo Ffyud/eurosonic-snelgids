@@ -1,8 +1,7 @@
-import { Component, signal, Signal, input, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { EventCardComponent } from "./event-card/event-card.component";
 import { Gig } from '../gig.model';
 import { Location } from '../location.enum';
-import { Day } from '../day.enum';
 
 @Component({
   selector: 'app-event-list',
@@ -16,4 +15,5 @@ export class EventListComponent {
   eventList = input.required<Gig[]>();
 
   selectedLocationsList = input.required<Location[]>();
+
 }
