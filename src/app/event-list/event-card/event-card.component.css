@@ -5,7 +5,8 @@
     position: relative;
     overflow: hidden;
     background: var(--light-dark-color);
-    box-shadow: 0px 2px 2px -2px #000;
+    box-shadow: inset 0px -1px 0px 0px #000;
+    color: #FFF;
 }
 
 .event-card.is-favorite {
@@ -13,7 +14,6 @@
 }
 
 h4 {
-    color: #FFF;
     padding: 0;
     margin: 0;
     padding-bottom: var(--spacing-m);
@@ -63,7 +63,6 @@ p.description {
     margin-bottom: var(--spacing-m);
     text-align: center;
     quotes: initial;
-    font-family: var(--baskerville-font);
 }
 
 .rating {
@@ -75,7 +74,6 @@ p.description {
     border-radius: var(--medium-radius);
     line-height: 30px;
     text-align: center;
-    color: #ffffff;
     font-size: 1.2em;
 }
 

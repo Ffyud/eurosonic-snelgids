@@ -31,21 +31,14 @@
     font-size: 1em;
     text-align: center;
     text-shadow: none;
-    border-bottom-left-radius: var(--medium-radius);
-    border-bottom-right-radius: var(--medium-radius);
-    margin: 0px;
     padding: var(--spacing-m);
+    margin: 0px;
     margin-bottom: var(--spacing-xl);
     margin-right: var(--spacing-xl);
-    background: var(--main-color);
-    background: linear-gradient(to right, var(--main-color), var(--main-dark-color));
+    background: var(--bright-color);
     box-shadow: 0px 1px 0px 0px #232323, 0px 1px 10px 0px var(--background-color);
-    color: var(--bright-color);
-}
-
-.event-list h3 span {
-    padding-left: var(--spacing-m);
-    padding-right: var(--spacing-m);
+    color: var(--background-color);
+    border-radius: var(--medium-radius);
 }
 
 ul {
