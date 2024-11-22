@@ -1,12 +1,15 @@
 .event-card {
-    /* background: var(--light-dark-color); */
+    min-height: 130px;
     border-radius: var(--medium-radius);
     padding: var(--spacing-m);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     background: var(--light-dark-color);
     box-shadow: inset 0px -1px 0px 0px #000;
     color: #FFF;
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
 }
 
 .event-card.is-favorite {
@@ -17,7 +20,9 @@ h4 {
     padding: 0;
     margin: 0;
     padding-bottom: var(--spacing-m);
+    padding-top: var(--spacing-m);
     font-weight: 700;
+    font-size: 1.2em;
     font-style: normal;
     text-align: center;
 }
@@ -72,9 +77,10 @@ p.description {
     right: 0px;
     top: 0px;
     border-radius: var(--medium-radius);
-    line-height: 30px;
+    line-height: 40px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-weight: 700;
 }
 
 .rating-5 {
@@ -109,7 +115,7 @@ p.description {
     content: "*";
     position: absolute;
     bottom: -10px;
-    background: linear-gradient( 45deg, #ffe562, #ffb300);
+    background: linear-gradient(45deg, #ffe562, #ffb300);
     border-radius: var(--minimal-radius);
     font-size: 1.4em;
     line-height: 1;

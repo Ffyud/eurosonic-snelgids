@@ -1,10 +1,13 @@
 <div [ngClass]="gig().favorite ? 'is-favorite' : ''" class="event-card">
-   <h4>{{ gig()?.artist }}</h4>
-   <p class="description">{{gig().description}}</p>
-   <div class="info-grid">
-
-
-      @switch (gig()?.rating) {
+   <span>
+      <h4>{{ gig()?.artist }}</h4>
+   </span>
+   <span>
+      <p class="description">{{gig().description}}</p>
+   </span>
+   <span>
+      <div class="info-grid">
+         @switch (gig()?.rating) {
          @case (rating.VIJF) {
          <div class="rating rating-5"><span>5</span></div>
          }
@@ -33,13 +36,10 @@
          <div class="rating rating-1-ster-ster-ster-ster rating-fire"><span>1</span></div>
          }
          }
-
-
-
-      <div class="time"><span>21:30</span></div>
-      <button [ngClass]="gig().favorite ? 'is-favorite' : ''" (click)="setAsFavorite(gig())" class="fav"
-         title="Favoriet"><i [ngClass]="gig().favorite ? 'ri-heart-fill' : 'ri-heart-line'"></i></button>
-
-   </div>
+         <div class="time"><span>21:30</span></div>
+         <button [ngClass]="gig().favorite ? 'is-favorite' : ''" (click)="setAsFavorite(gig())" class="fav"
+            title="Favoriet"><i [ngClass]="gig().favorite ? 'ri-heart-fill' : 'ri-heart-line'"></i></button>
+      </div>
+   </span>
 
 </div>
