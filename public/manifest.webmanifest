@@ -1,6 +1,6 @@
 {
-  "name": "eurosonic-snelgids",
-  "short_name": "eurosonic-snelgid",
+  "name": "Eurosonic Snelgids",
+  "short_name": "Snelgids",
   "theme_color": "rgb(23, 31, 40)",
   "background_color": "rgb(23, 31, 40)",
   "display": "standalone",
