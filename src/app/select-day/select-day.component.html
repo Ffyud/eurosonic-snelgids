@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <span class="back"><i class="ri-arrow-left-line"></i></span>
-    <span class="day">Woensdag 5 jan</span>
-    <span class="forward"><i class="ri-arrow-right-line"></i></span>
+    <button (click)="dayBack(selectedDay)" class="back" title="Vorige dag"><i class="ri-arrow-left-line"></i></button>
+    <span class="day">{{getSelectedDateString(selectedDay)}}</span>
+    <button (click)="dayForward(selectedDay)" class="forward" title="Volgende dag"><i class="ri-arrow-right-line"></i></button>
 </div>

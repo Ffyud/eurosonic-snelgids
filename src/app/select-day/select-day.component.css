@@ -1,17 +1,25 @@
 .wrapper {
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: auto 200px auto;
     line-height: 38px;
 }
 
 i { font-size: 24px;}
 
-span.back {
+button {
+    background: none;
+    outline: none;
+    border: none;
+    color: var(--bright-color);
+}
+
+button.back {
     text-align: right;
 }
 span.day {
     text-align: center;
 }
-span.forward {
+button.forward {
     text-align: left;
 }

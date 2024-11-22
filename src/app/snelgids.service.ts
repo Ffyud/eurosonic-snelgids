@@ -1,5 +1,5 @@
 import { Injectable, signal, WritableSignal } from '@angular/core';
-import data from '../../sheet_data.mock.json';
+import data from '../../sheet_data.json';
 import { Gig } from './gig.model';
 import { Day } from './day.enum';
 import { Location } from './location.enum';
@@ -25,6 +25,7 @@ export class SnelgidsService {
     }));
   }
 
+  selectedDay: WritableSignal<Day> = signal(Day.VRIJ);
   selectedLocations: WritableSignal<Location[]> = signal(this.getLocations()); // TODO bewaren in localstorage
 
   favoriteEvents: WritableSignal<Gig[]> = signal(this.getFavoritesFromLocalStorage());
@@ -117,8 +118,17 @@ export class SnelgidsService {
   }
 
   // Get all countries
-  getAllCountries(): Country[] {
+  getCountries(): Country[] {
     return Object.values(Country);
+  }
+
+  // Get all days
+  getDays(): Day[] {
+    return Object.values(Day).filter(day => day !== Day.ONBEKEND);
+  }
+
+  getSelectedDay(): Day {
+    return this.selectedDay();
   }
 
   // Get user selected locations
@@ -137,6 +147,12 @@ export class SnelgidsService {
       this.selectedLocations.update(() => { return [location, ...this.selectedLocations()] });
     }
     console.log('Geselecteerde locaties geüpdate', this.selectedLocations());
+  }
+
+  setSelectedDay(day: Day): void {
+    this.selectedDay.update(() => { return day});
+    console.log('Geselecteerde dag geüpdate', this.selectedDay());
+
   }
 
 }
