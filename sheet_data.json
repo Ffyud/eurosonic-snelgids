@@ -27,6 +27,15 @@
         "Korte beschrijving": "Electropop die ook uit Japan zou kunnen komen"
     },
     {
+        "Score": "1*",
+        "Land": "Oek",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Aircraft",
+        "Korte beschrijving": "Dampende electropop. Depeche Mode light."
+    },
+    {
         "Score": "1**",
         "Land": "Eng",
         "Dag": "",
@@ -51,7 +60,16 @@
         "Tijd": "",
         "Locatie": "",
         "Artiest": "Amilost",
-        "Korte beschrijving": "Noors  Schots duo maakt dromerige licht bombastische popsongs"
+        "Korte beschrijving": "Noors-Schots duo maakt dromerige licht bombastische popsongs"
+    },
+    {
+        "Score": "2",
+        "Land": "Ier",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Annie -Dog",
+        "Korte beschrijving": "Beetje gezapige popsongs. Aardig maar niet wereldschokkend"
     },
     {
         "Score": "4",
@@ -69,7 +87,16 @@
         "Tijd": "",
         "Locatie": "",
         "Artiest": "Arp Frique",
-        "Korte beschrijving": "Gospel dissco. Misschien live wel grappig"
+        "Korte beschrijving": "Gospel disco. Misschien live wel grappig"
+    },
+    {
+        "Score": "2",
+        "Land": "Slov",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Astrid & The Scandals",
+        "Korte beschrijving": "Beetje kabbelende dreamy popsongs"
     },
     {
         "Score": "1",
@@ -126,6 +153,24 @@
         "Korte beschrijving": "Jazzy soulnummers met flinke band"
     },
     {
+        "Score": "1*",
+        "Land": "Ier",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Bea Stewart",
+        "Korte beschrijving": "Singer-songwriter met fijne folkpop met een Ierse tongval"
+    },
+    {
+        "Score": "1",
+        "Land": "Zwi",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Benjamin Amaru",
+        "Korte beschrijving": "Vermakelijke folkpop"
+    },
+    {
         "Score": "5",
         "Land": "Slow",
         "Dag": "",
@@ -133,6 +178,15 @@
         "Locatie": "",
         "Artiest": "Berlin Manson",
         "Korte beschrijving": "Rappende beats met een forse taalbarriere"
+    },
+    {
+        "Score": "1**",
+        "Land": "Bel",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Berre",
+        "Korte beschrijving": "Ingetogen Singer-songwriter met een fijne stem"
     },
     {
         "Score": "4",
@@ -144,7 +198,16 @@
         "Korte beschrijving": "Italopop met een flinke beat en rappende zang"
     },
     {
-        "Score": "",
+        "Score": "1***",
+        "Land": "Eng",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Big Special",
+        "Korte beschrijving": "Spoken Word rock. Errug fijn op Pukkelpop"
+    },
+    {
+        "Score": "4",
         "Land": "Ned",
         "Dag": "",
         "Tijd": "",
@@ -153,13 +216,58 @@
         "Korte beschrijving": "Jazzy soul met veel piano en trompet. Kabbelt nogal."
     },
     {
-        "Score": "1**",
+        "Score": "1***",
         "Land": "Zwe",
         "Dag": "",
         "Tijd": "",
         "Locatie": "",
         "Artiest": "Boko Yout",
         "Korte beschrijving": "Dreigende urban pop met een underground gevoel"
+    },
+    {
+        "Score": "1*",
+        "Land": "Oos",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Bon Jour",
+        "Korte beschrijving": "Frisse Indiepop"
+    },
+    {
+        "Score": "2",
+        "Land": "Fra",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Bonnie Banane",
+        "Korte beschrijving": "Alternative pop. Grappig"
+    },
+    {
+        "Score": "2",
+        "Land": "Eng",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Bradley Simpson",
+        "Korte beschrijving": "Radiopop met Andre Hazes rijmwoordenboek teksten"
+    },
+    {
+        "Score": "4",
+        "Land": "Tsj",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Brat\u0159i",
+        "Korte beschrijving": "Dampende instrumentale electro met een beat"
+    },
+    {
+        "Score": "1",
+        "Land": "Eng",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Br\u00f2geal",
+        "Korte beschrijving": "Fijne Indiefolk. Bij voorkeur in een pub"
     },
     {
         "Score": "2",
@@ -169,6 +277,15 @@
         "Locatie": "",
         "Artiest": "Bug",
         "Korte beschrijving": "Urban poppy hiphop"
+    },
+    {
+        "Score": "4",
+        "Land": "Fra",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Canblaster",
+        "Korte beschrijving": "Dreamy electronische soundscapes"
     },
     {
         "Score": "1***",
@@ -189,6 +306,24 @@
         "Korte beschrijving": "Prettige Ierse Indierock "
     },
     {
+        "Score": "1*",
+        "Land": "Oek",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Carpetman",
+        "Korte beschrijving": "Gemaskerde zanger maakt ingetogen soulvolle pop"
+    },
+    {
+        "Score": "2",
+        "Land": "Ned",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Cavolo Nero",
+        "Korte beschrijving": "Groovy bband met latin invloeden"
+    },
+    {
         "Score": "4",
         "Land": "Bel",
         "Dag": "",
@@ -198,6 +333,15 @@
         "Korte beschrijving": "DJ Producer met dampende beats"
     },
     {
+        "Score": "2",
+        "Land": "Spa",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Chicos y Mendez",
+        "Korte beschrijving": "Spaanstalige folkpop"
+    },
+    {
         "Score": "1****",
         "Land": "Eng",
         "Dag": "",
@@ -205,6 +349,24 @@
         "Locatie": "",
         "Artiest": "Chloe Qisha",
         "Korte beschrijving": "Pop met een Billie Eilish vibe. Niet verkeerd"
+    },
+    {
+        "Score": "1**",
+        "Land": "Eng",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Chloe Slater",
+        "Korte beschrijving": "Alternative pop met een smoel"
+    },
+    {
+        "Score": "1",
+        "Land": "Ned",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Ciao Lucifer",
+        "Korte beschrijving": "Opgewekte indiepop"
     },
     {
         "Score": "1**",
@@ -226,6 +388,33 @@
     },
     {
         "Score": "1*",
+        "Land": "Zwe",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Clutter",
+        "Korte beschrijving": "Indierock met een Vera kelderbar gevoel"
+    },
+    {
+        "Score": "2",
+        "Land": "Ned",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Cocobolo",
+        "Korte beschrijving": "Instrumentale Funky nuummers met Noord Afrikaanse beats"
+    },
+    {
+        "Score": "4",
+        "Land": "Ned",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "COLLIGNON",
+        "Korte beschrijving": "Instrumentale mellow soundscapes"
+    },
+    {
+        "Score": "1*",
         "Land": "Bel",
         "Dag": "",
         "Tijd": "",
@@ -241,6 +430,42 @@
         "Locatie": "",
         "Artiest": "COMRAD",
         "Korte beschrijving": "Italiaanse bombastische hardrock"
+    },
+    {
+        "Score": "1****",
+        "Land": "Eng",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Corella",
+        "Korte beschrijving": "Indiefolk uit Manchester"
+    },
+    {
+        "Score": "1**",
+        "Land": "Ier",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Cruel Sister",
+        "Korte beschrijving": "Volle gitaarsound, alternative rock. Best fijn"
+    },
+    {
+        "Score": "1",
+        "Land": "Ned",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "CUT_",
+        "Korte beschrijving": "Electronische Indiepop"
+    },
+    {
+        "Score": "1***",
+        "Land": "Eng",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "CVC",
+        "Korte beschrijving": "Indiefolk met een CSNY gevoel. Live in 23 Reeperbahn gezien."
     },
     {
         "Score": "1***",
@@ -277,6 +502,15 @@
         "Locatie": "",
         "Artiest": "De Niemanders",
         "Korte beschrijving": "Band uit AZC's Pop met (Noord) Afrikaanse invloeden"
+    },
+    {
+        "Score": "",
+        "Land": "Noo",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Delara",
+        "Korte beschrijving": ""
     },
     {
         "Score": "4",
@@ -366,7 +600,7 @@
         "Tijd": "",
         "Locatie": "",
         "Artiest": "Enji ",
-        "Korte beschrijving": "Ella Fitzgerald uit Ulaan battaar. Jazz in het Mongools."
+        "Korte beschrijving": "Ella Fitzgerald uit Ulaan Battaar. Jazz in het Mongools."
     },
     {
         "Score": "4",
@@ -519,7 +753,7 @@
         "Tijd": "",
         "Locatie": "",
         "Artiest": "GRAYSSOKER",
-        "Korte beschrijving": "Acccordeon op stero\u00efds"
+        "Korte beschrijving": "Accordeon op stero\u00efds"
     },
     {
         "Score": "2",
@@ -870,7 +1104,7 @@
         "Tijd": "",
         "Locatie": "",
         "Artiest": "Luna",
-        "Korte beschrijving": "Nedrlandstalige liedje met een hoog Beste Zangers gehalte"
+        "Korte beschrijving": "Nederlandstalige liedje met een hoog Beste Zangers gehalte"
     },
     {
         "Score": "2",
@@ -880,6 +1114,15 @@
         "Locatie": "",
         "Artiest": "Luvcat",
         "Korte beschrijving": "Niet heel wereldschokkende popsongs"
+    },
+    {
+        "Score": "4",
+        "Land": "Den",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Lyra Valenza & Signe Dige",
+        "Korte beschrijving": "Electronische soundscapees"
     },
     {
         "Score": "2",
@@ -1105,6 +1348,15 @@
         "Locatie": "",
         "Artiest": "Okgiorgio",
         "Korte beschrijving": "DJ Producer met gladde popsongs met een beat"
+    },
+    {
+        "Score": "2",
+        "Land": "Ita",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "One Eat One",
+        "Korte beschrijving": "Alternative electropop"
     },
     {
         "Score": "2",
@@ -1365,7 +1617,7 @@
         "Tijd": "",
         "Locatie": "",
         "Artiest": "Sylvie Kreusch",
-        "Korte beschrijving": "De vriendin van die met haar indiepop blijkbaar al 3 jaar talent is"
+        "Korte beschrijving": "\"De vriendin van\" die met haar indiepop blijkbaar al 3 jaar talent is"
     },
     {
         "Score": "2",
@@ -1375,6 +1627,15 @@
         "Locatie": "",
         "Artiest": "Teo Planell",
         "Korte beschrijving": "Spaanstalige singersongwriter met kabbelende songs"
+    },
+    {
+        "Score": "2",
+        "Land": "Hon",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "The Anahit",
+        "Korte beschrijving": "Duistere electropop"
     },
     {
         "Score": "1**",
