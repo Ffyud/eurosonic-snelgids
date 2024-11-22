@@ -17,6 +17,7 @@
 }
 
 h4 {
+    display: block;
     padding: 0;
     margin: 0;
     padding-bottom: var(--spacing-m);
@@ -46,7 +47,8 @@ h4 {
     background: none;
     border: none;
     outline: none;
-    text-align: right;
+    text-align: center;
+    margin: 0px;
 }
 
 .info-grid button.fav.is-favorite {
@@ -62,24 +64,26 @@ p.description::after {
 }
 
 p.description {
+    display: block;
     quotes: "„" "“" "‚" "‘";
     font-size: .8em;
     margin: 0;
     margin-bottom: var(--spacing-m);
     text-align: center;
     quotes: initial;
+    word-wrap: anywhere;
 }
 
 .rating {
     /* position: absolute; */
     position: relative;
-    width: 40px;
+    width: 30px;
     right: 0px;
     top: 0px;
     border-radius: var(--medium-radius);
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 700;
 }
 
