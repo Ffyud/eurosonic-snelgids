@@ -7,7 +7,15 @@ main {
     overflow: hidden;
 }
 
-header {
+button{
+    background: none;
+    outline: none;
+    border: none;
+    color: var(--bright-color);
+    padding-left: var(--spacing-xl);
+}
+
+header.header {
     position: relative;
     top: 0;
     box-shadow: inset 0px -1px 0px 0px var(--light-dark-color);
@@ -17,24 +25,23 @@ header {
     align-items: center;
 }
 
-header .share {
+.header .share {
     text-align: right;
     padding-right: var(--spacing-xl);
 }
 
-header .share i {
+.header .share i {
     font-size: 24px;
-
 }
 
-header .title {
+.header .title {
     text-align: center;
     padding-top: var(--spacing-xl);
     padding-bottom: var(--spacing-xl);
     /* padding-left: var(--spacing-xl); */
 }
 
-header .title h1 {
+.header .title h1 {
     text-transform: uppercase;
     display: inline-block;
     margin: 0;
@@ -65,7 +72,7 @@ span.snelgids span {
     transform: rotate(7deg);
 }
 
-header .title h3 {
+.header .title h3 {
     font-weight: 400;
     display: block;
     margin: 0;
@@ -79,3 +86,15 @@ header .title h3 {
     width: 100%;
     bottom: 0px;
 }
+
+@media (orientation: landscape) {
+    .header {
+      display: none !important;
+    }
+  }
+  
+  @media (orientation: portrait) {
+   .header {
+      display: grid;
+    }
+  }

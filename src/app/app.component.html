@@ -1,5 +1,6 @@
 <main class="main">
-  <header>
+  <app-dialog-qr-code [isOpen]="dialogQrCodeIsOpen()" (close)="closeDialogQrCode()"></app-dialog-qr-code>
+  <header class="header">
     <span></span>
     <span class="title">
       <h1>
@@ -27,7 +28,10 @@
       </h1>
       <!-- <h3>Opgesteld doorvan De Lijstjesman</h3> -->
     </span>
-    <span class="share"><i class="ri-share-2-fill"></i></span>
+    <span class="share">
+      <button (click)="openDialogQrCode()" class="share-with-qr" title="Delen met QR-code"><i class="ri-qr-code-line"></i></button>
+      <button class="share-with-app" title="Delen"><i class="ri-share-2-line"></i></button>
+    </span>
   </header>
   <div class="content">
     <router-outlet />
