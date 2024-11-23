@@ -1,0 +1,7 @@
+<div class="wrapper" [ngClass]="isOpen() ? 'visible' : ''">
+    <div class="dialog">
+        <button class="close-dialog" (click)="clickClose()" title="Sluiten"><i class="ri-close-circle-line"></i></button>
+        <p>Deel de snelgids door deze QR-code te laten scannen.</p>
+        <img class="qr-code" src="qr-code.png"/>
+    </div>
+</div>
