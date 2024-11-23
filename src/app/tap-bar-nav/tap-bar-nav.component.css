@@ -54,3 +54,15 @@ li button span {
     display: block;
     clear: both;
 }
+
+@media (orientation: landscape) {
+    div.tap-bar-nav-wrapper {
+      display: none !important;
+    }
+  }
+  
+  @media (orientation: portrait) {
+   div.tap-bar-nav-wrapper {
+      display: block;
+    }
+  }

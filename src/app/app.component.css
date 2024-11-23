@@ -87,6 +87,8 @@ span.snelgids span {
     bottom: 0px;
 }
 
+/* FIXME add max width */
+
 @media (orientation: landscape) {
     .header {
       display: none !important;
