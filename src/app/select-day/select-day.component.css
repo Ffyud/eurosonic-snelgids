@@ -1,4 +1,5 @@
 .wrapper {
+    box-shadow: inset 0px -1px 0px 0px var(--light-dark-color);
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto 200px auto;

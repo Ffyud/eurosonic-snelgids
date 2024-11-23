@@ -55,6 +55,7 @@ li button span {
     clear: both;
 }
 
+/* FIXME add max width */
 @media (orientation: landscape) {
     div.tap-bar-nav-wrapper {
       display: none !important;
