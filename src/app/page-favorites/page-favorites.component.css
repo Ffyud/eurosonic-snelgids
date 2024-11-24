@@ -6,6 +6,8 @@ div.wrapper-favorites {
 div.wrapper-favorites .header {
     line-height: 38px;
     text-align: center;
+    box-shadow: inset 0px -1px 0px 0px var(--light-dark-color);
+
 }
 .no-results {
     align-self: center;
