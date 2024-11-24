@@ -7,7 +7,7 @@ main {
     overflow: hidden;
 }
 
-button{
+button {
     background: none;
     outline: none;
     border: none;
@@ -89,14 +89,14 @@ span.snelgids span {
 
 /* FIXME add max width */
 
-@media (orientation: landscape) {
+@media (orientation:landscape) and (max-width: 844px) {
     .header {
-      display: none !important;
+        display: none !important;
     }
-  }
-  
-  @media (orientation: portrait) {
-   .header {
-      display: grid;
+}
+
+@media (orientation: portrait) {
+    .header {
+        display: grid;
     }
-  }
+}
