@@ -31,7 +31,9 @@ h4 {
 .info-grid {
     display: grid;
     align-items: center;
-    grid-template-columns: auto auto auto;
+    justify-items: center;
+    gap: var(--spacing-xl);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .info-grid div.time {

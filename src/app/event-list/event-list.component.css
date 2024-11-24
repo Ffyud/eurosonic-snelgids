@@ -1,6 +1,5 @@
 .event-list-container {
     overflow: scroll;
-    /* scroll-snap-type: both proximity; */
     display: grid;
     grid-auto-flow: column;
     width: 100vw;
@@ -11,6 +10,7 @@
 
 .event-list-container .event-list:first-child {
     margin-left: auto;
+    margin-left: var(--spacing-xl);
 }
 
 .event-list-container .event-list:last-child {
@@ -18,9 +18,9 @@
 }
 
 .event-list {
-    /* scroll-snap-align: start; */
-    width: 45vw;
-    max-width: 200px;
+    width: 44vw;
+    max-width: 300px;
+    min-width: 170px;
 }
 
 .event-list h3 {

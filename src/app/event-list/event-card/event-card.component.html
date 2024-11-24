@@ -1,13 +1,13 @@
 <div [ngClass]="gig().favorite ? 'is-favorite' : ''" class="event-card">
    <span>
-      <h4>{{ gig()?.artist }}</h4>
+      <h4>{{ gig().artist }}</h4>
    </span>
    <span>
       <p class="description">{{gig().description}}</p>
    </span>
    <span>
       <div class="info-grid">
-         @switch (gig()?.rating) {
+         @switch (gig().rating) {
          @case (rating.VIJF) {
          <div class="rating rating-5"><span>5</span></div>
          }
