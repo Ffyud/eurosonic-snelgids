@@ -98,13 +98,14 @@ export class SnelgidsService {
   }
 
   setFavoriteEvents(gig: Gig): void {
-    // TODO veld favorite altijd op true zetten
     const isInFavoriteEvents: boolean = this.favoriteEvents().some((value: Gig) => value.artist === gig.artist);
     if (isInFavoriteEvents) {
+      gig.favorite = false;
       const updatedList: Gig[] = this.favoriteEvents().filter((value: Gig) => value.artist !== gig.artist);
       this.favoriteEvents.update(() => { return updatedList });
       this.saveFavoritesToLocalStorage(updatedList);
     } else {
+      gig.favorite = true;
       const updatedList: Gig[] = [gig, ...this.favoriteEvents()];
       this.favoriteEvents.update(() => { return updatedList });
       this.saveFavoritesToLocalStorage(updatedList);
