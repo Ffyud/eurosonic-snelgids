@@ -4,12 +4,12 @@ import { EventListComponent } from "../event-list/event-list.component";
 import { SnelgidsService } from '../snelgids.service';
 import { Gig } from '../gig.model';
 import { Location } from '../location.enum';
-import { SelectLocationComponent } from "../select-location/select-location.component";
+import { FilterLocationsComponent } from "../filter-locations/filter-locations.component";
 
 @Component({
   selector: 'app-timetable-page',
   standalone: true,
-  imports: [SelectDayComponent, EventListComponent, SelectLocationComponent],
+  imports: [SelectDayComponent, EventListComponent, FilterLocationsComponent],
   templateUrl: './timetable-page.component.html',
   styleUrl: './timetable-page.component.css'
 })

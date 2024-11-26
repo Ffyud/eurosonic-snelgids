@@ -1,5 +1,6 @@
 div.tap-bar-nav-wrapper {
     z-index: 200;
+    height: 60px;
     position: fixed;
     bottom: 0;
     padding-bottom: env(safe-area-inset-bottom, 0px);

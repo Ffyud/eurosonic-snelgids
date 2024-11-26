@@ -1,0 +1,16 @@
+<div [ngClass]="isOpen() ? 'visible' : ''" class="wrapper">
+    <div class="dialog">
+        <p>Kies de locaties die je in het schema wil zien.</p>
+        <ul>
+            @for (location of locations; track location) {
+            <li>
+                @if(locationIsSelected(location)) {
+                <button class="active" (click)="onClick(location)"><i class="ri-checkbox-blank-circle-fill"></i> {{ location }}</button>
+                } @else {
+                <button class="inactive" (click)="onClick(location)"><i class="ri-checkbox-blank-circle-line"></i> {{ location }}</button>
+                }
+            </li>
+            }
+        </ul>
+    </div>
+</div>

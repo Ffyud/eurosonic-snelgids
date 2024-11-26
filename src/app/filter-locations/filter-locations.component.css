@@ -1,0 +1,27 @@
+div.wrapper {
+
+}
+
+button.filter {
+    z-index: 200;
+    position: absolute;
+    bottom: calc(60px + var(--spacing-xl) + env(safe-area-inset-bottom, 0px));
+    right: var(--spacing-xl);
+    outline: none;
+    border: none;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+    line-height: calc(24px + 15px);
+    box-shadow: inset 0px 0px 0px 1px var(--light-dark-color);
+    background: var(--background-color);
+    color: var(--bright-color);
+    text-shadow: none;
+    border-radius: var(--medium-radius);
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+button.filter i { font-size: 24px; margin-right: var(--spacing-m);}
