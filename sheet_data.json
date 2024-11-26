@@ -504,13 +504,13 @@
         "Korte beschrijving": "Band uit AZC's Pop met (Noord) Afrikaanse invloeden"
     },
     {
-        "Score": "",
+        "Score": "1",
         "Land": "Noo",
         "Dag": "",
         "Tijd": "",
         "Locatie": "",
         "Artiest": "Delara",
-        "Korte beschrijving": ""
+        "Korte beschrijving": "Ingetogen popsongs met een beat. In het Noors"
     },
     {
         "Score": "4",
@@ -520,6 +520,15 @@
         "Locatie": "",
         "Artiest": "Devon Rexi",
         "Korte beschrijving": "Flinke beats en zang in het Farsi. Erg repeterend."
+    },
+    {
+        "Score": "4",
+        "Land": "Oek",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "DONBA\u20b4GRL",
+        "Korte beschrijving": "Bombastische electropop"
     },
     {
         "Score": "1",
@@ -583,6 +592,15 @@
         "Locatie": "",
         "Artiest": "Elinborg",
         "Korte beschrijving": "Warme truien en kampvuur folkpop voor lange nachten"
+    },
+    {
+        "Score": "4",
+        "Land": "Noo",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Ella Marie",
+        "Korte beschrijving": "Ingetogen dreamy popsongs in het Laplands"
     },
     {
         "Score": "1***",
@@ -649,6 +667,15 @@
     },
     {
         "Score": "1**",
+        "Land": "Noo",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Fay Wildhagen",
+        "Korte beschrijving": "Ingetogen popballads met een licht Americana gevoel"
+    },
+    {
+        "Score": "1**",
         "Land": "Dui",
         "Dag": "",
         "Tijd": "",
@@ -666,6 +693,15 @@
         "Korte beschrijving": "Disco electropop. Spaanse disco in de zomer muziek."
     },
     {
+        "Score": "1***",
+        "Land": "Eng",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Fiona Lee",
+        "Korte beschrijving": "Beloftevolle alternative rock"
+    },
+    {
         "Score": "1",
         "Land": "Ned",
         "Dag": "Za",
@@ -673,6 +709,24 @@
         "Locatie": "",
         "Artiest": "Flaire",
         "Korte beschrijving": "Funky dansbare Nederdiscopop. Beetje rip-off van Goldband."
+    },
+    {
+        "Score": "4",
+        "Land": "Noo",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Flammer Dance Band",
+        "Korte beschrijving": "Instrumentale funky blazers band"
+    },
+    {
+        "Score": "2",
+        "Land": "Eng",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Florence Sinclair",
+        "Korte beschrijving": "Donkere urban rap pop. Wel intrigerend"
     },
     {
         "Score": "2",
@@ -720,6 +774,15 @@
         "Korte beschrijving": "Ingetogen Indiepop om te chillen"
     },
     {
+        "Score": "1",
+        "Land": "Eng",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Getdown Services",
+        "Korte beschrijving": "Blanke spoken word rap op flinke beats"
+    },
+    {
         "Score": "2",
         "Land": "Den",
         "Dag": "",
@@ -738,6 +801,15 @@
         "Korte beschrijving": "Dansbare urban disco hiphop. "
     },
     {
+        "Score": "2",
+        "Land": "Fin",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Goldielocks",
+        "Korte beschrijving": "Bombastische pop Beetje overgeproduceerd"
+    },
+    {
         "Score": "1",
         "Land": "Den",
         "Dag": "",
@@ -745,6 +817,15 @@
         "Locatie": "",
         "Artiest": "Gorgeous",
         "Korte beschrijving": "Folkpop met een kabbelend countryritme "
+    },
+    {
+        "Score": "2",
+        "Land": "Fin",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Grande Mahogany",
+        "Korte beschrijving": "Funky dansbare soulpop"
     },
     {
         "Score": "3",
@@ -784,6 +865,15 @@
     },
     {
         "Score": "1",
+        "Land": "Spa",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Heal",
+        "Korte beschrijving": "Volle donkere indierock. Niet vrolijk wel fijn"
+    },
+    {
+        "Score": "1",
         "Land": "Noo",
         "Dag": "",
         "Tijd": "",
@@ -808,6 +898,15 @@
         "Locatie": "",
         "Artiest": "Indian Wells",
         "Korte beschrijving": "Nogal herhalende electronische soundscapes"
+    },
+    {
+        "Score": "1**",
+        "Land": "Bel",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Isaac Roux",
+        "Korte beschrijving": "Kabbelende Singer-songwriter met een vleugje Dotan en Haeven"
     },
     {
         "Score": "4",
@@ -901,6 +1000,15 @@
     },
     {
         "Score": "4",
+        "Land": "Pol",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Joulie Fox",
+        "Korte beschrijving": "Poolse pop met een beat en een songfestival gevoel"
+    },
+    {
+        "Score": "4",
         "Land": "Spa",
         "Dag": "",
         "Tijd": "",
@@ -943,6 +1051,15 @@
         "Locatie": "",
         "Artiest": "K\u00e4\u00e4rij\u00e4",
         "Korte beschrijving": "Dampende electropop/rock. U weet wel ESF 24."
+    },
+    {
+        "Score": "2",
+        "Land": "IJs",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "Kaktus Einarsson",
+        "Korte beschrijving": "Koude winteravond muziek. Piano/keyboard en galmende zang. "
     },
     {
         "Score": "4",
@@ -1033,6 +1150,15 @@
         "Locatie": "",
         "Artiest": "L.A. Sagne",
         "Korte beschrijving": "Schreeuwerige post-punk. Na 3 nummers wel klaar mee"
+    },
+    {
+        "Score": "",
+        "Land": "Fra",
+        "Dag": "",
+        "Tijd": "",
+        "Locatie": "",
+        "Artiest": "La Chica",
+        "Korte beschrijving": ""
     },
     {
         "Score": "4",
