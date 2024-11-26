@@ -1,6 +1,5 @@
 import { Component, signal, WritableSignal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-// TODO import { SelectLocationComponent } from "./select-location/select-location.component";
 import { TapBarNavComponent } from "./tap-bar-nav/tap-bar-nav.component";
 import { DialogQrCodeComponent } from "./dialog-qr-code/dialog-qr-code.component";
 
@@ -17,7 +16,6 @@ export class AppComponent {
   protected dialogQrCodeIsOpen: WritableSignal<boolean> = signal(false);
 
   protected openDialogQrCode() {
-    console.log('klik', this.dialogQrCodeIsOpen());
     this.dialogQrCodeIsOpen() ? this.dialogQrCodeIsOpen.set(false) : this.dialogQrCodeIsOpen.set(true);
   }
 
