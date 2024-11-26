@@ -63,7 +63,7 @@ li button.inactive {
 }
 
 li button.inactive i {
-    color: var(--red-color);
+    color: var(--light-dark-color);
 }
 
 li button {
