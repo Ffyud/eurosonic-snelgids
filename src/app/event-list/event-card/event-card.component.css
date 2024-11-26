@@ -80,6 +80,7 @@ p.description {
     text-align: center;
     quotes: initial;
     word-wrap: anywhere;
+    text-wrap: balance;
 }
 
 .rating {
