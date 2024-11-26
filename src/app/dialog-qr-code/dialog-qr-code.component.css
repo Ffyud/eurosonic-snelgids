@@ -44,7 +44,7 @@ button.close-dialog {
 }
 
 p {
-    font-weight: 700;
+    font-weight: 400;
     margin: 0;
     padding: var(--spacing-xl);
     padding-bottom: 0;
