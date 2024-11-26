@@ -12,12 +12,26 @@
     display: block;
 }
 
+button.close-dialog {
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--bright-color);
+    font-size: 30px;
+    width: 100%;
+    position: relative;
+    display: block;
+    text-align: right;
+    padding-right: var(--spacing-xl);
+    padding-top: var(--spacing-xl);
+}
+
 .dialog {
     margin: 0px auto;
     position: fixed;
     width: 100%;
     bottom: 0px;
-    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-bottom: env(safe-area-inset-bottom, var(--spacing-xl));
     background: var(--background-color);
     color: var(--background-color);
     border-radius: var(--medium-radius);
@@ -26,14 +40,12 @@
 
 p {
     color: var(--bright-color);
-    font-weight: 700;
+    font-weight: 400;
     margin: 0;
     padding: var(--spacing-xl);
 }
 
 ul {
-    height: 300px;
-    overflow: scroll;
     list-style-type: none;
     margin: 0;
     padding: var(--spacing-xl);

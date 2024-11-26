@@ -21,4 +21,9 @@ export class FilterLocationsComponent {
       this.dialogLocationsIsOpen.set(true);
     }
   }
+
+  protected closeDialogLocations() {
+    this.dialogLocationsIsOpen.set(false);
+  }
+
 }

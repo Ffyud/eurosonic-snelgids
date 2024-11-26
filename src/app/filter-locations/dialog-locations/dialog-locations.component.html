@@ -1,6 +1,7 @@
 <div [ngClass]="isOpen() ? 'visible' : ''" class="wrapper">
     <div class="dialog">
-        <p>Welke locaties komen in het schema?</p>
+        <button class="close-dialog" (click)="clickClose()" title="Sluiten"><i class="ri-close-circle-line"></i></button>
+        <p>Kies welke locaties in het schema staan.</p>
         <ul>
             @for (location of locations; track location) {
             <li>
