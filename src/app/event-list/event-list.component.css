@@ -3,6 +3,8 @@
     display: grid;
     grid-auto-flow: column;
     width: 100vw;
+    max-width: fit-content;
+    margin: 0px auto;
     padding-top: var(--spacing-xl);
     height: calc(100vh + 1px);
     /* anders geen sticky headers */
