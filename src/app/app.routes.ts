@@ -20,4 +20,6 @@ export const routes: Routes = [
         path: 'favorieten',
         component: PageFavoritesComponent
     }
+
+    // TODO voeg routes toe voor elk event en geef event mee aan TimetablePageComponent zodat deze uitgelicht kan worden
 ];
