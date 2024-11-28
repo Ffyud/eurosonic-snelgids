@@ -1,6 +1,7 @@
 {
   "name": "Eurosonic Snelgids",
   "short_name": "Snelgids",
+  "description": "Een handige app voor de Eurosonic Snelgids van de Lijstjesman.",
   "theme_color": "rgb(23, 31, 40)",
   "background_color": "rgb(23, 31, 40)",
   "display": "standalone",
@@ -8,7 +9,7 @@
   "start_url": "./",
   "icons": [
     {
-      "src": "icons/icon-512x512.png",
+      "src": "icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
