@@ -25,3 +25,15 @@ button.filter {
 }
 
 button.filter i { font-size: 24px; margin-right: var(--spacing-m);}
+
+@media (orientation:landscape) and (max-width: 844px) {
+    button.filter {
+        bottom: calc(var(--spacing-xl) + env(safe-area-inset-bottom, 0px));
+    }
+  }
+  
+  @media (orientation: portrait) {
+    button.filter {
+        bottom: calc(60px + var(--spacing-xl) + env(safe-area-inset-bottom, 0px));
+    }
+  }

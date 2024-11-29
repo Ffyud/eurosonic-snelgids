@@ -6,7 +6,7 @@
     line-height: 38px;
 }
 
-i { font-size: 24px;}
+i { font-size: 30px;}
 
 button {
     background: none;
@@ -20,6 +20,8 @@ button.back {
 }
 span.day {
     text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
 }
 button.forward {
     text-align: left;

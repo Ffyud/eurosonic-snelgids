@@ -8,7 +8,7 @@
                 @if(locationIsSelected(location)) {
                 <button class="active" (click)="onClick(location)"><i class="ri-checkbox-blank-circle-fill"></i> {{ location }}</button>
                 } @else {
-                <button class="inactive" (click)="onClick(location)"><i class="ri-checkbox-blank-circle-fill"></i> {{ location }}</button>
+                <button class="inactive" (click)="onClick(location)"><i class="ri-checkbox-blank-circle-line"></i> {{ location }}</button>
                 }
             </li>
             }

@@ -25,6 +25,13 @@
     min-width: 170px;
 }
 
+@media (min-width: 810px) {
+    .event-list {
+        width: 26vw;
+        max-width: 200px;
+    }
+}
+
 .event-list h3 {
     top: 0px;
     left: 0px;

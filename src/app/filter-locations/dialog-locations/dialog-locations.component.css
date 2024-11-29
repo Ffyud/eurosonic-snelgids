@@ -31,7 +31,7 @@ button.close-dialog {
     position: fixed;
     width: 100%;
     bottom: 0px;
-    padding-bottom: env(safe-area-inset-bottom, var(--spacing-xl));
+    padding-bottom: calc(var(--spacing-xl) + env(safe-area-inset-bottom, var(--spacing-xl)));
     background: var(--background-color);
     color: var(--background-color);
     border-radius: var(--medium-radius);
@@ -41,16 +41,19 @@ button.close-dialog {
 p {
     color: var(--bright-color);
     font-weight: 400;
-    margin: 0;
+    font-size: 1.2em;
+    margin: 0 auto;
+    max-width: 50vw;
     padding: var(--spacing-xl);
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0px auto;
     padding: var(--spacing-xl);
     padding-top: 0;
     padding-bottom: 0;
+    max-width: 650px;
 
 }
 
@@ -71,11 +74,14 @@ li button.active i {
 li button.inactive {
     background: none;
     color: var(--bright-color);
+    box-shadow: inset 0px 0px 0px 2px var(--bright-color);
+
     text-shadow: none;
 }
 
 li button.inactive i {
     color: var(--light-dark-color);
+
 }
 
 li button {

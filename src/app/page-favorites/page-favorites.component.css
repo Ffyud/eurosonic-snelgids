@@ -5,6 +5,8 @@ div.wrapper-favorites {
 
 div.wrapper-favorites .header {
     line-height: 38px;
+    font-size: 1.2em;
+    font-weight: 400;
     text-align: center;
     box-shadow: inset 0px -1px 0px 0px var(--light-dark-color);
 
