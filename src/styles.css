@@ -16,7 +16,11 @@ html {
     --dark-color: #000;
     --light-dark-color: #32475F;
     --bright-color: #fff3b3;
+    --white-color: #FFF;
     --transparant-black-color: #222222bd;
+
+    --wrapper-background: #000000db;
+    --dialog-animation: slideIn 300ms;
 
     --main-color: #07b34c;
     --main-dark-color: #0575e6;
@@ -41,4 +45,14 @@ button {
     text-decoration: none;
     outline: none;
     border: none;
+}
+
+@keyframes slideIn {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: calc(var(--spacing-xl) + var(--spacing-xl));
+    }
 }
