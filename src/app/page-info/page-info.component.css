@@ -1,12 +1,14 @@
 div.wrapper-info {
-    max-width: 600px;
+    max-width: 450px;
     margin: 0px auto;
 }
 
 div.wrapper-info p {
-    margin: var(--spacing-xl);    
+    margin: var(--spacing-xl);  
+    margin-top: calc(var(--spacing-xl) + var(--spacing-xl));  
     display: block;
     text-align: center;
+    text-wrap: balance;
 }
 
 button.share {
