@@ -24,37 +24,6 @@ export enum Country {
     Tsjechië = "TSJ",
     Portugal = "POR",
     Luxemburg = "LUX",
-    Slowakije = "SLOW",
+    Slowakije = "Slow",
     Onbekend = "ONBEKEND"
 }
-
-export enum CountryFlag {
-    SPA = "🇪🇸",
-    FRA = "🇫🇷",
-    BEL = "🇧🇪",
-    ENG = "🏴",
-    NOO = "🇳🇴",
-    NED = "🇳🇱",
-    DUI = "🇩🇪",
-    KRO = "🇭🇷",
-    ITA = "🇮🇹",
-    SLOV = "🇸🇮",
-    ZWE = "🇸🇪",
-    IER = "🇮🇪",
-    LET = "🇱🇻",
-    ZWI = "🇨🇭",
-    DEN = "🇩🇰",
-    FAR = "🇫🇴",
-    HON = "🇭🇺",
-    OOS = "🇦🇹",
-    EST = "🇪🇪",
-    POL = "🇵🇱",
-    FIN = "🇫🇮",
-    SER = "🇷🇸",
-    TSJ = "🇨🇿",
-    POR = "🇵🇹",
-    LUX = "🇱🇺",
-    SLOW = "🇸🇰",
-    ONBEKEND = ""
-}
-
