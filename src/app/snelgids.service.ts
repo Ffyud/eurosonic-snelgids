@@ -56,7 +56,7 @@ export class SnelgidsService {
 
   // Method to validate day
   private getValidCountry(country: string): Country {
-    return Object.values(Country).includes(country.toUpperCase() as Country) ? country as Country : Country.Onbekend;
+    return Object.values(Country).includes(country.toUpperCase() as Country) ? country.toUpperCase() as Country : Country.Onbekend;
   }
 
   // Get all events
@@ -65,7 +65,6 @@ export class SnelgidsService {
       ...gig,
       favorite: this.favoriteEvents().some((favoriteGig) => favoriteGig.artist === gig.artist)
     }));
-    console.log(gigWithFavorites)
     return gigWithFavorites;
   }
 
