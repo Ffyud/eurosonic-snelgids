@@ -83,6 +83,13 @@ p.description {
     text-wrap: balance;
 }
 
+.country {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    font-size: 30px;
+}
+
 .rating {
     position: relative;
     width: 30px;

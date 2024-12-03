@@ -22,6 +22,41 @@ export class EventCardComponent {
     this.snelgidsService.setFavoriteEvents(gig);
   }
 
+
+  getFlag(country: Country): string {
+    return this.countryFlagMap[country] || "";
+  }
+
+  countryFlagMap: { [key in Country]: string } = {
+    [Country.Spanje]: "🇪🇸",
+    [Country.Frankrijk]: "🇫🇷",
+    [Country.België]: "🇧🇪",
+    [Country.Engeland]: "🇬🇧",
+    [Country.Noorwegen]: "🇳🇴",
+    [Country.Nederland]: "🇳🇱",
+    [Country.Duitsland]: "🇩🇪",
+    [Country.Kroatië]: "🇭🇷",
+    [Country.Italië]: "🇮🇹",
+    [Country.Slovenië]: "🇸🇮",
+    [Country.Zweden]: "🇸🇪",
+    [Country.Ierland]: "🇮🇪",
+    [Country.Letland]: "🇱🇻",
+    [Country.Zwitserland]: "🇨🇭",
+    [Country.Denemarken]: "🇩🇰",
+    [Country.Faeröer]: "🇫🇴",
+    [Country.Hongarije]: "🇭🇺",
+    [Country.Oostenrijk]: "🇦🇹",
+    [Country.Estland]: "🇪🇪",
+    [Country.Polen]: "🇵🇱",
+    [Country.Finland]: "🇫🇮",
+    [Country.Servië]: "🇷🇸",
+    [Country.Tsjechië]: "🇨🇿",
+    [Country.Portugal]: "🇵🇹",
+    [Country.Luxemburg]: "🇱🇺",
+    [Country.Slowakije]: "🇸🇰",
+    [Country.Onbekend]: ""
+};
+
   rating = Rating;
 
   country = Country;
