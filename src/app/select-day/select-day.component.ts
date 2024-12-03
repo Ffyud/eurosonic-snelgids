@@ -17,12 +17,9 @@ export class SelectDayComponent {
   days: Day[] = this.snelgidsService.getDays();
 
   dayBack(day: Day): void {
-    console.log(this.days)
     const currentDay = this.days.indexOf(day);
-    console.log(currentDay)
     const lastIndex: number = (currentDay - 1 + this.days.length) % this.days.length;
 
-    console.log(this.days[lastIndex])
     this.snelgidsService.setSelectedDay(this.days[lastIndex])
     this.updateSelectedDay();
   }
