@@ -26,7 +26,17 @@ export class SnelgidsService {
   }
 
   selectedDay: WritableSignal<Day> = signal(Day.VRIJ);
-  selectedLocations: WritableSignal<Location[]> = signal(this.getLocations()); // TODO bewaren in localstorage
+
+  selectedLocations: WritableSignal<Location[]> = signal(this.getLocationsFromLocalStorage());
+
+  private getLocationsFromLocalStorage(): Location[] {
+    const storedLocations = localStorage.getItem('locations');
+    return storedLocations ? JSON.parse(storedLocations) : this.getLocations();
+  }
+
+  private saveLocationsToLocalStorage(locations: Location[]): void {
+    localStorage.setItem('locations', JSON.stringify(locations));
+  }
 
   favoriteEvents: WritableSignal<Gig[]> = signal(this.getFavoritesFromLocalStorage());
 
@@ -142,9 +152,12 @@ export class SnelgidsService {
     if (locationExists) {
       const updatedList: Location[] = this.selectedLocations().filter((value: Location) => value !== location);
       this.selectedLocations.update(() => { return updatedList });
+      this.saveLocationsToLocalStorage(updatedList);
 
     } else {
-      this.selectedLocations.update(() => { return [location, ...this.selectedLocations()] });
+      const updatedList: Location[] = [location, ...this.selectedLocations()];
+      this.selectedLocations.update(() => { return updatedList });
+      this.saveLocationsToLocalStorage(updatedList);
     }
     console.log('Geselecteerde locaties geüpdate', this.selectedLocations());
   }
