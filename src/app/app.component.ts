@@ -13,7 +13,26 @@ import { DialogQrCodeComponent } from "./dialog-qr-code/dialog-qr-code.component
 export class AppComponent {
   title = 'eurosonic-snelgids';
 
+  protected shareData = {
+    title: "Eurosonic Snelgids",
+    text: "De Eurosonic Snelgids van de Lijstjesman",
+    url: "https://ffyud.github.io/eurosonic-snelgids",
+  };
+
   protected dialogQrCodeIsOpen: WritableSignal<boolean> = signal(false);
+
+  protected webShareIsAvailable(): boolean {
+    try {
+      navigator.share()
+    } catch (error) {
+      if(error instanceof TypeError) return false;
+    } 
+    return true;
+  }
+
+  protected onShare() {
+    navigator.share(this.shareData)
+  }
 
   protected openDialogQrCode() {
     this.dialogQrCodeIsOpen() ? this.dialogQrCodeIsOpen.set(false) : this.dialogQrCodeIsOpen.set(true);

@@ -31,7 +31,9 @@
       <!-- <h3>Opgesteld doorvan De Lijstjesman</h3> -->
     </span>
     <span class="share">
-      <button class="share-with-app" title="Delen"><i class="ri-share-2-line"></i></button>
+      @if (webShareIsAvailable()) {
+        <button (click)="onShare()" class="share-with-app" title="Delen"><i class="ri-share-2-line"></i></button>
+      }
     </span>
   </header>
   <div class="content">
@@ -39,4 +41,3 @@
   </div>
   <app-tap-bar-nav></app-tap-bar-nav>
 </main>
-
