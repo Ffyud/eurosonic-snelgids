@@ -1,7 +1,7 @@
 export enum Day {
-    WOE = "Woensdag",
-    DON = "Donderdag",
-    VRIJ = "Vrijdag",
-    ZAT = "Zaterdag",
+    WOE = "Woe",
+    DON = "Don",
+    VRIJ = "Vrij",
+    ZAT = "Zat",
     ONBEKEND = "Onbekend"
 }
