@@ -25,7 +25,9 @@ export class SnelgidsService {
     }));
   }
 
-  selectedDay: WritableSignal<Day> = signal(Day.VRIJ);
+  // TODO dag uit localstorage halen
+  // TODO dag altijd default op juiste datum indien tijdens festival (na een tijdstip)
+  selectedDay: WritableSignal<Day> = signal(Day.VRIJ); 
 
   selectedLocations: WritableSignal<Location[]> = signal(this.getLocationsFromLocalStorage());
 
@@ -70,8 +72,14 @@ export class SnelgidsService {
   }
 
   // Get all events
-  getEvents(): Gig[] {
-    const gigWithFavorites = this.gigs.map((gig: Gig) => ({
+  getEvents(locations?: Location[], days?: Day[]): Gig[] {
+
+    const gigs: Gig[] = this.gigs.filter(event =>
+      (!locations || locations.includes(event.location)) &&
+      (!days || days.includes(event.day))
+    );
+
+    const gigWithFavorites = gigs.map((gig: Gig) => ({
       ...gig,
       favorite: this.favoriteEvents().some((favoriteGig) => favoriteGig.artist === gig.artist)
     }));
@@ -81,14 +89,6 @@ export class SnelgidsService {
   // Get a single event by artist name
   getEvent(artist: string): Gig | undefined {
     return this.gigs.find(event => event.artist === artist);
-  }
-
-  // Get events by location and/or day
-  getEventsByFilter(locations?: Location[], days?: Day[]): Gig[] {
-    return this.gigs.filter(event =>
-      (!locations || locations.includes(event.location)) &&
-      (!days || days.includes(event.day))
-    );
   }
 
   // Get all favorite events
