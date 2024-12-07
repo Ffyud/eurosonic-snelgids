@@ -13,6 +13,7 @@ button {
     border: none;
     color: var(--bright-color);
     padding-left: var(--spacing-xl);
+    padding-right: 0px;
 }
 
 header.header {
