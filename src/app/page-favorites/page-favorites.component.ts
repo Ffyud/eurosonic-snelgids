@@ -2,6 +2,7 @@ import { Component, computed, inject, Input, Signal } from '@angular/core';
 import { SnelgidsService } from '../snelgids.service';
 import { Location } from '../location.enum';
 import { EventListComponent } from '../event-list/event-list.component';
+import { Day } from '../day.enum';
 
 @Component({
   selector: 'app-page-favorites',
@@ -17,6 +18,8 @@ export class PageFavoritesComponent {
   protected readonly favoriteEvents = this.snelgidsService.getFavoriteEvents();
   protected readonly favoriteEventsLocations = this.snelgidsService.getFavoriteEventsLocations();
 
+  protected readonly ALLEDAGEN = Day.ALLE;
+  
   @Input() selectedLocationsList: Signal<Location[]> = computed(() => this.snelgidsService.getSelectedLocations());
 
 }

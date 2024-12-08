@@ -14,7 +14,8 @@ export class SelectDayComponent {
   protected snelgidsService = inject(SnelgidsService);
 
   selectedDay: Day = this.snelgidsService.getSelectedDay();
-  days: Day[] = this.snelgidsService.getDays();
+  // FIXME dag mag niet "ALLE" zijn hier want selectie gaat mis
+  days: Day[] = this.snelgidsService.getDays().filter((day: Day) => day !== Day.ALLE);
 
   dayBack(day: Day): void {
     const currentDay = this.days.indexOf(day);

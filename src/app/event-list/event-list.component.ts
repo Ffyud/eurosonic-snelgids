@@ -18,4 +18,6 @@ export class EventListComponent {
 
   selectedLocationsList = input.required<Location[]>();
   selectedDay = input.required<Day>();
+
+  Day = Day;
 }
