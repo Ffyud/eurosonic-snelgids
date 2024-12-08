@@ -1,7 +1,7 @@
 export enum Day {
-    WOE = "Woe",
-    DON = "Don",
+    WO = "Wo",
+    DO = "Do",
     VRIJ = "Vrij",
-    ZAT = "Zat",
+    ZA = "Za",
     ONBEKEND = "Onbekend"
-}
+} // FIXME afhankelijk van hoe het uiteindelijk in de data weergegeven gaat worden ("Woe" of "Wo")
