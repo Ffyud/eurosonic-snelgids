@@ -38,13 +38,13 @@ export class SelectDayComponent {
 
   getSelectedDateString(day: Day): string {
     switch(day) {
-      case Day.WOE:
+      case Day.WO:
         return "Woensdag 15 januari"
-      case Day.DON:
+      case Day.DO:
         return "Donderdag 16 januari"
       case Day.VRIJ:
         return "Vrijdag 17 januari"
-      case Day.ZAT:
+      case Day.ZA:
         return "Zaterdag 18 januari"
       default:
         return "Onbekend"
