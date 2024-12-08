@@ -121,7 +121,7 @@
       "Land": "Fra",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Martinikerk",
       "Artiest": "A\u00efta Mon Amour",
       "Korte beschrijving": "Noord Afrikaanse pop"
   },
@@ -130,7 +130,7 @@
       "Land": "Ned",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Prinsentuin",
       "Artiest": "Baby Berserk",
       "Korte beschrijving": "Frisse electopop waar je vrolijk van wordt"
   },
@@ -166,7 +166,7 @@
       "Land": "Zwi",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Simplon",
       "Artiest": "Benjamin Amaru",
       "Korte beschrijving": "Vermakelijke folkpop"
   },
@@ -175,7 +175,7 @@
       "Land": "Slow",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Huis de Beurs",
       "Artiest": "Berlin Manson",
       "Korte beschrijving": "Rappende beats met een forse taalbarriere"
   },
@@ -184,7 +184,7 @@
       "Land": "Bel",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Simplon",
       "Artiest": "Berre",
       "Korte beschrijving": "Ingetogen Singer-songwriter met een fijne stem"
   },
@@ -193,7 +193,7 @@
       "Land": "Ita",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Simplon",
       "Artiest": "BigMamma",
       "Korte beschrijving": "Italopop met een flinke beat en rappende zang"
   },
@@ -202,7 +202,7 @@
       "Land": "Eng",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Plato",
       "Artiest": "Big Special",
       "Korte beschrijving": "Spoken Word rock. Errug fijn op Pukkelpop"
   },
@@ -211,41 +211,41 @@
       "Land": "Ned",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Plato",
       "Artiest": "Bnnyhunna",
       "Korte beschrijving": "Jazzy soul met veel piano en trompet. Kabbelt nogal."
   },
   {
       "Score": "1***",
       "Land": "Zwe",
-      "Dag": "",
+      "Dag": "Za",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Plato",
       "Artiest": "Boko Yout",
       "Korte beschrijving": "Dreigende urban pop met een underground gevoel"
   },
   {
       "Score": "1*",
       "Land": "Oos",
-      "Dag": "",
+      "Dag": "Za",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Plato",
       "Artiest": "Bon Jour",
       "Korte beschrijving": "Frisse Indiepop"
   },
   {
       "Score": "2",
       "Land": "Fra",
-      "Dag": "",
+      "Dag": "Za",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Plato",
       "Artiest": "Bonnie Banane",
       "Korte beschrijving": "Alternative pop. Grappig"
   },
   {
       "Score": "2",
       "Land": "Eng",
-      "Dag": "",
+      "Dag": "Za",
       "Tijd": "",
       "Locatie": "",
       "Artiest": "Bradley Simpson",
@@ -254,9 +254,9 @@
   {
       "Score": "4",
       "Land": "Tsj",
-      "Dag": "",
+      "Dag": "Za",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Plato",
       "Artiest": "Brat\u0159i",
       "Korte beschrijving": "Dampende instrumentale electro met een beat"
   },
@@ -265,7 +265,7 @@
       "Land": "Eng",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Martinikerk",
       "Artiest": "Br\u00f2geal",
       "Korte beschrijving": "Fijne Indiefolk. Bij voorkeur in een pub"
   },
@@ -274,7 +274,7 @@
       "Land": "Ned",
       "Dag": "Za",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Martinikerk",
       "Artiest": "Bug",
       "Korte beschrijving": "Urban poppy hiphop"
   },
@@ -283,7 +283,7 @@
       "Land": "Fra",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Forum",
       "Artiest": "Canblaster",
       "Korte beschrijving": "Dreamy electronische soundscapes"
   },
@@ -292,7 +292,7 @@
       "Land": "Eng",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Forum",
       "Artiest": "Cara Rose",
       "Korte beschrijving": "Singer songwriter met goede stem en mooie ballads"
   },
@@ -301,7 +301,7 @@
       "Land": "Ier",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Forum",
       "Artiest": "Cardinals",
       "Korte beschrijving": "Prettige Ierse Indierock "
   },
@@ -310,7 +310,7 @@
       "Land": "Oek",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Forum",
       "Artiest": "Carpetman",
       "Korte beschrijving": "Gemaskerde zanger maakt ingetogen soulvolle pop"
   },
@@ -319,7 +319,7 @@
       "Land": "Ned",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Forum",
       "Artiest": "Cavolo Nero",
       "Korte beschrijving": "Groovy bband met latin invloeden"
   },
@@ -328,7 +328,7 @@
       "Land": "Bel",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Forum",
       "Artiest": "Cellini",
       "Korte beschrijving": "DJ Producer met dampende beats"
   },
@@ -337,7 +337,7 @@
       "Land": "Spa",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Forum",
       "Artiest": "Chicos y Mendez",
       "Korte beschrijving": "Spaanstalige folkpop"
   },
@@ -346,7 +346,7 @@
       "Land": "Eng",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Forum",
       "Artiest": "Chloe Qisha",
       "Korte beschrijving": "Pop met een Billie Eilish vibe. Niet verkeerd"
   },
@@ -355,7 +355,7 @@
       "Land": "Eng",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Forum",
       "Artiest": "Chloe Slater",
       "Korte beschrijving": "Alternative pop met een smoel"
   },
@@ -364,7 +364,7 @@
       "Land": "Ned",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Forum",
       "Artiest": "Ciao Lucifer",
       "Korte beschrijving": "Opgewekte indiepop"
   },
@@ -373,7 +373,7 @@
       "Land": "Ier",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Forum",
       "Artiest": "Cliffords",
       "Korte beschrijving": "Indiepop met een uitstekende zangeres"
   },
@@ -382,7 +382,7 @@
       "Land": "Dui",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Museum",
       "Artiest": "Cloudy June",
       "Korte beschrijving": "Aalgladde radiopop met een hoog Shakira gehalte"
   },
@@ -391,7 +391,7 @@
       "Land": "Zwe",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Museum",
       "Artiest": "Clutter",
       "Korte beschrijving": "Indierock met een Vera kelderbar gevoel"
   },
@@ -400,7 +400,7 @@
       "Land": "Ned",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Museum",
       "Artiest": "Cocobolo",
       "Korte beschrijving": "Instrumentale Funky nuummers met Noord Afrikaanse beats"
   },
@@ -409,16 +409,16 @@
       "Land": "Ned",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Museum",
       "Artiest": "COLLIGNON",
       "Korte beschrijving": "Instrumentale mellow soundscapes"
   },
   {
       "Score": "1*",
       "Land": "Bel",
-      "Dag": "",
+      "Dag": "Zat",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Museum",
       "Artiest": "Colt",
       "Korte beschrijving": "Franstalige electropop waarbij het moeilijk is om stil te zitten"
   },
@@ -427,7 +427,7 @@
       "Land": "Ita",
       "Dag": "",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Groninger Museum",
       "Artiest": "COMRAD",
       "Korte beschrijving": "Italiaanse bombastische hardrock"
   },
@@ -1613,7 +1613,7 @@
   {
       "Score": "2",
       "Land": "Bel",
-      "Dag": "",
+      "Dag": "Do",
       "Tijd": "",
       "Locatie": "",
       "Artiest": "Sylvie Kreusch",
@@ -1622,7 +1622,7 @@
   {
       "Score": "2",
       "Land": "Spa",
-      "Dag": "",
+      "Dag": "Do",
       "Tijd": "",
       "Locatie": "",
       "Artiest": "Teo Planell",
@@ -1631,7 +1631,7 @@
   {
       "Score": "2",
       "Land": "Hon",
-      "Dag": "",
+      "Dag": "Do",
       "Tijd": "",
       "Locatie": "",
       "Artiest": "The Anahit",
@@ -1640,7 +1640,7 @@
   {
       "Score": "1**",
       "Land": "Eng",
-      "Dag": "",
+      "Dag": "Do",
       "Tijd": "",
       "Locatie": "",
       "Artiest": "The Pill",
@@ -1658,7 +1658,7 @@
   {
       "Score": "2",
       "Land": "Est/Zwe",
-      "Dag": "",
+      "Dag": "Vrij",
       "Tijd": "",
       "Locatie": "",
       "Artiest": "Tuulikki Bartosik x Sander M\u00f6lder",
@@ -1667,16 +1667,16 @@
   {
       "Score": "2",
       "Land": "Oos",
-      "Dag": "",
+      "Dag": "Vrij",
       "Tijd": "",
-      "Locatie": "",
+      "Locatie": "Plato",
       "Artiest": "UCHE YARA",
       "Korte beschrijving": "Oorspronkelijk Nigeriaanse brengt pop met Afro invloeden"
   },
   {
       "Score": "1*",
       "Land": "Eng",
-      "Dag": "",
+      "Dag": "Vrij",
       "Tijd": "",
       "Locatie": "Oosterpoort",
       "Artiest": "Ugly",
@@ -1703,7 +1703,7 @@
   {
       "Score": "5",
       "Land": "Fra",
-      "Dag": "",
+      "Dag": "Vrij",
       "Tijd": "",
       "Locatie": "DOT",
       "Artiest": "VESTIGE",
