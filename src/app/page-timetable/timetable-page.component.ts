@@ -5,6 +5,7 @@ import { SnelgidsService } from '../snelgids.service';
 import { Gig } from '../gig.model';
 import { Location } from '../location.enum';
 import { FilterLocationsComponent } from "../filter-locations/filter-locations.component";
+import { Day } from '../day.enum';
 
 @Component({
   selector: 'app-timetable-page',
@@ -19,6 +20,6 @@ export class TimetablePageComponent {
 
   @Input() eventsList: Signal<Gig[]> = computed(() => this.snelgidsService.getEvents());
   @Input() selectedLocationsList: Signal<Location[]> = computed(() => this.snelgidsService.getSelectedLocations());
-
+  @Input() selectedDay: Signal<Day> = computed(() => this.snelgidsService.getSelectedDay());
 
 }

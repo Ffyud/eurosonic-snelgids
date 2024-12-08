@@ -4,7 +4,7 @@
             <h3><span>{{location}}</span></h3>
             <ul>
                 @for (event of eventList(); track event.artist) {
-                    @if(event.location === location) {
+                    @if(event.location === location && event.day === selectedDay()) {
                         <li>
                             <app-event-card [gig]="event"></app-event-card>
                         </li>
