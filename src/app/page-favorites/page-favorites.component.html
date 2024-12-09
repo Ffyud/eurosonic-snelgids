@@ -1,6 +1,6 @@
 <div class="wrapper-favorites">
     @if (favoriteEvents.length !== 0) {
-    <div class="header">Favorieten</div>
+    <div class="header">Favorieten ({{favoriteEvents.length}})</div>
     <app-event-list [eventList]="favoriteEvents" [selectedDay]="ALLEDAGEN" [selectedLocationsList]="favoriteEventsLocations"></app-event-list>
     } @else {
     <div class="no-results">
