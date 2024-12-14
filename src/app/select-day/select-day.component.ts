@@ -43,7 +43,7 @@ export class SelectDayComponent {
         return "Woensdag 15 januari"
       case Day.DO:
         return "Donderdag 16 januari"
-      case Day.VRIJ:
+      case Day.VR:
         return "Vrijdag 17 januari"
       case Day.ZA:
         return "Zaterdag 18 januari"

@@ -27,7 +27,7 @@ export class SnelgidsService {
 
   // TODO dag uit localstorage halen
   // TODO dag altijd default op juiste datum indien tijdens festival (na een tijdstip)
-  selectedDay: WritableSignal<Day> = signal(Day.VRIJ); 
+  selectedDay: WritableSignal<Day> = signal(Day.VR); 
 
   selectedLocations: WritableSignal<Location[]> = signal(this.getLocationsFromLocalStorage());
 
