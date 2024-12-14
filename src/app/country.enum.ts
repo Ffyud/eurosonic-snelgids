@@ -24,6 +24,8 @@ export enum Country {
     Tsjechië = "TSJ",
     Portugal = "POR",
     Luxemburg = "LUX",
-    Slowakije = "Slow",
+    Slowakije = "SLOW",
+    Oekraïne = "OEK",
+    Ijsland = "IJS",
     Onbekend = "ONBEKEND"
 }

@@ -54,6 +54,8 @@ export class EventCardComponent {
     [Country.Portugal]: "🇵🇹",
     [Country.Luxemburg]: "🇱🇺",
     [Country.Slowakije]: "🇸🇰",
+    [Country.Oekraïne]: "🇺🇦",
+    [Country.Ijsland]: "🇮🇸",
     [Country.Onbekend]: ""
 };
 
