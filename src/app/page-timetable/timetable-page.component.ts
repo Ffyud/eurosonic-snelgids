@@ -1,4 +1,4 @@
-import { Component, computed, inject, Input, Signal } from '@angular/core';
+import { Component, computed, inject, Signal } from '@angular/core';
 import { SelectDayComponent } from "../select-day/select-day.component";
 import { EventListComponent } from "../event-list/event-list.component";
 import { SnelgidsService } from '../snelgids.service';
@@ -17,9 +17,9 @@ import { Day } from '../day.enum';
 export class TimetablePageComponent {
 
   snelgidsService = inject(SnelgidsService);
-
-  @Input() eventsList: Signal<Gig[]> = computed(() => this.snelgidsService.getEvents());
-  @Input() selectedLocationsList: Signal<Location[]> = computed(() => this.snelgidsService.getSelectedLocations());
-  @Input() selectedDay: Signal<Day> = computed(() => this.snelgidsService.getSelectedDay());
+  
+  protected readonly eventsList: Signal<Gig[]> = computed(() => this.snelgidsService.getEvents());
+  protected readonly selectedLocationsList: Signal<Location[]> = computed(() => this.snelgidsService.getSelectedLocations());
+  protected readonly selectedDay: Signal<Day> = computed(() => this.snelgidsService.getSelectedDay());
 
 }
