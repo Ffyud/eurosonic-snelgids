@@ -19,5 +19,13 @@ export class EventListComponent {
   selectedLocationsList = input.required<Location[]>();
   selectedDay = input.required<Day>();
 
+  protected hasEventsForLocation(location: Location): boolean {
+    return this.eventList().some(
+      event =>
+        event.location === location &&
+        (this.selectedDay() === this.Day.ALLE || event.day === this.selectedDay())
+    );
+  }
+
   Day = Day;
 }

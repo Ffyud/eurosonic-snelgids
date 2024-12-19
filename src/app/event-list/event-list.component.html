@@ -1,16 +1,18 @@
 <div class="event-list-container">
     @for(location of selectedLocationsList(); track location) {
-        <div class="event-list">
-            <h3><span>{{location}}</span></h3>
-            <ul>
-                @for (event of eventList(); track event.artist) {
-                    @if(event.location === location && (selectedDay() === Day.ALLE || event.day === selectedDay())) {
-                        <li>
-                            <app-event-card [gig]="event"></app-event-card>
-                        </li>
+        @if(hasEventsForLocation(location)) {
+            <div class="event-list">
+                <h3><span>{{location}}</span></h3>
+                <ul>
+                    @for (event of eventList(); track event.artist) {
+                        @if(event.location === location && (selectedDay() === Day.ALLE || event.day === selectedDay())) {
+                            <li>
+                                <app-event-card [gig]="event"></app-event-card>
+                            </li>
+                        }
                     }
-                }
-            </ul>
-        </div>
+                </ul>
+            </div>
+        }
     }
 </div>
