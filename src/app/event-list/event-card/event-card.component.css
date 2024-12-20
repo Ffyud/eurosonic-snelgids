@@ -75,12 +75,22 @@ p.description::after {
 p.description {
     display: block;
     quotes: "„" "“" "‚" "‘";
-    font-size: .8em;
+    /* font-size: .9   em; */
     margin: 0;
-    margin-bottom: var(--spacing-m);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
     text-align: center;
     word-wrap: anywhere;
     text-wrap: balance;
+}
+
+.day {
+    text-align: center;
+    background: var(--background-color);
+    border-radius: var(--medium-radius);
+    padding: var(--spacing-m);
+    margin-top: var(--spacing-m);
+    font-weight: 600;
 }
 
 .country {
@@ -97,119 +107,111 @@ p.description {
     top: 0px;
     border-radius: var(--medium-radius);
     line-height: 30px;
+    text-shadow: none;
     text-align: center;
     font-size: 1.2em;
     font-weight: 700;
 }
 
+.rating:after {
+    display: block;
+    position: absolute;
+    text-shadow: none;
+    bottom: -10px;
+    font-size: 24px;
+    line-height: 24px;
+    height: 12px;
+    background: linear-gradient(45deg, #ffe562, #ffb300);
+    color: rgb(114, 53, 0);
+    border-radius: var(--minimal-radius);
+}
+
+.rating-1-ster:after {
+    content: "*";
+    box-shadow: 0px 0px 0px 1px #FFF;
+    width: 20px;
+    left: calc(50% - 10px);
+}
+
+.rating-1-ster-ster:after {
+    content: "**";
+    box-shadow: 0px 0px 0px 1px #FFF;
+    width: 100%;
+    left: 0;
+}
+
+.rating-1-ster-ster-ster:after {
+    content: "***";
+    box-shadow: inset 5px 0px 6px 0px #FFF, 0px 0px 0px 1px #FFF, 0px 0px 2px 1px orange;
+    left: calc(50% - 18px);
+    width: 36px;
+}
+
+.rating-1-ster-ster-ster-ster:after {
+    content: "****";
+    box-shadow: inset 16px 0px 10px 0px #FFF, 0px 0px 0px 1px #FFF, 0px 0px 3px 2px orange;
+    left: calc(50% - 25px);
+    width: 50px;
+}
+
+.rating-1-ster-ster-ster-ster-ster:after {
+    content: "*****";
+    box-shadow: 0px 0px 0px 1px #FFF, 0px 0px 10px 2px orange;
+    left: calc(50% - 25px);
+    width: 50px;
+}
+
 .rating-5 {
-    background-color: #2e6b2e;
+    font-weight: 300;
+    opacity: .7;
+    background-color: #3a8742;
 }
 
 .rating-4 {
+    font-weight: 300;
+    opacity: .8;
     background-color: #3a8742;
 }
 
 .rating-3 {
+    font-weight: 300;
+    opacity: .9;
     background-color: #4ba355;
 }
 
 .rating-2 {
-    background-color: #5dbf68;
+    background-color: #a98e3d;
 }
 
 .rating-1 {
     color: rgb(114, 53, 0);
     background-color: #ffbb00;
-    text-shadow: 0px 0px 1px #FFF;
 }
 
 .rating-1-ster {
     color: rgb(114, 53, 0);
     background-color: #ffbb00;
-    text-shadow: 0px 0px 1px #FFF;
-}
-
-.rating-1-ster:after {
-    content: "*";
-    position: absolute;
-    bottom: -10px;
-    background: linear-gradient(45deg, #ffe562, #ffb300);
-    border-radius: var(--minimal-radius);
-    font-size: 1.4em;
-    line-height: 1;
-    display: block;
-    width: 20px;
-    left: calc(50% - 10px);
-    height: 15px;
-    color: rgb(114, 53, 0);
-    text-shadow: none;
 }
 
 .rating-1-ster-ster {
     background-color: #ffbb00;
     color: rgb(114, 53, 0);
-    text-shadow: 0px 0px 1px #FFF;
-}
-
-.rating-1-ster-ster:after {
-    content: "**";
-    position: absolute;
-    bottom: -10px;
-    background: linear-gradient(45deg, #ffe562, #ffb300);
-    border-radius: var(--minimal-radius);
-    font-size: 1.4em;
-    line-height: 1;
-    display: block;
-    width: 100%;
-    left: 0;
-    height: 17px;
-    color: rgb(114, 53, 0);
-    text-shadow: none;
 }
 
 .rating-1-ster-ster-ster {
     background-color: #ffbb00;
     color: rgb(114, 53, 0);
-    text-shadow: 0px 0px 1px #FFF;
-}
-
-.rating-1-ster-ster-ster:after {
-    display: block;
-    content: "***";
-    position: absolute;
-    background: linear-gradient( 45deg, #ffe562, #ffb300);
-    color: rgb(114, 53, 0);
-    text-shadow: none;
-    border-radius: var(--minimal-radius);
-    font-size: 24px;
-    line-height: 24px;
-    bottom: -10px;
-    left: calc(50% - 18px);
-    width: 36px;
-    height: 12px;
 }
 
 .rating-1-ster-ster-ster-ster {
     background-color: #ffbb00;
     color: rgb(114, 53, 0);
-    text-shadow: 0px 0px 1px #FFF;
 }
 
-.rating-1-ster-ster-ster-ster:after {
-    display: block;
-    content: "****";
-    position: absolute;
-    background: linear-gradient( 45deg, #ffe562, #ffb300);
+.rating-1-ster-ster-ster-ster-ster {
+    background-color: #ffbb00;
     color: rgb(114, 53, 0);
-    text-shadow: none;
-    border-radius: var(--minimal-radius);
-    font-size: 24px;
-    line-height: 24px;
-    bottom: -10px;
-    left: calc(50% - 25px);
-    width: 50px;
-    height: 12px;
+    box-shadow: inset 0px 0px 20px 3px #FFF, 0px 0px 15px 2px orange;
 }
 
 .rating span {

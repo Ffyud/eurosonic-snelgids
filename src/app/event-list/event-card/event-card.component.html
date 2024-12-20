@@ -39,6 +39,9 @@
             @case (rating.EEN_STER_STER_STER_STER) {
             <div class="rating rating-1-ster-ster-ster-ster rating-fire"><span>1</span></div>
             }
+            @case (rating.EEN_STER_STER_STER_STER_STER) {
+               <div class="rating rating-1-ster-ster-ster-ster-ster rating-fire"><span>1</span></div>
+            }
             }
          </div>
          <div class="info-time"><span>21:30</span>
@@ -49,5 +52,10 @@
          </div>
       </div>
    </span>
+   @if (selectedDay() === day.ALLE) {
+      <span class="day">
+         {{ getFullDay(gig().day) }}
+      </span>
+   }
 
 </div>

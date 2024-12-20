@@ -8,5 +8,6 @@ export enum Rating {
     EEN_STER_STER = "1**",
     EEN_STER_STER_STER = "1***",
     EEN_STER_STER_STER_STER = "1****",
+    EEN_STER_STER_STER_STER_STER = "1*****",
     ONBEKEND = "onbekend"
  }

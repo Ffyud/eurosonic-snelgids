@@ -4,6 +4,7 @@ import { Rating } from '../../rating.enum';
 import { Country } from "../../country.enum";
 import { SnelgidsService } from '../../snelgids.service';
 import { NgClass } from '@angular/common';
+import { Day } from '../../day.enum';
 
 @Component({
   selector: 'app-event-card',
@@ -17,15 +18,28 @@ export class EventCardComponent {
   protected snelgidsService = inject(SnelgidsService);
 
   gig: InputSignal<Gig> = input.required<Gig>();
+  selectedDay: InputSignal<Day | undefined> = input<Day | undefined>();
 
   setAsFavorite(gig: Gig): void {
     this.snelgidsService.setFavoriteEvents(gig);
   }
 
+  getFullDay(day: Day): string {
+    return this.dayMap[day] || "";
+  }
 
   getFlag(country: Country): string {
     return this.countryFlagMap[country] || "";
   }
+
+  dayMap: { [key in Day]: string } = {
+    [Day.WO]: "woensdag",
+    [Day.DO]: "donderdag",
+    [Day.VR]: "vrijdag",
+    [Day.ZA]: "zaterdag",
+    [Day.ALLE]: "",
+    [Day.ONBEKEND]: "",
+  };
 
   countryFlagMap: { [key in Country]: string } = {
     [Country.Spanje]: "🇪🇸",
@@ -62,5 +76,7 @@ export class EventCardComponent {
   rating = Rating;
 
   country = Country;
+
+  day = Day;
 
 }
