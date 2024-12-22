@@ -40,11 +40,16 @@
             <div class="rating rating-1-ster-ster-ster-ster rating-fire"><span>1</span></div>
             }
             @case (rating.EEN_STER_STER_STER_STER_STER) {
-               <div class="rating rating-1-ster-ster-ster-ster-ster rating-fire"><span>1</span></div>
+            <div class="rating rating-1-ster-ster-ster-ster-ster rating-fire"><span>1</span></div>
             }
             }
          </div>
-         <div class="info-time"><span>21:30</span>
+         <div class="info-time">
+            @if (gig().timeEnd !== '') {
+            <span>{{gig().time}} - {{gig().timeEnd}}</span>
+            } @else if(gig().time !== '') {
+            <span>{{gig().time}}</span>
+            }
          </div>
          <div class="info-fav">
             <button [ngClass]="gig().favorite ? 'is-favorite' : ''" (click)="setAsFavorite(gig())" class="fav"
@@ -53,9 +58,9 @@
       </div>
    </span>
    @if (selectedDay() === day.ALLE) {
-      <span class="day">
-         {{ getFullDay(gig().day) }}
-      </span>
+   <span class="day">
+      {{ getFullDay(gig().day) }}
+   </span>
    }
 
 </div>

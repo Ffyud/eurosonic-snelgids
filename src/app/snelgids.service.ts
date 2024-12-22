@@ -20,7 +20,8 @@ export class SnelgidsService {
       country: this.getValidCountry(event['Land']),
       location: this.getValidLocation(event['Locatie']),
       day: this.getValidDay(event['Dag']),
-      time: event['Tijd'],
+      time: this.getValidTime(event['Tijd']),
+      timeEnd: this.getValidEndTime(event['Tijd']),
       rating: this.getValidRating(event['Score'])
     }));
   }
@@ -51,24 +52,42 @@ export class SnelgidsService {
     localStorage.setItem('favoriteEvents', JSON.stringify(favorites));
   }
 
-  // Method to validate location
   private getValidLocation(location: string): Location {
     return Object.values(Location).includes(location as Location) ? location as Location : Location.ONBEKEND;
   }
 
-  // Method to validate rating
   private getValidRating(rating: string): Rating {
     return Object.values(Rating).includes(rating as Rating) ? rating as Rating : Rating.ONBEKEND;
   }
 
-  // Method to validate day
   private getValidDay(day: string): Day {
     return Object.values(Day).includes(day as Day) ? day as Day : Day.ONBEKEND;
   }
 
-  // Method to validate day
   private getValidCountry(country: string): Country {
     return Object.values(Country).includes(country.toUpperCase() as Country) ? country.toUpperCase() as Country : Country.Onbekend;
+  }
+
+  private getValidTime(time: string): string {
+    const timePattern = /^(\d{2}.\d{2})-(\d{2}.\d{2})$/; //  "HH.mm-HH.mm"
+    const match: string[] | null = timePattern.exec(time);
+    console.log(time, match)
+    if(match) {
+      return match[1].replace('.', ':');
+    } else {
+      return "";
+    }
+  }
+
+  private getValidEndTime(time: string): string {
+    const timePattern = /^(\d{2}.\d{2})-(\d{2}.\d{2})$/; //  "HH.mm-HH.mm"
+    const match: string[] | null = timePattern.exec(time);
+    console.log(time, match)
+    if(match) {
+      return match[2].replace('.', ':');
+    } else {
+      return "";
+    }
   }
 
   // Get all events
