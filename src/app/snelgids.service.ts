@@ -98,10 +98,28 @@ export class SnelgidsService {
       (!days || days.includes(event.day))
     );
 
-    const gigWithFavorites = gigs.map((gig: Gig) => ({
+    // Sorteer chronologisch, inclusief avond en nacht
+    const gigsSorted: Gig[] = gigs.sort((a, b) => {
+      const hourA: number = Number(a.time.split(":")[0]);
+      const hourB: number = Number(b.time.split(":")[0]);
+
+      const isPastMidnight = (hour: number) => hour >= 0 && hour < 4;
+
+      if (isPastMidnight(hourA) && !isPastMidnight(hourB)) {
+        return 1;
+      }
+      if (!isPastMidnight(hourA) && isPastMidnight(hourB)) {
+        return -1;
+      }
+      return a.time.localeCompare(b.time);
+    });
+
+    // Verrijk lijst met gekozen favorieten (true/false) van gebruiker
+    const gigWithFavorites = gigsSorted.map((gig: Gig) => ({
       ...gig,
       favorite: this.favoriteEvents().some((favoriteGig) => favoriteGig.artist === gig.artist)
     }));
+
     return gigWithFavorites;
   }
 
