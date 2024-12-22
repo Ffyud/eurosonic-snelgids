@@ -6,9 +6,6 @@ sheet_url = "https://docs.google.com/spreadsheets/d/1IpreXQt8gMkvbMWSK2IdzopMWqf
 df = pd.read_csv(sheet_url)
 df = df.fillna("")  # Replace NaN with 0
 
-# df["Dag"] = "Zat"  # Set "Dag" as "Zat" for all rows
-
-# Convert the DataFrame to JSON
 json_data = df.to_dict(orient="records")
 
 # Print the JSON data
