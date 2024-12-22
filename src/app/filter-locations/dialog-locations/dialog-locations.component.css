@@ -32,7 +32,7 @@ button.close-dialog {
     margin: 0px auto;
     position: fixed;
     width: 100%;
-    bottom: calc(var(--spacing-xl) + var(--spacing-xl));
+    bottom: 0px;
     border-radius: var(--medium-radius);
     text-align: center;
     animation: var(--dialog-animation);
@@ -52,8 +52,10 @@ ul {
     margin: 0px auto;
     padding: var(--spacing-xl);
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: calc(var(--spacing-xl) + var(--spacing-xl));
     max-width: 650px;
+    max-height: 60vh;
+    overflow-y: scroll;
 
 }
 

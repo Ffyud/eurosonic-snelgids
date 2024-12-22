@@ -53,6 +53,6 @@ button {
     }
 
     100% {
-        bottom: calc(var(--spacing-xl) + var(--spacing-xl));
+        bottom: 0px;
     }
 }
