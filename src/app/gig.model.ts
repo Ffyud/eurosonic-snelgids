@@ -8,8 +8,8 @@ export interface Gig {
     country: Country,
     location: Location,
     day: Day,
-    time?: string,
-    timeEnd?: string,
+    time: string,
+    timeEnd: string,
     rating: string,
     favorite?: boolean
 

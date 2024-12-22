@@ -46,9 +46,15 @@
          </div>
          <div class="info-time">
             @if (gig().timeEnd !== '') {
-            <span>{{gig().time}} - {{gig().timeEnd}}</span>
+            <span class="time">
+               <span class="start-time">{{gig().time}}</span>
+               <span class="divider">-</span>
+               <span class="end-time">{{gig().timeEnd}}</span>
+            </span>
             } @else if(gig().time !== '') {
-            <span>{{gig().time}}</span>
+            <span class="time">
+               <span class="start-time">{{gig().time}}</span>
+            </span>
             }
          </div>
          <div class="info-fav">
