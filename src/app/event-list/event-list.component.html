@@ -2,7 +2,7 @@
     @for(location of selectedLocationsList(); track location) {
         @if(hasEventsForLocation(location)) {
             <div class="event-list">
-                <h3><span>{{location}}</span></h3>
+                <h3><span>{{fullLocationTitle(location)}}</span></h3>
                 <ul>
                     @for (event of eventList(); track event.artist) {
                         @if(event.location === location && (selectedDay() === Day.ALLE || event.day === selectedDay())) {

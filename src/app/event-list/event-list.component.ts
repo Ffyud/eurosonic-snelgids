@@ -13,7 +13,7 @@ import { Day } from '../day.enum';
 })
 
 export class EventListComponent {
-  
+
   eventList = input.required<Gig[]>();
 
   selectedLocationsList = input.required<Location[]>();
@@ -25,6 +25,25 @@ export class EventListComponent {
         event.location === location &&
         (this.selectedDay() === this.Day.ALLE || event.day === this.selectedDay())
     );
+  }
+
+  protected fullLocationTitle(location: string): string {
+    switch (location as Location) {
+      case Location.BINNENZAAL:
+      case Location.BOVENZAAL:
+      case Location.GROTE_ZAAL:
+      case Location.KLEINE_ZAAL:
+      case Location.KELDER:
+      case Location.KUNSTPUNT:
+      case Location.MARATHONZAAL:
+      case Location.FOYER_GROTE_ZAAL:
+      case Location.ENTREEHAL:
+        return "Oosterpoort " + location;
+      case Location.FORUM_RABO:
+        return "Forum Rabostudio";  
+      default:
+        return location;
+    }
   }
 
   Day = Day;
