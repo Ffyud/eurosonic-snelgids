@@ -31,7 +31,7 @@
         "Land": "Bel",
         "Dag": "Vr",
         "Tijd": "21.30-22.10",
-        "Locatie": "Simpoln Main",
+        "Locatie": "Simplon Main",
         "Artiest": "Aili",
         "Korte beschrijving": "Electropop die ook uit Japan zou kunnen komen"
     },
@@ -67,7 +67,7 @@
         "Land": "Noo",
         "Dag": "Do",
         "Tijd": "23.40-00.20",
-        "Locatie": "Lutherse kerk",
+        "Locatie": "Lutherse Kerk",
         "Artiest": "Amilost",
         "Korte beschrijving": "Noors-Schots duo maakt dromerige licht bombastische popsongs"
     },
@@ -193,7 +193,7 @@
         "Land": "Slow",
         "Dag": "Do",
         "Tijd": "23.50-00.30",
-        "Locatie": "All Round Poolcentre",
+        "Locatie": "All Round",
         "Artiest": "Berlin Manson",
         "Korte beschrijving": "Rappende beats met een forse taalbarriere"
     },
@@ -445,7 +445,7 @@
         "Land": "Ita",
         "Dag": "Do",
         "Tijd": "22.30-23.10",
-        "Locatie": "All Round Poolcentre",
+        "Locatie": "All Round",
         "Artiest": "COMRAD",
         "Korte beschrijving": "Italiaanse bombastische hardrock"
     },
@@ -688,7 +688,7 @@
         "Land": "Spa",
         "Dag": "Vr",
         "Tijd": "19.50-20.30",
-        "Locatie": "All Round Pool Centre",
+        "Locatie": "All Round",
         "Artiest": "EZEZEZ",
         "Korte beschrijving": "Baskische postpunk grunge. Best grappig"
     },
@@ -796,7 +796,7 @@
         "Land": "Oos",
         "Dag": "Vr",
         "Tijd": "21.10-21.50",
-        "Locatie": "All Round Pool Centre",
+        "Locatie": "All Round",
         "Artiest": "Gardens",
         "Korte beschrijving": "Kabbelende Indiepop. Niet heel onderscheidend"
     },
@@ -1129,7 +1129,7 @@
         "Land": "Spa",
         "Dag": "Vr",
         "Tijd": "23.30-00.10",
-        "Locatie": "Forum Rabo ",
+        "Locatie": "Forum Rabo",
         "Artiest": "Julieta",
         "Korte beschrijving": "\u00c8lectropop met een beat die ook op het songfestival weinig voor elkaar zou krijgen"
     },
@@ -1192,7 +1192,7 @@
         "Land": "Ned",
         "Dag": "Za",
         "Tijd": "17.45-18.30",
-        "Locatie": "Foyer Grote Zaaal",
+        "Locatie": "Foyer Grote Zaal",
         "Artiest": "Kaya Imani",
         "Korte beschrijving": "Nederlandstalige RnB.Tekstueeel niet heel erg sterk"
     },
@@ -1344,7 +1344,7 @@
         "Score": "1***",
         "Land": "Bel",
         "Dag": "Do",
-        "Tijd": "22,10-22,50",
+        "Tijd": "22.10-22,50",
         "Locatie": "Nieuwe Kerk",
         "Artiest": "Loverman",
         "Korte beschrijving": "Muzikale expressieve duizendpoot met hobbelpaard. Love it or leave it."
@@ -1471,7 +1471,7 @@
         "Land": "Bel",
         "Dag": "Vr",
         "Tijd": "22.30-23.10",
-        "Locatie": "All Round Pool Centre",
+        "Locatie": "All Round",
         "Artiest": "Marcel",
         "Korte beschrijving": "Rammelende post-punk garagerock. Aardig maar niet heel spannend."
     },
@@ -1498,7 +1498,7 @@
         "Land": "Spa",
         "Dag": "Vr",
         "Tijd": "19.30-20.10",
-        "Locatie": "`Grand Theatre",
+        "Locatie": "Grand Theatre",
         "Artiest": "Mar\u00eda Jos\u00e9 Llergo",
         "Korte beschrijving": "Spaanstalige pop met traditionele invloeden"
     },
@@ -1651,7 +1651,7 @@
         "Land": "Roe",
         "Dag": "Do",
         "Tijd": "21.10-21.50",
-        "Locatie": "All Round Pool Centre",
+        "Locatie": "All Round",
         "Artiest": "Musspell",
         "Korte beschrijving": "Damesduo maakt dromerige meerstemmige pop"
     },
@@ -1696,7 +1696,7 @@
         "Land": "Kro",
         "Dag": "Do",
         "Tijd": "19.50-20.30",
-        "Locatie": "All Round Pool Centre",
+        "Locatie": "All Round",
         "Artiest": "Neme\u010dek",
         "Korte beschrijving": "Rock met traditonele Balkanmuziek invloeden"
     },
@@ -1741,7 +1741,7 @@
         "Land": "Noo",
         "Dag": "Vr",
         "Tijd": "01.10-01.50",
-        "Locatie": "All Round Pool Centre",
+        "Locatie": "All Round",
         "Artiest": "nonne",
         "Korte beschrijving": "Beetje zweverige krautrock "
     },
@@ -1867,7 +1867,7 @@
         "Land": "Ita",
         "Dag": "Wo",
         "Tijd": "00.00-00.40",
-        "Locatie": "Bovnzaal",
+        "Locatie": "Bovenzaal",
         "Artiest": "Post Nebbia",
         "Korte beschrijving": "De wat betere Italopop"
     },
@@ -1894,7 +1894,7 @@
         "Land": "Ita",
         "Dag": "Vr",
         "Tijd": "23.50-00.30",
-        "Locatie": "All Round Pool Centre",
+        "Locatie": "All Round",
         "Artiest": "R.Y.F.",
         "Korte beschrijving": "Alternative pop met een beat en een 80's gevoel. Best lekker"
     },
@@ -1903,7 +1903,7 @@
         "Land": "WitR",
         "Dag": "Do",
         "Tijd": "23.40-00.20",
-        "Locatie": "Minerv Praediniussingel",
+        "Locatie": "Minerva Praediniussingel",
         "Artiest": "Rap & Vogue",
         "Korte beschrijving": "Franstalige electropop uit Wit Rusland?"
     },
@@ -1986,7 +1986,7 @@
         "Tijd": "21.30-22.15",
         "Locatie": "Grote Zaal",
         "Artiest": "S10",
-        "Korte beschrijving": "Als je die nou nog niet kent....."
+        "Korte beschrijving": "Als je die nou nog niet kent..."
     },
     {
         "Score": "4",
@@ -2056,7 +2056,7 @@
         "Land": "Ier",
         "Dag": "Vr",
         "Tijd": "20.10-20.50",
-        "Locatie": "Huze Maas main",
+        "Locatie": "Huize Maas Main",
         "Artiest": "Soft Launch",
         "Korte beschrijving": "Prettige Indiepop. Zomers gevoel en soms wat funky."
     },
@@ -2173,7 +2173,7 @@
         "Land": "Ned",
         "Dag": "Za",
         "Tijd": "23.15-00.15",
-        "Locatie": "Binnenzaal ",
+        "Locatie": "Binnenzaal",
         "Artiest": "SUPERSTRINGS",
         "Korte beschrijving": "Boem Boem Boem Pieeeeeuw Pieeeeeuw"
     },
@@ -2192,7 +2192,7 @@
         "Dag": "Vr",
         "Tijd": "22.10-22.50",
         "Locatie": "DOT",
-        "Artiest": "Tarta Relena ",
+        "Artiest": "Tarta Relena",
         "Korte beschrijving": "Moderne meerstemmige flamenco"
     },
     {
@@ -2227,7 +2227,7 @@
         "Land": "Eng",
         "Dag": "Vr",
         "Tijd": "19.40-20.20",
-        "Locatie": "WeNUtButter",
+        "Locatie": "WeNutButter",
         "Artiest": "The Family Battenberg",
         "Korte beschrijving": "Rock met een zeventies gevoel"
     },
@@ -2245,7 +2245,7 @@
         "Land": "Ned",
         "Dag": "Za",
         "Tijd": "20.15-21.00",
-        "Locatie": "Kleine Zaal ",
+        "Locatie": "Kleine Zaal",
         "Artiest": "The Vices",
         "Korte beschrijving": "Ik zie ze zo nog spelen in de kelder van Vrijdag"
     },
@@ -2253,8 +2253,8 @@
         "Score": "4",
         "Land": "Por",
         "Dag": "Do",
-        "Tijd": "01.00-01.%0",
-        "Locatie": "All Round Pool Centre",
+        "Tijd": "01.00-01.00",
+        "Locatie": "All Round",
         "Artiest": "Travo",
         "Korte beschrijving": "Psychedelische rock. Koos Koets leeft."
     },
@@ -2407,7 +2407,7 @@
         "Land": "Ned",
         "Dag": "Za",
         "Tijd": "18.30-19.15",
-        "Locatie": "marathonzaal",
+        "Locatie": "Marathonzaal",
         "Artiest": "Yan L\u00e2le",
         "Korte beschrijving": "Indiepop met Oosterse invloeden. The Indien meets Altin G\u00fcn"
     },
