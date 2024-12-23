@@ -69,25 +69,12 @@ export class SnelgidsService {
   }
 
   private getValidTime(time: string): string {
-    const timePattern = /^(\d{2}.\d{2})-(\d{2}.\d{2})$/; //  "HH.mm-HH.mm"
-    const match: string[] | null = timePattern.exec(time);
-    console.log(time, match)
-    if(match) {
-      return match[1].replace('.', ':');
-    } else {
-      return "";
-    }
+    return time.trim().split('-')[0]?.replace('.', ":");
   }
 
   private getValidEndTime(time: string): string {
-    const timePattern = /^(\d{2}.\d{2})-(\d{2}.\d{2})$/; //  "HH.mm-HH.mm"
-    const match: string[] | null = timePattern.exec(time);
-    console.log(time, match)
-    if(match) {
-      return match[2].replace('.', ':');
-    } else {
-      return "";
-    }
+    return time.trim().split('-')[1]?.replace('.', ":");
+
   }
 
   // Get all events
