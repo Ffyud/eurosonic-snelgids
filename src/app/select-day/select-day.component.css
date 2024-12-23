@@ -1,9 +1,27 @@
 .wrapper {
+    position: fixed;
+    width: 100%;
     box-shadow: inset 0px -1px 0px 0px var(--light-dark-color);
+    z-index: 200;
+    background: var(--background-color);
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto 200px auto;
-    line-height: 38px;
+    line-height: 40px;
+    top: 75px;
+    left: 0;
+}
+
+@media (orientation:landscape) and (max-width: 844px) {
+    .wrapper {
+        top: 0;
+    }
+}
+
+@media (orientation: portrait) {
+    .wrapper {
+        top: 75px;
+    }
 }
 
 i { font-size: 30px;}

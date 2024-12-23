@@ -4,13 +4,30 @@ div.wrapper-favorites {
 }
 
 div.wrapper-favorites .header {
-    line-height: 38px;
+    z-index: 200;
+    background: var(--background-color);
+    position: fixed;
+    top: 75px;
+    width: 100%;
+    line-height: 40px;
     font-size: 1.2em;
     font-weight: 400;
     text-align: center;
     box-shadow: inset 0px -1px 0px 0px var(--light-dark-color);
-
 }
+
+@media (orientation:landscape) and (max-width: 844px) {
+    div.wrapper-favorites .header {
+        top: 0px;
+    }
+}
+
+@media (orientation: portrait) {
+    div.wrapper-favorites .header {
+        top: 75px;
+    }
+}
+
 .no-results {
     align-self: center;
 }

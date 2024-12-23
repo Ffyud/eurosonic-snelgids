@@ -1,4 +1,6 @@
 div.wrapper-info {
+    position: relative;
+    top: 75px;
     max-width: 450px;
     margin: 0px auto;
 }
@@ -39,4 +41,12 @@ ul.links li i {
     display: block;
     font-size: 35px;
     margin-bottom: var(--spacing-xl);
+}
+
+span.made-by {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: -25vh;
+    padding-bottom: 25vh;
 }

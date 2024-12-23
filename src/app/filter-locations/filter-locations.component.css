@@ -4,7 +4,7 @@ div.wrapper {
 
 button.filter {
     z-index: 200;
-    position: absolute;
+    position: fixed;
     bottom: calc(60px + var(--spacing-xl) + env(safe-area-inset-bottom, 0px));
     right: var(--spacing-xl);
     outline: none;

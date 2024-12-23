@@ -1,13 +1,25 @@
 .event-list-container {
-    overflow: scroll;
+    position: relative;
+    top: calc(75px + 40px);
     display: grid;
     grid-auto-flow: column;
     width: 100vw;
     max-width: fit-content;
     margin: 0px auto;
     padding-top: var(--spacing-xl);
-    height: calc(100vh + 1px);
-    /* anders geen sticky headers */
+    padding-bottom: 25vh;
+}
+
+@media (orientation:landscape) and (max-width: 844px) {
+    .event-list-container {
+        top: 40px;
+    }
+}
+
+@media (orientation: portrait) {
+    .event-list-container {
+        top: calc(75px + 40px);
+    }
 }
 
 .event-list-container .event-list:first-child {
@@ -33,12 +45,15 @@
 }
 
 .event-list h3 {
-    top: 0px;
+    min-height: 40px;
+    align-content: center;
+    top: calc(75px + 40px);
     left: 0px;
     position: sticky;
     z-index: 100;
     align-self: start;
     font-size: 1em;
+    text-wrap: balance;
     text-align: center;
     text-shadow: none;
     padding: var(--spacing-m);
@@ -50,6 +65,19 @@
     color: var(--background-color);
     border-radius: var(--medium-radius);
 }
+
+@media (orientation:landscape) and (max-width: 844px) {
+    .event-list h3 {
+        top: 40px;
+    }
+}
+
+@media (orientation: portrait) {
+    .event-list h3 {
+        top: calc(75px + 40px);
+    }
+}
+
 
 ul {
     list-style-type: none;

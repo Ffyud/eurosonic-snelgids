@@ -4,6 +4,7 @@
 
 main {
     height: 100%;
+    overflow: scroll;
 }
 
 button {
@@ -16,8 +17,12 @@ button {
 }
 
 header.header {
-    position: relative;
+    position: fixed;
+    height: 75px;
+    width: 100%;
     top: 0;
+    z-index: 200;
+    background: var(--background-color);
     box-shadow: inset 0px -1px 0px 0px var(--light-dark-color);
     display: grid;
     grid-auto-flow: column;
@@ -94,16 +99,14 @@ span.snelgids span {
     bottom: 0px;
 }
 
-/* FIXME add max width */
-
 @media (orientation:landscape) and (max-width: 844px) {
-    .header {
+    header.header {
         display: none !important;
     }
 }
 
 @media (orientation: portrait) {
-    .header {
+    header.header {
         display: grid;
     }
 }
