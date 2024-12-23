@@ -51,7 +51,7 @@ h4 {
     text-align: center;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
     .info-grid .info-fav {
         text-align: right;
     }
@@ -105,7 +105,7 @@ p.description {
     padding-right: var(--spacing-m);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
     .time {
         line-height: initial;
     }
@@ -120,11 +120,15 @@ p.description {
 }
 
 .day {
+    margin: 0px auto;
+    width: fit-content;
     text-align: center;
     background: var(--background-color);
     border-radius: var(--medium-radius);
-    padding: var(--spacing-m);
     margin-top: var(--spacing-m);
+    padding: var(--spacing-m);
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
     font-weight: 600;
 }
 
