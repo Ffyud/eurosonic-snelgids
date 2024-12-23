@@ -11,8 +11,7 @@ import { Day } from '../day.enum';
   selector: 'app-timetable-page',
   standalone: true,
   imports: [SelectDayComponent, EventListComponent, FilterLocationsComponent],
-  templateUrl: './timetable-page.component.html',
-  styleUrl: './timetable-page.component.css'
+  templateUrl: './timetable-page.component.html'
 })
 export class TimetablePageComponent {
 
