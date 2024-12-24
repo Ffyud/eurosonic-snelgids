@@ -12,6 +12,16 @@ import { DialogLocationsComponent } from "./dialog-locations/dialog-locations.co
 })
 export class FilterLocationsComponent {
 
+  snelgidsService = inject(SnelgidsService);
+
+  protected locations: Location[] = this.snelgidsService.getLocations();
+  protected selectedLocations = signal<Location[]>(this.snelgidsService.getSelectedLocations());
+
+  protected amountDeselectedLocations(): number {
+    console.log(this.selectedLocations());
+    return this.locations.length - this.selectedLocations().length;
+  }
+
   dialogLocationsIsOpen = signal<boolean>(false);
 
   openDialogLocations() {
@@ -23,6 +33,7 @@ export class FilterLocationsComponent {
   }
 
   protected closeDialogLocations() {
+    this.selectedLocations.set(this.snelgidsService.getSelectedLocations());  // Anders geen update op amountDeselectedLocations
     this.dialogLocationsIsOpen.set(false);
   }
 
