@@ -26,12 +26,20 @@ export class SnelgidsService {
     }));
   }
 
-  // TODO dag uit localstorage halen
+  selectedDay: WritableSignal<Day> = signal(this.getSelectedDayFromLocalStorage()); 
+
   // TODO dag altijd default op juiste datum indien tijdens festival (na een tijdstip)
-  selectedDay: WritableSignal<Day> = signal(Day.VR); 
+  private getSelectedDayFromLocalStorage(): Day {
+    const storedSelectedDay = localStorage.getItem('selectedDay');
+    return storedSelectedDay ? JSON.parse(storedSelectedDay) : Day.WO;
+  }
+
+  private saveSelectedDayToLocalStorage(day: Day): void {
+    localStorage.setItem('selectedDay', JSON.stringify(day));
+  }
 
   selectedLocations: WritableSignal<Location[]> = signal(this.getLocationsFromLocalStorage());
-
+  
   private getLocationsFromLocalStorage(): Location[] {
     const storedLocations = localStorage.getItem('locations');
     return storedLocations ? JSON.parse(storedLocations) : this.getLocations();
@@ -79,6 +87,7 @@ export class SnelgidsService {
 
   // Get all events
   getEvents(locations?: Location[], days?: Day[]): Gig[] {
+    console.log('👋🧑‍💻 https://github.com/Ffyud/eurosonic-snelgids')
 
     const gigs: Gig[] = this.gigs.filter(event =>
       (!locations || locations.includes(event.location)) &&
@@ -188,6 +197,7 @@ export class SnelgidsService {
 
   setSelectedDay(day: Day): void {
     this.selectedDay.update(() => { return day});
+    this.saveSelectedDayToLocalStorage(day);
     console.log('Geselecteerde dag geüpdate', this.selectedDay());
 
   }
