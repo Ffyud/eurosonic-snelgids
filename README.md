@@ -1,5 +1,12 @@
-# De Eurosonic snelgids van De Lijstjesman
+# eurosonic-snelgids
 
-De Lijstjesman stelt elk jaar een prettig overzicht samen van het Eurosonic festival in onze stad. In een oogopslag de informatie die je wil - een score en een korte beschrijving - uit de hand van de Lijstjesman. Om dit in een handig leesbaar formaat te gieten is deze webapp gemaakt.
+[De Lijstjesman](https://x.com/Naituutstad) heeft de optredens op Eurosonic 2025 gerecenseerd en een cijfer gegeven. 
 
-- De bron: [Eurosonic 2025 snelgids.ods][Eurosonic 2025 snelgids.ods - Google Spreadsheets](https://docs.google.com/spreadsheets/d/1IpreXQt8gMkvbMWSK2IdzopMWqfGQDwEtRr4EY5Qoi8/edit?usp=sharing)
+Deze webapp toont in een overzicht alle recensies en cijfers die de Lijstjeman heeft opgeschreven in zijn snelgids spreadsheet. 
+
+- De beschrijving en het cijfer zijn afkomstig van de Lijstjesman.
+- Toont het festival per dag met de locaties waar op die dag optredens zijn.
+- Markeer optredens als favoriet. Deze verschijnen op de favorietenpagina.
+- Deel de QR-code met mensen om je heen die baat hebben bij de snelgids.
+
+De spreadsheet van de Lijstjeman: [Eurosonic 2025 snelgids.ods - Google Spreadsheets](https://docs.google.com/spreadsheets/d/1IpreXQt8gMkvbMWSK2IdzopMWqfGQDwEtRr4EY5Qoi8/edit?usp=sharing)
