@@ -50,11 +50,17 @@ ul.links li a span {
 }
 
 div.made-by {
-    width: 100%;
+    width: 150px;
     text-align: center;
     position: absolute;
-    bottom: -100vh;
-    padding-bottom: 25vh;
+    left: calc(50% - 75px);
+    bottom: -75vh;
+    padding-bottom: calc(60px + var(--spacing-xl) + var(--spacing-xl));
+}
+
+div.made-by a {
+    text-decoration: none;
+    color: inherit;
 }
 
 div.made-by span {
