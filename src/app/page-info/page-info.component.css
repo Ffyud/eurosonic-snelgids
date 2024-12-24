@@ -32,14 +32,21 @@ ul.links li {
     border-radius: var(--medium-radius);
 }
 ul.links li a { 
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    align-items: center;
     text-decoration: none;
     color: inherit;
 }
 
-ul.links li i {
+ul.links li a i {
     display: block;
     font-size: 35px;
-    margin-bottom: var(--spacing-xl);
+}
+
+ul.links li a span {
+    text-wrap: balance;
 }
 
 div.made-by {
