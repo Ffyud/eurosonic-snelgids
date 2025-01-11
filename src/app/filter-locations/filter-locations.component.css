@@ -1,6 +1,3 @@
-div.wrapper {
-
-}
 
 button.filter {
     z-index: 200;
@@ -14,7 +11,7 @@ button.filter {
     padding-left: var(--spacing-xl);
     padding-right: var(--spacing-xl);
     line-height: calc(24px + 15px);
-    box-shadow: inset 0px 0px 0px 1px var(--light-dark-color);
+    box-shadow: inset 0px 0px 0px 1px var(--bright-color);
     background: var(--background-color);
     color: var(--bright-color);
     text-shadow: none;
