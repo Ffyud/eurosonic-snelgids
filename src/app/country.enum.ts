@@ -27,5 +27,7 @@ export enum Country {
     Slowakije = "SLOW",
     Oekraïne = "OEK",
     Ijsland = "IJS",
+    Wit_Rusland = "WITR",
+    Romenië = "ROE",
     Onbekend = "ONBEKEND"
 }
