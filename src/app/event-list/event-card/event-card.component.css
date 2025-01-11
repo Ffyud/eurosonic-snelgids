@@ -134,9 +134,9 @@ p.description {
 
 .country {
     position: absolute;
-    top: -15px;
+    top: -5px;
     right: -5px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .rating {

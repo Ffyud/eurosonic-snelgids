@@ -1,6 +1,6 @@
 <div [ngClass]="gig().favorite ? 'is-favorite' : ''" class="event-card">
    <span class="country">
-      {{ getFlag(gig().country)}}
+      <span [class]="'fi fi-' + getFlag(gig().country)" fis></span>
    </span>
    <span>
       <h4>{{ gig().artist }}</h4>
