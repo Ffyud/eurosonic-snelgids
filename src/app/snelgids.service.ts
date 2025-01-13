@@ -157,7 +157,7 @@ export class SnelgidsService {
 
   // Get all locations
   getLocations(): Location[] {
-    return Object.values(Location).sort((a: Location, b: Location) => (a as string).localeCompare(b as string));
+    return Object.values(Location).sort((a: Location, b: Location) => (a as string).localeCompare(b as string)).filter(location => location !== Location.ONBEKEND);
   }
 
   // Get all countries
