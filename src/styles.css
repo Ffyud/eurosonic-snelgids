@@ -22,20 +22,11 @@ html {
     --wrapper-background: #000000db;
     --dialog-animation: slideIn 300ms;
 
-    --main-color: #07b34c;
-    --main-dark-color: #0575e6;
-
     --red-color: #ffa8a8;
     --dark-red-color: #514343;
 
-    --backdrop-blur: blur(15px);
-
     --minimal-radius: 3px;
     --medium-radius: 15px;
-    --heavy-radius: 30px;
-
-    --skewed-radius: 48% 12%;
-    --skewed-radius-reverse: 12% 48%;
 
     --box-shadow-button: inset 0px -2px 0px 2px #000;
 }
