@@ -26,7 +26,7 @@ export class SnelgidsService {
     }));
   }
 
-  selectedDay: WritableSignal<Day> = signal(this.getSelectedDayFromLocalStorage()); 
+  selectedDay: WritableSignal<Day> = signal(this.getSelectedDayFromLocalStorage());
 
   // TODO dag altijd default op juiste datum indien tijdens festival (na een tijdstip)
   private getSelectedDayFromLocalStorage(): Day {
@@ -39,7 +39,7 @@ export class SnelgidsService {
   }
 
   selectedLocations: WritableSignal<Location[]> = signal(this.getLocationsFromLocalStorage());
-  
+
   private getLocationsFromLocalStorage(): Location[] {
     const storedLocations = localStorage.getItem('locations');
     return storedLocations ? JSON.parse(storedLocations) : this.getLocations();
@@ -82,8 +82,16 @@ export class SnelgidsService {
 
   private getValidEndTime(time: string): string {
     return time.trim().split('-')[1]?.replace('.', ":");
-
   }
+
+  private dayOrder = {
+    [Day.WO]: 1,
+    [Day.DO]: 2,
+    [Day.VR]: 3,
+    [Day.ZA]: 4,
+    [Day.ALLE]: 5,
+    [Day.ONBEKEND]: 6,
+  };
 
   // Get all events
   getEvents(locations?: Location[], days?: Day[]): Gig[] {
@@ -126,7 +134,7 @@ export class SnelgidsService {
 
   // Get all favorite events
   getFavoriteEvents(): Gig[] {
-    return this.favoriteEvents();
+    return this.favoriteEvents().sort((a: Gig, b: Gig) => this.dayOrder[a.day] - this.dayOrder[b.day]);
   }
 
   isFavoriteEvent(gig: Gig): boolean {
@@ -196,7 +204,7 @@ export class SnelgidsService {
   }
 
   setSelectedDay(day: Day): void {
-    this.selectedDay.update(() => { return day});
+    this.selectedDay.update(() => { return day });
     this.saveSelectedDayToLocalStorage(day);
     console.log('Geselecteerde dag geüpdate', this.selectedDay());
 
