@@ -1,7 +1,7 @@
 {
   "name": "Eurosonic Snelgids",
   "short_name": "Snelgids",
-  "description": "Een handige app voor de Eurosonic Snelgids van de Lijstjesman.",
+  "description": "Toont in een overzicht alle recensies en cijfers die de Lijstjeman heeft opgeschreven in zijn snelgids sheet.",
   "theme_color": "rgb(23, 31, 40)",
   "background_color": "rgb(23, 31, 40)",
   "display": "standalone",
