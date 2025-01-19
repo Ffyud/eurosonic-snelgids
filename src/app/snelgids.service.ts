@@ -1,5 +1,5 @@
 import { Injectable, signal, WritableSignal } from '@angular/core';
-import data from '../../sheet_data.json';
+import data from '../../sheet_data_2025.json';
 import { Gig } from './gig.model';
 import { Day } from './day.enum';
 import { Location } from './location.enum';
@@ -104,8 +104,8 @@ export class SnelgidsService {
 
     // Sorteer chronologisch, inclusief avond en nacht
     const gigsSorted: Gig[] = gigs.sort((a, b) => {
-      const hourA: number = Number(a.time.split(":")[0]);
-      const hourB: number = Number(b.time.split(":")[0]);
+      const hourA = Number(a.time.split(":")[0]);
+      const hourB = Number(b.time.split(":")[0]);
 
       const isPastMidnight = (hour: number) => hour >= 0 && hour < 4;
 
