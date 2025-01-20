@@ -1,3 +1,9 @@
 TODO.md
 node_modules
 .angular
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
