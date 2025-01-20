@@ -1,5 +1,7 @@
 # eurosonic-snelgids
 
+test3
+
 [De Lijstjesman](https://x.com/Naituutstad) heeft de optredens op Eurosonic 2025 gerecenseerd en een cijfer gegeven. 
 
 Deze webapp toont in een overzicht alle recensies en cijfers die de Lijstjeman heeft opgeschreven in zijn snelgids spreadsheet. 
