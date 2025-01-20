@@ -4,11 +4,10 @@ import { Location } from '../location.enum';
 import { RouterLink,RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-tap-bar-nav',
-  standalone: true,
-  imports: [RouterLink,RouterLinkActive],
-  templateUrl: './tap-bar-nav.component.html',
-  styleUrl: './tap-bar-nav.component.css'
+    selector: 'app-tap-bar-nav',
+    imports: [RouterLink, RouterLinkActive],
+    templateUrl: './tap-bar-nav.component.html',
+    styleUrl: './tap-bar-nav.component.css'
 })
 export class TapBarNavComponent {
   snelgidsService = inject(SnelgidsService);

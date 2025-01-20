@@ -4,11 +4,10 @@ import { SnelgidsService } from '../snelgids.service';
 import { DialogLocationsComponent } from "./dialog-locations/dialog-locations.component";
 
 @Component({
-  selector: 'app-filter-locations',
-  standalone: true,
-  imports: [DialogLocationsComponent],
-  templateUrl: './filter-locations.component.html',
-  styleUrl: './filter-locations.component.css'
+    selector: 'app-filter-locations',
+    imports: [DialogLocationsComponent],
+    templateUrl: './filter-locations.component.html',
+    styleUrl: './filter-locations.component.css'
 })
 export class FilterLocationsComponent {
 

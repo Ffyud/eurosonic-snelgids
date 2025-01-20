@@ -3,11 +3,10 @@ import { SnelgidsService } from '../snelgids.service';
 import { Day } from '../day.enum';
 
 @Component({
-  selector: 'app-select-day',
-  standalone: true,
-  imports: [],
-  templateUrl: './select-day.component.html',
-  styleUrl: './select-day.component.css'
+    selector: 'app-select-day',
+    imports: [],
+    templateUrl: './select-day.component.html',
+    styleUrl: './select-day.component.css'
 })
 export class SelectDayComponent {
 

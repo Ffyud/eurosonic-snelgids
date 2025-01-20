@@ -5,11 +5,10 @@ import { EventListComponent } from '../event-list/event-list.component';
 import { Day } from '../day.enum';
 
 @Component({
-  selector: 'app-page-favorites',
-  standalone: true,
-  imports: [EventListComponent],
-  templateUrl: './page-favorites.component.html',
-  styleUrl: './page-favorites.component.css'
+    selector: 'app-page-favorites',
+    imports: [EventListComponent],
+    templateUrl: './page-favorites.component.html',
+    styleUrl: './page-favorites.component.css'
 })
 export class PageFavoritesComponent {
 

@@ -4,11 +4,10 @@ import { Location } from '../../location.enum';
 import { NgClass } from '@angular/common';
 
 @Component({
-  selector: 'app-dialog-locations',
-  standalone: true,
-  imports: [NgClass],
-  templateUrl: './dialog-locations.component.html',
-  styleUrl: './dialog-locations.component.css'
+    selector: 'app-dialog-locations',
+    imports: [NgClass],
+    templateUrl: './dialog-locations.component.html',
+    styleUrl: './dialog-locations.component.css'
 })
 export class DialogLocationsComponent {
   snelgidsService = inject(SnelgidsService);

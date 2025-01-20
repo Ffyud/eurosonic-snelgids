@@ -4,11 +4,10 @@ import { TapBarNavComponent } from "./tap-bar-nav/tap-bar-nav.component";
 import { DialogQrCodeComponent } from "./dialog-qr-code/dialog-qr-code.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, TapBarNavComponent, DialogQrCodeComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    imports: [RouterOutlet, TapBarNavComponent, DialogQrCodeComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'eurosonic-snelgids';

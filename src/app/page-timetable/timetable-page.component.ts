@@ -8,10 +8,9 @@ import { FilterLocationsComponent } from "../filter-locations/filter-locations.c
 import { Day } from '../day.enum';
 
 @Component({
-  selector: 'app-timetable-page',
-  standalone: true,
-  imports: [SelectDayComponent, EventListComponent, FilterLocationsComponent],
-  templateUrl: './timetable-page.component.html'
+    selector: 'app-timetable-page',
+    imports: [SelectDayComponent, EventListComponent, FilterLocationsComponent],
+    templateUrl: './timetable-page.component.html'
 })
 export class TimetablePageComponent {
 

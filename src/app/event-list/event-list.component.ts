@@ -5,11 +5,10 @@ import { Location } from '../location.enum';
 import { Day } from '../day.enum';
 
 @Component({
-  selector: 'app-event-list',
-  standalone: true,
-  imports: [EventCardComponent],
-  templateUrl: './event-list.component.html',
-  styleUrl: './event-list.component.css'
+    selector: 'app-event-list',
+    imports: [EventCardComponent],
+    templateUrl: './event-list.component.html',
+    styleUrl: './event-list.component.css'
 })
 
 export class EventListComponent {

@@ -7,11 +7,10 @@ import { NgClass } from '@angular/common';
 import { Day } from '../../day.enum';
 
 @Component({
-  selector: 'app-event-card',
-  standalone: true,
-  imports: [NgClass],
-  templateUrl: './event-card.component.html',
-  styleUrl: './event-card.component.css'
+    selector: 'app-event-card',
+    imports: [NgClass],
+    templateUrl: './event-card.component.html',
+    styleUrl: './event-card.component.css'
 })
 export class EventCardComponent {
 
