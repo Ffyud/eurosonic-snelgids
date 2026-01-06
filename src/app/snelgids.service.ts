@@ -163,9 +163,11 @@ export class SnelgidsService {
     console.log('Favoriete optredens geüpdate', this.favoriteEvents());
   }
 
-  // Get all locations
-  getLocations(): Location[] {
-    return Object.values(Location).sort((a: Location, b: Location) => (a as string).localeCompare(b as string)).filter(location => location !== Location.ONBEKEND);
+  public getLocations(): Location[] {
+    return Object.values(Location)
+      .sort((a: Location, b: Location) => (a as string).localeCompare(b as string))
+      .filter(location => this.getEvents().some(event => event.location === location))
+    // .filter(location => location !== Location.ONBEKEND);
   }
 
   // Get all countries
