@@ -26,9 +26,11 @@ export class SnelgidsService {
     }));
   }
 
-  selectedDay: WritableSignal<Day> = signal(this.getSelectedDayFromLocalStorage());
+  private readonly selectedDay: WritableSignal<Day> = signal(this.getSelectedDayFromLocalStorage());
+  private readonly selectedLocations: WritableSignal<Location[]> = signal(this.getLocationsFromLocalStorage());
+  private readonly favoriteEvents: WritableSignal<Gig[]> = signal(this.getFavoritesFromLocalStorage());
 
-  // TODO dag altijd default op juiste datum indien tijdens festival (na een tijdstip)
+  // FIXME dag altijd default op juiste datum indien tijdens festival (na een tijdstip)
   private getSelectedDayFromLocalStorage(): Day {
     const storedSelectedDay = localStorage.getItem('selectedDay');
     return storedSelectedDay ? JSON.parse(storedSelectedDay) : Day.WO;
@@ -38,8 +40,6 @@ export class SnelgidsService {
     localStorage.setItem('selectedDay', JSON.stringify(day));
   }
 
-  selectedLocations: WritableSignal<Location[]> = signal(this.getLocationsFromLocalStorage());
-
   private getLocationsFromLocalStorage(): Location[] {
     const storedLocations = localStorage.getItem('locations');
     return storedLocations ? JSON.parse(storedLocations) : this.getLocations();
@@ -48,8 +48,6 @@ export class SnelgidsService {
   private saveLocationsToLocalStorage(locations: Location[]): void {
     localStorage.setItem('locations', JSON.stringify(locations));
   }
-
-  favoriteEvents: WritableSignal<Gig[]> = signal(this.getFavoritesFromLocalStorage());
 
   private getFavoritesFromLocalStorage(): Gig[] {
     const storedFavorites = localStorage.getItem('favoriteEvents');
@@ -84,7 +82,7 @@ export class SnelgidsService {
     return time.trim().split('-')[1]?.replace('.', ":");
   }
 
-  private dayOrder = {
+  private readonly dayOrder = {
     [Day.WO]: 1,
     [Day.DO]: 2,
     [Day.VR]: 3,
@@ -93,8 +91,7 @@ export class SnelgidsService {
     [Day.ONBEKEND]: 6,
   };
 
-  // Get all events
-  getEvents(locations?: Location[], days?: Day[]): Gig[] {
+  public getEvents(locations?: Location[], days?: Day[]): Gig[] {
     console.log('👋🧑‍💻 https://github.com/Ffyud/eurosonic-snelgids')
 
     const gigs: Gig[] = this.gigs.filter(event =>
@@ -127,27 +124,17 @@ export class SnelgidsService {
     return gigWithFavorites;
   }
 
-  // Get a single event by artist name
-  getEvent(artist: string): Gig | undefined {
-    return this.gigs.find(event => event.artist === artist);
-  }
-
-  // Get all favorite events
-  getFavoriteEvents(): Gig[] {
+  public getFavoriteEvents(): Gig[] {
     return this.favoriteEvents().sort((a: Gig, b: Gig) => this.dayOrder[a.day] - this.dayOrder[b.day]);
   }
 
-  isFavoriteEvent(gig: Gig): boolean {
-    return this.favoriteEvents().includes(gig);
-  }
-
-  getFavoriteEventsLocations(): Location[] {
+  public getFavoriteEventsLocations(): Location[] {
     const locations: Location[] = this.favoriteEvents().map((gig: Gig) => { return gig.location });
     const uniqueLocations: Location[] = locations.filter((value, index, array) => array.indexOf(value) === index);
     return uniqueLocations;
   }
 
-  setFavoriteEvents(gig: Gig): void {
+  public setFavoriteEvents(gig: Gig): void {
     const isInFavoriteEvents: boolean = this.favoriteEvents().some((value: Gig) => value.artist === gig.artist);
     if (isInFavoriteEvents) {
       gig.favorite = false;
@@ -160,7 +147,6 @@ export class SnelgidsService {
       this.favoriteEvents.update(() => { return updatedList });
       this.saveFavoritesToLocalStorage(updatedList);
     }
-    console.log('Favoriete optredens geüpdate', this.favoriteEvents());
   }
 
   public getLocations(): Location[] {
@@ -170,27 +156,23 @@ export class SnelgidsService {
     // .filter(location => location !== Location.ONBEKEND);
   }
 
-  // Get all countries
-  getCountries(): Country[] {
+  public getCountries(): Country[] {
     return Object.values(Country);
   }
 
-  // Get all days
-  getDays(): Day[] {
+  public getDays(): Day[] {
     return Object.values(Day).filter(day => day !== Day.ONBEKEND);
   }
 
-  getSelectedDay(): Day {
+  public getSelectedDay(): Day {
     return this.selectedDay();
   }
 
-  // Get user selected locations
-  getSelectedLocations(): Location[] {
+  public getSelectedLocations(): Location[] {
     return this.selectedLocations();
   }
 
-  // Set or unset a user selected location
-  setSelectedLocations(location: Location): void {
+  public setSelectedLocations(location: Location): void {
     const locationExists: boolean = this.selectedLocations().includes(location);
     if (locationExists) {
       const updatedList: Location[] = this.selectedLocations().filter((value: Location) => value !== location);
@@ -202,14 +184,11 @@ export class SnelgidsService {
       this.selectedLocations.update(() => { return updatedList });
       this.saveLocationsToLocalStorage(updatedList);
     }
-    console.log('Geselecteerde locaties geüpdate', this.selectedLocations());
   }
 
-  setSelectedDay(day: Day): void {
+  public setSelectedDay(day: Day): void {
     this.selectedDay.update(() => { return day });
     this.saveSelectedDayToLocalStorage(day);
-    console.log('Geselecteerde dag geüpdate', this.selectedDay());
-
   }
 
 }
