@@ -34,7 +34,7 @@ export class AppComponent {
   }
 
   protected openDialogQrCode() {
-    this.dialogQrCodeIsOpen() ? this.dialogQrCodeIsOpen.set(false) : this.dialogQrCodeIsOpen.set(true);
+    this.dialogQrCodeIsOpen.set(!this.dialogQrCodeIsOpen());
   }
 
   protected closeDialogQrCode() {
