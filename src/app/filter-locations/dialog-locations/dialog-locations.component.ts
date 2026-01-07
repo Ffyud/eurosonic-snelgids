@@ -13,7 +13,7 @@ export class DialogLocationsComponent {
   snelgidsService = inject(SnelgidsService);
 
   isOpen = input.required<boolean>();
-  close = output<boolean>();
+  isClosed = output<boolean>();
 
   protected locations: Location[] = this.snelgidsService.getLocations();
   protected selectedLocations = signal<Location[]>(this.snelgidsService.selectedLocations());
@@ -30,6 +30,6 @@ export class DialogLocationsComponent {
 
 
   clickClose() {
-    this.close.emit(true);
+    this.isClosed.emit(true);
   }
 }
