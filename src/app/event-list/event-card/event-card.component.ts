@@ -1,4 +1,4 @@
-import { Component, Signal, Input, inject, signal, input, InputSignal, computed } from '@angular/core';
+import { Component, inject, input, InputSignal } from '@angular/core';
 import { Gig } from '../../gig.model';
 import { Rating } from '../../rating.enum';
 import { Country } from "../../country.enum";
@@ -7,14 +7,14 @@ import { NgClass } from '@angular/common';
 import { Day } from '../../day.enum';
 
 @Component({
-    selector: 'app-event-card',
-    imports: [NgClass],
-    templateUrl: './event-card.component.html',
-    styleUrl: './event-card.component.css'
+  selector: 'app-event-card',
+  imports: [NgClass],
+  templateUrl: './event-card.component.html',
+  styleUrl: './event-card.component.css'
 })
 export class EventCardComponent {
 
-  protected snelgidsService = inject(SnelgidsService);
+  private readonly snelgidsService = inject(SnelgidsService);
 
   gig: InputSignal<Gig> = input.required<Gig>();
   selectedDay: InputSignal<Day | undefined> = input<Day | undefined>();
@@ -72,7 +72,7 @@ export class EventCardComponent {
     [Country.Ijsland]: "is",
     [Country.Wit_Rusland]: "by",
     [Country.Onbekend]: ""
-};
+  };
 
   rating = Rating;
 
