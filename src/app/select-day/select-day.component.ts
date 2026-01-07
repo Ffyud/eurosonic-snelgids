@@ -10,7 +10,7 @@ import { Day } from '../day.enum';
 })
 export class SelectDayComponent {
 
-  protected snelgidsService = inject(SnelgidsService);
+  private readonly snelgidsService = inject(SnelgidsService);
 
   selectedDay: Day = this.snelgidsService.selectedDay();
   // FIXME dag mag niet "ALLE" zijn hier want selectie gaat mis

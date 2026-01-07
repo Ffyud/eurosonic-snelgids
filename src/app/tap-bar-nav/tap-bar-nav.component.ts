@@ -10,7 +10,7 @@ import { RouterLink,RouterLinkActive } from '@angular/router';
     styleUrl: './tap-bar-nav.component.css'
 })
 export class TapBarNavComponent {
-  snelgidsService = inject(SnelgidsService);
+  private readonly snelgidsService = inject(SnelgidsService);
   
   protected locations: Location[] = this.snelgidsService.getLocations();
   protected selectedLocations = signal<Location[]>(this.snelgidsService.selectedLocations());
