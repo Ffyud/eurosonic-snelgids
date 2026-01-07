@@ -1,8 +1,8 @@
 <div class="wrapper">
     <button (click)="openDialogLocations()" class="filter">
         <i class="ri-equalizer-2-line"></i> Filter locaties
-        @if (amountDeselectedLocations() !== 0) {
-            ({{amountDeselectedLocations()}} verborgen)
+        @if (amountLocationsNotSelected() !== 0) {
+            ({{amountLocationsNotSelected()}} verborgen)
         }
     </button>
     <app-dialog-locations [isOpen]="dialogLocationsIsOpen()" (isClosed)="closeDialogLocations()"></app-dialog-locations>
