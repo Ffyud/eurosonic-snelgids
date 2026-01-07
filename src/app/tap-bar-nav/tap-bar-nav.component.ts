@@ -16,10 +16,9 @@ export class TapBarNavComponent {
   protected selectedLocations = signal<Location[]>(this.snelgidsService.selectedLocations());
 
   showMenu = signal<boolean>(false);
+  
   onClick(location: Location): void {
     this.snelgidsService.setSelectedLocations(location);
-    // Update signal zodat locationIsSelected het opmerkt
-    this.selectedLocations.set(this.snelgidsService.selectedLocations()); 
   }
 
   locationIsSelected(location: Location): boolean {
