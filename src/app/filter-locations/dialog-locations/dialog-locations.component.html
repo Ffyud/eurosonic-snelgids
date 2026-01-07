@@ -1,14 +1,17 @@
-<div [ngClass]="isOpen() ? 'visible' : ''" class="wrapper">
+<div [class.visible]="isOpen()" class="wrapper">
     <div class="dialog">
-        <button class="close-dialog" (click)="clickClose()" title="Sluiten"><i class="ri-close-circle-line"></i></button>
+        <button class="close-dialog" (click)="clickClose()" title="Sluiten"><i
+                class="ri-close-circle-line"></i></button>
         <p>Kies welke locaties in het mogen schema staan.</p>
         <ul>
             @for (location of locations; track location) {
             <li>
                 @if(locationIsSelected(location)) {
-                <button class="active" (click)="onClick(location)"><i class="ri-checkbox-blank-circle-fill"></i> {{ location }}</button>
+                <button class="active" (click)="onClick(location)"><i class="ri-checkbox-blank-circle-fill"></i> {{
+                    location }}</button>
                 } @else {
-                <button class="inactive" (click)="onClick(location)"><i class="ri-checkbox-blank-circle-line"></i> {{ location }}</button>
+                <button class="inactive" (click)="onClick(location)"><i class="ri-checkbox-blank-circle-line"></i> {{
+                    location }}</button>
                 }
             </li>
             }

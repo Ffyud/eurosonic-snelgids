@@ -3,10 +3,10 @@ import { SnelgidsService } from '../../snelgids.service';
 import { Location } from '../../location.enum';
 
 @Component({
-    selector: 'app-dialog-locations',
-    imports: [NgClass],
-    templateUrl: './dialog-locations.component.html',
-    styleUrl: './dialog-locations.component.css'
+  selector: 'app-dialog-locations',
+  imports: [],
+  templateUrl: './dialog-locations.component.html',
+  styleUrl: './dialog-locations.component.css'
 })
 export class DialogLocationsComponent {
   private readonly snelgidsService = inject(SnelgidsService);
