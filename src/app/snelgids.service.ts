@@ -11,10 +11,7 @@ import { Country } from './country.enum';
 })
 export class SnelgidsService {
 
-  private readonly gigs: Gig[] = [];
-
-  constructor() {
-    this.gigs = data.map(event => ({
+  private readonly gigs = signal(data.map(event => ({
       artist: event['Artiest'],
       description: event['Korte beschrijving'],
       country: this.getValidCountry(event['Land']),
@@ -23,14 +20,13 @@ export class SnelgidsService {
       time: this.getValidTime(event['Tijd']),
       timeEnd: this.getValidEndTime(event['Tijd']),
       rating: this.getValidRating(event['Score'])
-    }));
-  }
+    })));
 
   public readonly selectedDay: WritableSignal<Day> = signal(this.getSelectedDayFromLocalStorage());
   public readonly selectedLocations: WritableSignal<Location[]> = signal(this.getLocationsFromLocalStorage());
   public readonly favoriteEvents: WritableSignal<Gig[]> = signal(this.getFavoritesFromLocalStorage());
 
-  // FIXME dag altijd default op juiste datum indien tijdens festival (na een tijdstip)
+  // TODO dag altijd default op juiste datum indien tijdens festival (na een tijdstip)
   private getSelectedDayFromLocalStorage(): Day {
     const storedSelectedDay = localStorage.getItem('selectedDay');
     return storedSelectedDay ? JSON.parse(storedSelectedDay) : Day.WO;
@@ -40,9 +36,16 @@ export class SnelgidsService {
     localStorage.setItem('selectedDay', JSON.stringify(day));
   }
 
+  public getLocations(): Location[] {
+    return Object.values(Location)
+      .sort((a: Location, b: Location) => (a as string).localeCompare(b as string))
+      .filter(location => this.gigs().some(event => event.location === location))
+      .filter(location => location !== Location.ONBEKEND);
+  };
+
   private getLocationsFromLocalStorage(): Location[] {
     const storedLocations = localStorage.getItem('locations');
-    return storedLocations ? JSON.parse(storedLocations) : this.getLocations();
+    return storedLocations ? JSON.parse(storedLocations) as Location[] : this.getLocations();
   }
 
   private saveLocationsToLocalStorage(locations: Location[]): void {
@@ -94,7 +97,7 @@ export class SnelgidsService {
   public getEvents(locations?: Location[], days?: Day[]): Gig[] {
     console.log('👋🧑‍💻 https://github.com/Ffyud/eurosonic-snelgids')
 
-    const gigs: Gig[] = this.gigs.filter(event =>
+    const gigs: Gig[] = this.gigs().filter(event =>
       (!locations || locations.includes(event.location)) &&
       (!days || days.includes(event.day))
     );
@@ -143,13 +146,6 @@ export class SnelgidsService {
       this.favoriteEvents.update(() => { return updatedList });
       this.saveFavoritesToLocalStorage(updatedList);
     }
-  }
-
-  public getLocations(): Location[] {
-    return Object.values(Location)
-      .sort((a: Location, b: Location) => (a as string).localeCompare(b as string))
-      .filter(location => this.getEvents().some(event => event.location === location))
-    // .filter(location => location !== Location.ONBEKEND);
   }
 
   public getCountries(): Country[] {
