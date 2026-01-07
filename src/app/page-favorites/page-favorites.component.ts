@@ -14,11 +14,11 @@ export class PageFavoritesComponent {
 
   snelgidsService = inject(SnelgidsService);
 
-  protected readonly favoriteEvents = this.snelgidsService.getFavoriteEvents();
+  protected readonly favoriteEvents = this.snelgidsService.favoriteEvents();
   protected readonly favoriteEventsLocations = this.snelgidsService.getFavoriteEventsLocations();
 
   protected readonly ALLEDAGEN = Day.ALLE;
   
-  @Input() selectedLocationsList: Signal<Location[]> = computed(() => this.snelgidsService.getSelectedLocations());
+  @Input() selectedLocationsList: Signal<Location[]> = computed(() => this.snelgidsService.selectedLocations());
 
 }

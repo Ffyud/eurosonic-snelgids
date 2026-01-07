@@ -13,13 +13,13 @@ export class TapBarNavComponent {
   snelgidsService = inject(SnelgidsService);
   
   protected locations: Location[] = this.snelgidsService.getLocations();
-  protected selectedLocations = signal<Location[]>(this.snelgidsService.getSelectedLocations());
+  protected selectedLocations = signal<Location[]>(this.snelgidsService.selectedLocations());
 
   showMenu = signal<boolean>(false);
   onClick(location: Location): void {
     this.snelgidsService.setSelectedLocations(location);
     // Update signal zodat locationIsSelected het opmerkt
-    this.selectedLocations.set(this.snelgidsService.getSelectedLocations()); 
+    this.selectedLocations.set(this.snelgidsService.selectedLocations()); 
   }
 
   locationIsSelected(location: Location): boolean {

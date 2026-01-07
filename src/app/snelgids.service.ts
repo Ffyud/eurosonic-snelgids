@@ -26,9 +26,9 @@ export class SnelgidsService {
     }));
   }
 
-  private readonly selectedDay: WritableSignal<Day> = signal(this.getSelectedDayFromLocalStorage());
-  private readonly selectedLocations: WritableSignal<Location[]> = signal(this.getLocationsFromLocalStorage());
-  private readonly favoriteEvents: WritableSignal<Gig[]> = signal(this.getFavoritesFromLocalStorage());
+  public readonly selectedDay: WritableSignal<Day> = signal(this.getSelectedDayFromLocalStorage());
+  public readonly selectedLocations: WritableSignal<Location[]> = signal(this.getLocationsFromLocalStorage());
+  public readonly favoriteEvents: WritableSignal<Gig[]> = signal(this.getFavoritesFromLocalStorage());
 
   // FIXME dag altijd default op juiste datum indien tijdens festival (na een tijdstip)
   private getSelectedDayFromLocalStorage(): Day {
@@ -124,10 +124,6 @@ export class SnelgidsService {
     return gigWithFavorites;
   }
 
-  public getFavoriteEvents(): Gig[] {
-    return this.favoriteEvents().sort((a: Gig, b: Gig) => this.dayOrder[a.day] - this.dayOrder[b.day]);
-  }
-
   public getFavoriteEventsLocations(): Location[] {
     const locations: Location[] = this.favoriteEvents().map((gig: Gig) => { return gig.location });
     const uniqueLocations: Location[] = locations.filter((value, index, array) => array.indexOf(value) === index);
@@ -138,12 +134,12 @@ export class SnelgidsService {
     const isInFavoriteEvents: boolean = this.favoriteEvents().some((value: Gig) => value.artist === gig.artist);
     if (isInFavoriteEvents) {
       gig.favorite = false;
-      const updatedList: Gig[] = this.favoriteEvents().filter((value: Gig) => value.artist !== gig.artist);
+      const updatedList: Gig[] = this.favoriteEvents().filter((value: Gig) => value.artist !== gig.artist).sort((a: Gig, b: Gig) => this.dayOrder[a.day] - this.dayOrder[b.day]);
       this.favoriteEvents.update(() => { return updatedList });
       this.saveFavoritesToLocalStorage(updatedList);
     } else {
       gig.favorite = true;
-      const updatedList: Gig[] = [gig, ...this.favoriteEvents()];
+      const updatedList: Gig[] = [gig, ...this.favoriteEvents()].sort((a: Gig, b: Gig) => this.dayOrder[a.day] - this.dayOrder[b.day]);
       this.favoriteEvents.update(() => { return updatedList });
       this.saveFavoritesToLocalStorage(updatedList);
     }
@@ -162,14 +158,6 @@ export class SnelgidsService {
 
   public getDays(): Day[] {
     return Object.values(Day).filter(day => day !== Day.ONBEKEND);
-  }
-
-  public getSelectedDay(): Day {
-    return this.selectedDay();
-  }
-
-  public getSelectedLocations(): Location[] {
-    return this.selectedLocations();
   }
 
   public setSelectedLocations(location: Location): void {

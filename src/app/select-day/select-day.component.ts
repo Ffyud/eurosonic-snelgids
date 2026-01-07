@@ -12,7 +12,7 @@ export class SelectDayComponent {
 
   protected snelgidsService = inject(SnelgidsService);
 
-  selectedDay: Day = this.snelgidsService.getSelectedDay();
+  selectedDay: Day = this.snelgidsService.selectedDay();
   // FIXME dag mag niet "ALLE" zijn hier want selectie gaat mis
   days: Day[] = this.snelgidsService.getDays().filter((day: Day) => day !== Day.ALLE);
 
@@ -33,7 +33,7 @@ export class SelectDayComponent {
   }
 
   updateSelectedDay(): void {
-    this.selectedDay = this.snelgidsService.getSelectedDay();
+    this.selectedDay = this.snelgidsService.selectedDay();
   }
 
   getSelectedDateString(day: Day): string {

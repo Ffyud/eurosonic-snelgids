@@ -17,7 +17,7 @@ export class TimetablePageComponent {
   snelgidsService = inject(SnelgidsService);
   
   protected readonly eventsList: Signal<Gig[]> = computed(() => this.snelgidsService.getEvents());
-  protected readonly selectedLocationsList: Signal<Location[]> = computed(() => this.snelgidsService.getSelectedLocations());
-  protected readonly selectedDay: Signal<Day> = computed(() => this.snelgidsService.getSelectedDay());
+  protected readonly selectedLocationsList: Signal<Location[]> = computed(() => this.snelgidsService.selectedLocations());
+  protected readonly selectedDay: Signal<Day> = computed(() => this.snelgidsService.selectedDay());
 
 }
