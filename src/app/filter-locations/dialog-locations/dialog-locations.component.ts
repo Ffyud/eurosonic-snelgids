@@ -28,7 +28,6 @@ export class DialogLocationsComponent {
     return this.selectedLocations().includes(location)
   }
 
-
   clickClose() {
     this.isClosed.emit(true);
   }

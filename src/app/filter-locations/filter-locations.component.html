@@ -5,5 +5,5 @@
             ({{amountDeselectedLocations()}} verborgen)
         }
     </button>
-    <app-dialog-locations [isOpen]="dialogLocationsIsOpen()" (close)="closeDialogLocations()"></app-dialog-locations>
+    <app-dialog-locations [isOpen]="dialogLocationsIsOpen()" (isClosed)="closeDialogLocations()"></app-dialog-locations>
 </div>
