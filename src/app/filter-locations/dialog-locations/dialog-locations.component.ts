@@ -1,7 +1,6 @@
-import { Component, inject, input, output, signal } from '@angular/core';
+import { Component, computed, inject, input, output } from '@angular/core';
 import { SnelgidsService } from '../../snelgids.service';
 import { Location } from '../../location.enum';
-import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-dialog-locations',
@@ -10,18 +9,21 @@ import { NgClass } from '@angular/common';
     styleUrl: './dialog-locations.component.css'
 })
 export class DialogLocationsComponent {
-  snelgidsService = inject(SnelgidsService);
+  private readonly snelgidsService = inject(SnelgidsService);
 
   isOpen = input.required<boolean>();
   isClosed = output<boolean>();
 
   protected locations: Location[] = this.snelgidsService.getLocations();
-  protected selectedLocations = signal<Location[]>(this.snelgidsService.selectedLocations());
+  protected readonly selectedLocations = computed(() => {
+    if (this.snelgidsService.selectedLocations().length !== 0) {
+      return this.snelgidsService.selectedLocations();
+    }
+    return this.snelgidsService.getLocations();
+  });
 
   onClick(location: Location): void {
     this.snelgidsService.setSelectedLocations(location);
-    // Update signal zodat locationIsSelected het opmerkt
-    this.selectedLocations.set(this.snelgidsService.selectedLocations()); 
   }
 
   locationIsSelected(location: Location): boolean {

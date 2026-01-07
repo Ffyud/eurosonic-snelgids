@@ -12,7 +12,7 @@ import { Day } from '../day.enum';
 })
 export class PageFavoritesComponent {
 
-  snelgidsService = inject(SnelgidsService);
+  private readonly snelgidsService = inject(SnelgidsService);
 
   protected readonly favoriteEvents = this.snelgidsService.favoriteEvents();
   protected readonly favoriteEventsLocations = this.snelgidsService.getFavoriteEventsLocations();
