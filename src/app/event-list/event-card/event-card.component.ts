@@ -31,7 +31,7 @@ export class EventCardComponent {
     return this.countryFlagMap[country] || "";
   }
 
-  dayMap: { [key in Day]: string } = {
+  dayMap: Record<Day, string> = {
     [Day.WO]: "woensdag",
     [Day.DO]: "donderdag",
     [Day.VR]: "vrijdag",
@@ -40,7 +40,7 @@ export class EventCardComponent {
     [Day.ONBEKEND]: "",
   };
 
-  countryFlagMap: { [key in Country]: string } = {
+  countryFlagMap: Record<Country, string> = {
     [Country.Spanje]: "es",
     [Country.Frankrijk]: "fr",
     [Country.België]: "be",
