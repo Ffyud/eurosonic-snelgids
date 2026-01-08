@@ -19,7 +19,7 @@
     },
     {
         "Score": "4",
-        "Land": "Dui/Oos",
+        "Land": "Dui",
         "Dag": "Do",
         "Tijd": "20:10-20:50",
         "Locatie": "Huize Maas Main",
@@ -388,7 +388,7 @@
     },
     {
         "Score": "4",
-        "Land": "W-Rus",
+        "Land": "witr",
         "Dag": "Do",
         "Tijd": "01:00-01:40",
         "Locatie": "Minerva Praedinius",
@@ -604,7 +604,7 @@
     },
     {
         "Score": "3",
-        "Land": " Ned",
+        "Land": "Ned",
         "Dag": "Za",
         "Tijd": "17:00-17:45",
         "Locatie": "Grote Zaal",
@@ -703,7 +703,7 @@
     },
     {
         "Score": "1**",
-        "Land": "Gri/Eng",
+        "Land": "Eng",
         "Dag": "Wo",
         "Tijd": "19:40-20:20",
         "Locatie": "Bovenzaal",
@@ -991,7 +991,7 @@
     },
     {
         "Score": "4",
-        "Land": "Dui ",
+        "Land": "Dui",
         "Dag": "Wo",
         "Tijd": "19:00-19:40",
         "Locatie": "Kunstpunt",
@@ -2017,7 +2017,7 @@
     },
     {
         "Score": "4",
-        "Land": "Gri ",
+        "Land": "Gri",
         "Dag": "Do",
         "Tijd": "23:30-00:10",
         "Locatie": "Grand Theatre",
@@ -2917,7 +2917,7 @@
     },
     {
         "Score": "3",
-        "Land": "Eng Zwe",
+        "Land": "Eng",
         "Dag": "Do",
         "Tijd": "20:50-21:30",
         "Locatie": "Werkman College",
@@ -2980,7 +2980,7 @@
     },
     {
         "Score": "",
-        "Land": "",
+        "Land": "Ned",
         "Dag": "Wo",
         "Tijd": "17:45-18:30",
         "Locatie": "Meet@air",
@@ -3016,7 +3016,7 @@
     },
     {
         "Score": "2",
-        "Land": "Slow/Dui",
+        "Land": "Dui",
         "Dag": "Wo",
         "Tijd": "23:40-00:20",
         "Locatie": "Bovenzaal",
@@ -3079,7 +3079,7 @@
     },
     {
         "Score": "1",
-        "Land": "Roe/Mol",
+        "Land": "Mol",
         "Dag": "Do",
         "Tijd": "15:20-15:40",
         "Locatie": "Plato",
@@ -3088,7 +3088,7 @@
     },
     {
         "Score": "1",
-        "Land": "Roe/Mol",
+        "Land": "Mol",
         "Dag": "Do",
         "Tijd": "22:10-22:50",
         "Locatie": "Huize Maas Front",
