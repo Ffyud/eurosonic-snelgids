@@ -44,12 +44,12 @@ export class SnelgidsService {
   };
 
   private getLocationsFromLocalStorage(): Location[] {
-    const storedLocations = localStorage.getItem('locations');
+    const storedLocations = localStorage.getItem('locations26');
     return storedLocations ? JSON.parse(storedLocations) as Location[] : this.getLocations();
   }
 
   private saveLocationsToLocalStorage(locations: Location[]): void {
-    localStorage.setItem('locations', JSON.stringify(locations));
+    localStorage.setItem('locations26', JSON.stringify(locations));
   }
 
   private getFavoritesFromLocalStorage(): Gig[] {
