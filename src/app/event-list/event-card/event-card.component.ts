@@ -71,6 +71,16 @@ export class EventCardComponent {
     [Country.Oekraïne]: "ua",
     [Country.Ijsland]: "is",
     [Country.Wit_Rusland]: "by",
+    [Country.Cyprus]: "cy",
+    [Country.Georgië]: "ge",
+    [Country.Moldavië]: "md",
+    [Country.Schotland]: "gb-sct",
+    [Country.Wales]: "gb-wls",
+    [Country.Noord_Ierland]: "gb-nir",
+    [Country.Kosovo]: "xk",
+    [Country.Bulgarije]: "bg",
+    [Country.Griekenland]: "gr",
+    [Country.Noord_Macedonië]: "mk",
     [Country.Onbekend]: ""
   };
 
