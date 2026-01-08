@@ -28,6 +28,16 @@ export enum Country {
     Oekraïne = "OEK",
     Ijsland = "IJS",
     Wit_Rusland = "WITR",
+    Bulgarije = "BUL",
     Romenië = "ROE",
+    Griekenland = "GRI",
+    Cyprus = "CYP",
+    Georgië = "GEO",
+    Moldavië = "MOL",
+    Schotland = "SCHO",
+    Wales = "WAL",
+    Noord_Ierland = "N-IER",
+    Kosovo = "KOS",
+    Noord_Macedonië = "N-MAC",
     Onbekend = "ONBEKEND"
 }
