@@ -31,6 +31,11 @@ export class EventCardComponent {
     return this.countryFlagMap[country] || "";
   }
 
+  getCountryLabel(code: Country): string {
+    const entry = Object.entries(Country).find(([, value]) => value === code);
+    return entry ? entry[0].replace('_', ' ') : code;
+  }
+
   dayMap: Record<Day, string> = {
     [Day.WO]: "woensdag",
     [Day.DO]: "donderdag",
@@ -52,7 +57,7 @@ export class EventCardComponent {
     [Country.Italië]: "it",
     [Country.Slovenië]: "si",
     [Country.Zweden]: "se",
-    [Country.Ierland]: "gb-nir",
+    [Country.Ierland]: "ie",
     [Country.Letland]: "lv",
     [Country.Zwitserland]: "ch",
     [Country.Denemarken]: "dk",

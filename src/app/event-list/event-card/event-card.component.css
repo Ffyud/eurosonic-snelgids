@@ -1,7 +1,6 @@
 .event-card {
     min-height: 130px;
     border-radius: var(--medium-radius);
-    padding: var(--spacing-m);
     position: relative;
     overflow: visible;
     background: var(--light-dark-color);
@@ -18,10 +17,9 @@
 
 h4 {
     display: block;
-    padding: 0;
+    padding: var(--spacing-xl);
     margin: 0;
-    padding-bottom: var(--spacing-m);
-    padding-top: var(--spacing-m);
+    background: rgba(0, 0, 0, 0.2);
     font-weight: 700;
     font-size: 1.2em;
     font-style: normal;
@@ -31,16 +29,16 @@ h4 {
 
 .info-grid {
     display: grid;
-    align-items: center;
-    grid-template-columns: 1fr auto 1fr;
-    margin: 0px auto;
-    max-width: 200px;
+    grid-template-columns: auto 1fr auto;
+    margin: var(--spacing-m);
 }
 
 .info-grid .info-time {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
+    color: rgba(225, 225, 225, 0.8);
+
 }
 
 .info-grid .info-rating {
@@ -82,10 +80,8 @@ p.description::after {
 p.description {
     display: block;
     quotes: "„" "“" "‚" "‘";
-    /* font-size: .9   em; */
     margin: 0;
-    margin-top: var(--spacing-xl);
-    margin-bottom: var(--spacing-xl);
+    margin: var(--spacing-xl) var(--spacing-m);
     text-align: center;
     word-wrap: anywhere;
     text-wrap: balance;
@@ -110,7 +106,8 @@ p.description {
         line-height: initial;
     }
 
-    .time .start-time, .time .end-time {
+    .time .start-time,
+    .time .end-time {
         display: block;
     }
 
@@ -133,9 +130,20 @@ p.description {
 }
 
 .country {
-    position: absolute;
-    top: -5px;
-    right: -5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-m);
+    text-align: left;
+    color: rgba(225, 225, 225, 0.8);
+    margin: var(--spacing-m) var(--spacing-xl);
+}
+
+.country .label {
+    font-size: 14px;
+}
+
+.country i {
     font-size: 20px;
 }
 
