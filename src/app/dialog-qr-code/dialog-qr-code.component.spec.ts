@@ -14,6 +14,8 @@ describe('DialogQrCodeComponent', () => {
 
     fixture = TestBed.createComponent(DialogQrCodeComponent);
     component = fixture.componentInstance;
+    // Provide required input for Angular 21
+    fixture.componentRef.setInput('isOpen', false);
     fixture.detectChanges();
   });
 
