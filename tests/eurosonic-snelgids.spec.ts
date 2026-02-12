@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.beforeEach(async ({page}) => {
   await page.goto('eurosonic-snelgids');
 
-  await expect(page.locator('header')).toContainText(/eurosonicsnelgidsvan de Lijstjesman!/);
+  await expect(page.locator('header')).toContainText(/eurosonic2026snelgidsvan de Lijstjesman!/);
 
 });
 
