@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TapBarNavComponent } from './tap-bar-nav.component';
+import { provideRouter } from '@angular/router';
 
 describe('TapBarNavComponent', () => {
   let component: TapBarNavComponent;
@@ -8,7 +9,8 @@ describe('TapBarNavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TapBarNavComponent]
+      imports: [TapBarNavComponent],
+      providers: [provideRouter([])],
     })
     .compileComponents();
 
